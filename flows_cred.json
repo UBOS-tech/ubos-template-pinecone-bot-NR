@@ -1,8 +1,4 @@
 {
-    "5ec2dfa21fa4e3a1": {
-        "user": "sophiamytsak0227",
-        "password": "MEjxkhis"
-    },
     "4b07803a52e468f5": {
         "token": "{global.get('process_env').BOT_TOKEN}"
     },
