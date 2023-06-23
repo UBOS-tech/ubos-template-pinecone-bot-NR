@@ -182,7 +182,7 @@
         ],
         "x": 34,
         "y": 59,
-        "w": 1462,
+        "w": 1472,
         "h": 322
     },
     {
@@ -218,7 +218,7 @@
         ],
         "x": 34,
         "y": 439,
-        "w": 1742,
+        "w": 1752,
         "h": 282
     },
     {
@@ -281,7 +281,7 @@
         ],
         "x": 34,
         "y": 799,
-        "w": 1562,
+        "w": 1572,
         "h": 842
     },
     {
@@ -324,9 +324,9 @@
             "62ddf71e3259e377",
             "1c79434061d7ff76"
         ],
-        "x": 34,
+        "x": 44,
         "y": 1739,
-        "w": 2052,
+        "w": 2042,
         "h": 748
     },
     {
@@ -373,7 +373,9 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 1139
+        "y": 1139,
+        "w": 712,
+        "h": 902
     },
     {
         "id": "7cf09a5628ba29e5",
@@ -458,7 +460,9 @@
             "56afed1bb13cc979"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 1952,
+        "h": 1022
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -482,7 +486,9 @@
             "4ca2aafdce75631b"
         ],
         "x": 774,
-        "y": 1139
+        "y": 1139,
+        "w": 1012,
+        "h": 162
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -533,7 +539,9 @@
             "5322da50da8b810a"
         ],
         "x": 774,
-        "y": 1339
+        "y": 1339,
+        "w": 1652,
+        "h": 622
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -577,7 +585,9 @@
             "db9c3ea65883774f"
         ],
         "x": 14,
-        "y": 3039
+        "y": 3039,
+        "w": 1172,
+        "h": 662
     },
     {
         "id": "a89d39ed625d493a",
@@ -633,7 +643,9 @@
             "22995a8e4464c6e5"
         ],
         "x": 4,
-        "y": 2079
+        "y": 2079,
+        "w": 1042,
+        "h": 922
     },
     {
         "id": "899f1daa46b0a16a",
@@ -701,24 +713,14 @@
         "verboselogging": false
     },
     {
-        "id": "03f6b4d65fcc0e6b",
+        "id": "b8599136ec475181",
         "type": "mongodb",
-        "hostname": "db648622cda77d221100000145-1686561375635mongo-5834.ubos-t9g4d",
+        "hostname": "db64942bd3a77d221100000464-1687432251084mongo-0502.ubos-blfvw",
         "topology": "direct",
         "connectOptions": "authSource=admin",
         "port": "27017",
-        "db": "mongo-5834",
-        "name": ""
-    },
-    {
-        "id": "45f6b0cb49b1a9a4",
-        "type": "mongodb",
-        "hostname": "db644797ab65e54e1000000069-1685346029481bot.ubos-lmdtg",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "bot",
-        "name": ""
+        "db": "mongo-0502",
+        "name": "BD"
     },
     {
         "id": "9c118fcdb9ebf1db",
@@ -3138,14 +3140,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "ea4c7fac6e05ec68",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1360,
+        "x": 1390,
         "y": 300,
         "wires": []
     },
@@ -3154,14 +3156,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "ea4c7fac6e05ec68",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1340,
+        "x": 1370,
         "y": 180,
         "wires": []
     },
@@ -3170,14 +3172,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1460,
+        "x": 1490,
         "y": 1600,
         "wires": []
     },
@@ -3186,14 +3188,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "e791570c012debab",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": true,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 480,
+        "x": 510,
         "y": 640,
         "wires": []
     },
@@ -3202,14 +3204,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "e791570c012debab",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1640,
+        "x": 1670,
         "y": 680,
         "wires": []
     },
@@ -3218,14 +3220,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "e791570c012debab",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1560,
+        "x": 1590,
         "y": 520,
         "wires": []
     },
@@ -3234,14 +3236,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 880,
+        "x": 910,
         "y": 1440,
         "wires": []
     },
@@ -3250,14 +3252,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 790,
+        "x": 820,
         "y": 1240,
         "wires": []
     },
@@ -3266,14 +3268,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "delete",
-        "x": 640,
+        "x": 670,
         "y": 1080,
         "wires": []
     },
@@ -3282,14 +3284,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "899f1daa46b0a16a",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": true,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 500,
+        "x": 530,
         "y": 2280,
         "wires": []
     },
@@ -3298,14 +3300,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "899f1daa46b0a16a",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1340,
+        "x": 1370,
         "y": 2420,
         "wires": []
     },
@@ -3314,14 +3316,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "899f1daa46b0a16a",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "update",
-        "x": 1500,
+        "x": 1530,
         "y": 2180,
         "wires": []
     },
@@ -3330,11 +3332,11 @@
         "type": "mongodb in",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "operation": "find",
-        "x": 540,
+        "x": 570,
         "y": 1160,
         "wires": [
             [
@@ -3348,11 +3350,11 @@
         "type": "mongodb in",
         "z": "c8208e6a65d3c2af",
         "g": "24fba248d7b111c9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "operation": "find",
-        "x": 520,
+        "x": 550,
         "y": 1560,
         "wires": [
             [
@@ -3479,14 +3481,14 @@
         "type": "mongodb out",
         "z": "c8208e6a65d3c2af",
         "g": "ea4c7fac6e05ec68",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "knowledgebase",
         "payonly": true,
         "upsert": false,
         "multi": false,
         "operation": "insert",
-        "x": 540,
+        "x": 570,
         "y": 240,
         "wires": []
     },
@@ -4575,7 +4577,7 @@
         "id": "f3044d88f842fe9e",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "",
         "payonly": true,
@@ -4590,7 +4592,7 @@
         "id": "4e41ef5ff791e8ec",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "",
         "payonly": false,
@@ -4605,7 +4607,7 @@
         "id": "249710f1ad698a20",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "",
         "operation": "find",
@@ -4621,7 +4623,7 @@
         "id": "fb78182cc4835041",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "",
         "operation": "aggregate",
@@ -5268,14 +5270,14 @@
         "id": "579e58cf164df28e",
         "type": "mongodb out",
         "z": "4004e7d2fbdbf6a9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "",
         "collection": "users_messages",
         "payonly": false,
         "upsert": false,
         "multi": false,
         "operation": "delete",
-        "x": 690,
+        "x": 580,
         "y": 800,
         "wires": []
     },
@@ -5283,7 +5285,7 @@
         "id": "dd435dc9daf8c5a1",
         "type": "mongodb in",
         "z": "4004e7d2fbdbf6a9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "users_chat",
         "operation": "find",
@@ -5299,7 +5301,7 @@
         "id": "f033645ce54afa87",
         "type": "mongodb in",
         "z": "4004e7d2fbdbf6a9",
-        "mongodb": "",
+        "mongodb": "b8599136ec475181",
         "name": "db",
         "collection": "users",
         "operation": "find",
