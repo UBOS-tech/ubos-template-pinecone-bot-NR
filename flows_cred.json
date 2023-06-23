@@ -1,0 +1,12 @@
+{
+    "5ec2dfa21fa4e3a1": {
+        "user": "sophiamytsak0227",
+        "password": "MEjxkhis"
+    },
+    "4b07803a52e468f5": {
+        "token": "{global.get('process_env').BOT_TOKEN}"
+    },
+    "b5149a289a574835": {},
+    "48b4e9a8d4115ee7": {},
+    "62ddf71e3259e377": {}
+}
