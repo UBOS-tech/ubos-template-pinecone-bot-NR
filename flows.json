@@ -462,9 +462,9 @@
             "aed0f134a3d46198",
             "22995a8e4464c6e5"
         ],
-        "x": 14,
+        "x": 4,
         "y": 2079,
-        "w": 1032,
+        "w": 1042,
         "h": 922
     },
     {
@@ -523,26 +523,6 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
-    },
-    {
-        "id": "b8599136ec475181",
-        "type": "mongodb",
-        "hostname": "db64942bd3a77d221100000464-1687432251084mongo-0502.ubos-blfvw",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "mongo-0502",
-        "name": "BD"
-    },
-    {
-        "id": "f9bda5b2c2e51cfe",
-        "type": "mongodb",
-        "hostname": "db6479dd750555f4120000000e-1685708487077database.ubos-cklpf",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "database",
-        "name": "DB"
     },
     {
         "id": "9c118fcdb9ebf1db",
@@ -2030,7 +2010,7 @@
         "id": "f3044d88f842fe9e",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "b8599136ec475181",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "payonly": true,
@@ -2045,7 +2025,7 @@
         "id": "4e41ef5ff791e8ec",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "b8599136ec475181",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "payonly": false,
@@ -2060,7 +2040,7 @@
         "id": "249710f1ad698a20",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "b8599136ec475181",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "operation": "find",
@@ -2076,7 +2056,7 @@
         "id": "fb78182cc4835041",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "b8599136ec475181",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "operation": "aggregate",
@@ -9773,7 +9753,7 @@
         "id": "f2bbe3862870090a",
         "type": "mongodb out",
         "z": "8bea414da58d7b2a",
-        "mongodb": "b8599136ec475181",
+        "mongodb": "",
         "name": "",
         "collection": "knowledgeObjects",
         "payonly": false,
