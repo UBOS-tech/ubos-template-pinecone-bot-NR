@@ -7953,13 +7953,14 @@
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 180,
+        "x": 120,
         "y": 1000,
         "wires": [
             [
                 "648e0d4d42dcbe42",
                 "ce0e4af9cb4f0c30",
-                "c7a6fc3a0eb4501a"
+                "c7a6fc3a0eb4501a",
+                "930e48bc61a07b6a"
             ]
         ]
     },
@@ -10041,12 +10042,17 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "function 335",
-        "func": "msg.old = msg.req.query.id\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    '_id': msg.old.id\n}\n\n// msg.payload = {\n//     $set: {\n//         'deleted': true\n//     }\n// }\n\nreturn msg;\n",
+        "func": "node.warn(msg)\nmsg.old = msg.req.query.id\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    '_id': objectid(msg.req.query.id)\n}\n\n// msg.payload = {\n//     $set: {\n//         'deleted': true\n//     }\n// }\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [],
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
         "x": 370,
         "y": 2700,
         "wires": [
@@ -10094,7 +10100,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "delete",
-        "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    const process_env = global.get(\"process_env\")\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${env.get('pineconeURL')}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}",
+        "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n    const process_env = global.get(\"process_env\")\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${env.get('pineconeURL')}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10133,7 +10139,7 @@
         "senderr": false,
         "headers": [],
         "x": 890,
-        "y": 2700,
+        "y": 2680,
         "wires": [
             [
                 "5161acd81a934fdf"
@@ -10265,7 +10271,7 @@
         "statusCode": "",
         "headers": {},
         "x": 1030,
-        "y": 2660,
+        "y": 2680,
         "wires": []
     },
     {
@@ -10514,7 +10520,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 910,
+        "x": 870,
         "y": 2740,
         "wires": []
     },
@@ -11265,6 +11271,22 @@
         "headers": {},
         "x": 1990,
         "y": 260,
+        "wires": []
+    },
+    {
+        "id": "930e48bc61a07b6a",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "name": "debug 424",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 170,
+        "y": 1040,
         "wires": []
     }
 ]
