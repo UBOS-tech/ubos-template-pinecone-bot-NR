@@ -483,9 +483,7 @@
             "29445d42adea56dc"
         ],
         "x": 1274,
-        "y": 59,
-        "w": 792,
-        "h": 242
+        "y": 59
     },
     {
         "id": "4b07803a52e468f5",
@@ -511,16 +509,6 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
-    },
-    {
-        "id": "152105fcad31bbe5",
-        "type": "mongodb",
-        "hostname": "db64942bd3a77d221100000464-1687432251084mongo-0502.ubos-blfvw",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "mongo-0502",
-        "name": "BD"
     },
     {
         "id": "9c118fcdb9ebf1db",
@@ -2008,7 +1996,7 @@
         "id": "f3044d88f842fe9e",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "152105fcad31bbe5",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "payonly": true,
@@ -2023,7 +2011,7 @@
         "id": "4e41ef5ff791e8ec",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "152105fcad31bbe5",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "payonly": false,
@@ -2038,7 +2026,7 @@
         "id": "249710f1ad698a20",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "152105fcad31bbe5",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "operation": "find",
@@ -2054,7 +2042,7 @@
         "id": "fb78182cc4835041",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "152105fcad31bbe5",
+        "mongodb": "",
         "name": "db",
         "collection": "",
         "operation": "aggregate",
