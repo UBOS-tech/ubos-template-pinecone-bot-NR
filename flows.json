@@ -8557,7 +8557,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "Create Pages",
-        "func": "let tokenizer = new natural.SentenceTokenizer();\nlet str = msg.payload;\n\nmsg.array = tokenizer.tokenize(str)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.split() }))\n\nmsg.array = result;\nnode.warn(msg.array)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -8568,8 +8568,8 @@
                 "module": "natural"
             }
         ],
-        "x": 1320,
-        "y": 1600,
+        "x": 1340,
+        "y": 1620,
         "wires": [
             [
                 "0293ec9c022d79f4"
@@ -8937,7 +8937,7 @@
         "name": "genarate unswer",
         "model": "gpt-3.5-turbo",
         "temperature": 0.02,
-        "max_tokens": 60,
+        "max_tokens": 2000,
         "prompt": "",
         "frequency_penalty": 0,
         "presence_penalty": 0,
@@ -9088,7 +9088,7 @@
         "name": "genarate unswer",
         "model": "gpt-3.5-turbo",
         "temperature": 0.02,
-        "max_tokens": 60,
+        "max_tokens": 2000,
         "prompt": "",
         "frequency_penalty": 0,
         "presence_penalty": 0,
@@ -10308,8 +10308,8 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "create payload",
-        "func": "msg.payload = msg.payload.text\nreturn msg;",
-        "outputs": 1,
+        "func": "\nlet str = msg.payload.text\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.split() }))\n\nmsg.array = result;\nnode.warn(msg.array)\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -10318,7 +10318,10 @@
         "y": 1560,
         "wires": [
             [
-                "81d103f3847b6d65"
+                "0293ec9c022d79f4"
+            ],
+            [
+                "ca26229730123383"
             ]
         ]
     },
