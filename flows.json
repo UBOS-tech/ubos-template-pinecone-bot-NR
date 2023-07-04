@@ -483,7 +483,9 @@
             "29445d42adea56dc"
         ],
         "x": 1274,
-        "y": 59
+        "y": 59,
+        "w": 792,
+        "h": 242
     },
     {
         "id": "4b07803a52e468f5",
@@ -7379,7 +7381,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name,\n    BOT_TOKEN: data.bot_token,\n    OPENAI_API: data.openai_api,\n    PIPECONE_API: data.pipecone_api,\n    PIPECONE_ENV: data.pipecone_env,\n    PIPECONE_INDEX: data.pipecone_index,\n    PRIVATE_TG_CHAT:data.private_chat\n}\n\nglobal.set(\"process_env\", process_env)\nreturn msg;",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name,\n    BOT_TOKEN: data.bot_token,\n    OPENAI_API: data.openai_api,\n    PIPECONE_API: data.pipecone_api,\n    PIPECONE_ENV: data.pipecone_env,\n    PIPECONE_INDEX: data.pipecone_index,\n    PRIVATE_TG_CHAT:data.private_chat,\n    PIPECONE_URL: data.pipecone_url\n}\n\nglobal.set(\"process_env\", process_env)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -7459,10 +7461,28 @@
         "y": 60,
         "wires": [
             [
-                "e3b8c26d52822ba0"
+                "e3b8c26d52822ba0",
+                "e2ddfce36897aa9d"
             ]
         ],
         "l": false
+    },
+    {
+        "id": "e2ddfce36897aa9d",
+        "type": "debug",
+        "z": "4cba6f8219137af4",
+        "name": "debug 425",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
+        "y": 100,
+        "wires": []
     },
     {
         "id": "63e9b54f0d64a1fb",
@@ -9656,7 +9676,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "delete",
-        "func": "let vectorIds = msg.req.query.id;\nmsg.headers = {\n    'Api-Key': '3845c70b-1212-43ec-ab70-4d2abbdb58ff',\n    'Content-Type': 'application/json'\n};\n\nmsg.url = 'https://test-16e2a78.svc.asia-northeast1-gcp.pinecone.io/vectors/delete';\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n\n\nreturn msg;\n\n\n\n",
+        "func": "let vectorIds = msg.req.query.id;\n\nconst process_env = global.get(\"process_env\")\nmsg.PIPECONE_URL = process_env.PIPECONE_URL\n\nmsg.headers = {\n    'Api-Key': '3845c70b-1212-43ec-ab70-4d2abbdb58ff',\n    'Content-Type': 'application/json'\n};\n\nmsg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9900,7 +9920,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "delete",
-        "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length>0){\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e=> e.id);\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key':process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n\nmsg.url = `${env.get('pineconeURL')}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}",
+        "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length>0){\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e=> e.id);\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key':process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10051,7 +10071,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "delete",
-        "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n    const process_env = global.get(\"process_env\")\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${env.get('pineconeURL')}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}",
+        "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n\n\n    const process_env = global.get(\"process_env\")\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${msg.PIPECONE_UR}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10102,7 +10122,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "delete",
-        "func": "let vectorIds = msg.req.query.id;\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key': process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n\nmsg.url = `${env.get('pineconeURL')}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n\n\nreturn msg;\n\n\n\n",
+        "func": "let vectorIds = msg.req.query.id;\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key': process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n\nmsg.PIPECONE_URL = process_env.PIPECONE_URL\nmsg.url = `${env.get('pineconeURL')}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n \n\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11257,6 +11277,35 @@
         "y": 840,
         "wires": [
             []
+        ]
+    },
+    {
+        "id": "587421b6ee1c2734",
+        "type": "inject",
+        "z": "8bea414da58d7b2a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1520,
+        "y": 860,
+        "wires": [
+            [
+                "20ef169512cdd410"
+            ]
         ]
     }
 ]
