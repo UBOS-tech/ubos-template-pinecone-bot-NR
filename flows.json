@@ -193,9 +193,7 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 1139,
-        "w": 712,
-        "h": 902
+        "y": 1139
     },
     {
         "id": "7cf09a5628ba29e5",
@@ -280,9 +278,7 @@
             "56afed1bb13cc979"
         ],
         "x": 14,
-        "y": 39,
-        "w": 1952,
-        "h": 1022
+        "y": 39
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -306,9 +302,7 @@
             "4ca2aafdce75631b"
         ],
         "x": 774,
-        "y": 1139,
-        "w": 1012,
-        "h": 162
+        "y": 1139
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -359,9 +353,7 @@
             "5322da50da8b810a"
         ],
         "x": 774,
-        "y": 1339,
-        "w": 1652,
-        "h": 622
+        "y": 1339
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -405,9 +397,7 @@
             "db9c3ea65883774f"
         ],
         "x": 14,
-        "y": 3039,
-        "w": 1172,
-        "h": 662
+        "y": 3039
     },
     {
         "id": "a89d39ed625d493a",
@@ -463,9 +453,7 @@
             "22995a8e4464c6e5"
         ],
         "x": 4,
-        "y": 2079,
-        "w": 1042,
-        "h": 922
+        "y": 2079
     },
     {
         "id": "080a4b05e6b518fc",
@@ -494,9 +482,9 @@
             "2db2b245aa5eabb5",
             "29445d42adea56dc"
         ],
-        "x": 1354,
+        "x": 1344,
         "y": 39,
-        "w": 792,
+        "w": 802,
         "h": 242
     },
     {
@@ -537,52 +525,10 @@
             "1c79434061d7ff76",
             "93961f4aeda1b32c"
         ],
-        "x": 34,
+        "x": 24,
         "y": 179,
-        "w": 2042,
+        "w": 2052,
         "h": 708
-    },
-    {
-        "id": "93961f4aeda1b32c",
-        "type": "group",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "TG private chat ",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "d1fe775ad04641c1",
-            "6bcf93306278ae07",
-            "079317a7798ae7d0",
-            "70d89be8294e4cc1",
-            "e288b3035af24eaa",
-            "ef767d928767cb70",
-            "9406da99327c9644",
-            "ca9798d997d772fd",
-            "d10542b05ef1f56d",
-            "d9ec1bb17c6cb2e5",
-            "681ed7fd92333081",
-            "7c1bf4b5923a9948",
-            "1043346252c517a7",
-            "17c46e8b98657bce",
-            "2037f13cdb05275d",
-            "78726ae519ab086a",
-            "28c49149129d34ef",
-            "6fae5298f072ae66",
-            "42c541d584f35255",
-            "8e058063d7977bdc",
-            "c79f68ae78c2fa0a",
-            "b5149a289a574835",
-            "03eaa5c76a7cc0b0",
-            "0b1926129388787b",
-            "9fc1615f16cc61ed",
-            "8fe93679b9f619bc"
-        ],
-        "x": 164,
-        "y": 439,
-        "w": 1582,
-        "h": 422
     },
     {
         "id": "e5c2a19a4e324330",
@@ -693,9 +639,9 @@
             "a216871af0720353",
             "930e48bc61a07b6a"
         ],
-        "x": 34,
+        "x": 24,
         "y": 599,
-        "w": 1152,
+        "w": 1162,
         "h": 322
     },
     {
@@ -741,9 +687,9 @@
             "5d205db14643ab46",
             "f073650597eacb86"
         ],
-        "x": 34,
+        "x": 24,
         "y": 39,
-        "w": 1272,
+        "w": 1282,
         "h": 522
     },
     {
@@ -772,9 +718,9 @@
             "cf4156d5c447a16c",
             "9b5d8966c49993cd"
         ],
-        "x": 1354,
+        "x": 1344,
         "y": 319,
-        "w": 932,
+        "w": 942,
         "h": 362
     },
     {
@@ -796,9 +742,9 @@
             "434e200cd77ed275",
             "d83803be20e467e5"
         ],
-        "x": 34,
+        "x": 24,
         "y": 2039,
-        "w": 1342,
+        "w": 1352,
         "h": 162
     },
     {
@@ -841,10 +787,52 @@
             "a9c2a874db422718",
             "1362f0a166dc1542"
         ],
-        "x": 34,
+        "x": 24,
         "y": 2279,
-        "w": 1092,
+        "w": 1102,
         "h": 542
+    },
+    {
+        "id": "93961f4aeda1b32c",
+        "type": "group",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "TG private chat ",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "d1fe775ad04641c1",
+            "6bcf93306278ae07",
+            "079317a7798ae7d0",
+            "70d89be8294e4cc1",
+            "e288b3035af24eaa",
+            "ef767d928767cb70",
+            "9406da99327c9644",
+            "ca9798d997d772fd",
+            "d10542b05ef1f56d",
+            "d9ec1bb17c6cb2e5",
+            "681ed7fd92333081",
+            "7c1bf4b5923a9948",
+            "1043346252c517a7",
+            "17c46e8b98657bce",
+            "2037f13cdb05275d",
+            "78726ae519ab086a",
+            "28c49149129d34ef",
+            "6fae5298f072ae66",
+            "42c541d584f35255",
+            "8e058063d7977bdc",
+            "c79f68ae78c2fa0a",
+            "b5149a289a574835",
+            "03eaa5c76a7cc0b0",
+            "0b1926129388787b",
+            "9fc1615f16cc61ed",
+            "8fe93679b9f619bc"
+        ],
+        "x": 164,
+        "y": 439,
+        "w": 1582,
+        "h": 422
     },
     {
         "id": "4b07803a52e468f5",
@@ -870,6 +858,16 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "fba05a7d77830c14",
+        "type": "mongodb",
+        "hostname": "db64942bd3a77d221100000464-1687432251084mongo-0502.ubos-blfvw",
+        "topology": "direct",
+        "connectOptions": "authSource=admin",
+        "port": "27017",
+        "db": "mongo-0502",
+        "name": ""
     },
     {
         "id": "9c118fcdb9ebf1db",
@@ -1033,7 +1031,7 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "check command",
-        "func": "msg.fromTG1 = msg.payload\nmsg.history = {\n    request: msg.payload.content,\n    startDate: Date.now()\n}\n\nconst process_env = global.get(\"process_env\")\nconst PRIVATE_TG_CHAT = process.env.PRIVATE_TG_CHAT\n\nconst date = msg.originalMessage.date\n\nmsg.typing = `typing${date}`\nglobal.set(`typing${date}`, true)\n\nif (msg.originalMessage.chat.type === \"group\" && (msg.payload.content.includes(\"http://\") || msg.payload.content.includes(\"https://\") && (msg.payload.chatId === PRIVATE_TG_CHAT ))){\n    \n    return msg.payload.content === '/start' ? [msg, null, null] : [null, null, msg];\n\n    }\nelse  if (msg.originalMessage.chat.type === \"group\") {\n    return msg.payload.content === '/start' ? [msg, null, null] : [null, msg, null]\n}\nelse if(msg.originalMessage.chat.type === \"private\"){\n    return msg.payload.content === '/start' ? [msg, null, null] : [null, msg, null]}\n   else {\n\n    return (msg.payload.type === 'message' &&\n        (msg.payload.content.includes(`@${global.get('process_env').BOT_NAME}`) || msg.payload.content === '/start')) ?\n        ((msg.payload.content === '/start') ? [msg, null,null] : [null, msg, null]) :\n        [null, null];\n}",
+        "func": "msg.fromTG1 = msg.payload\nmsg.history = {\n    request: msg.payload.content,\n    startDate: Date.now()\n}\n\nconst process_env = global.get(\"process_env\")\nconst PRIVATE_TG_CHAT = process_env.PRIVATE_TG_CHAT\n\nconst date = msg.originalMessage.date\n\nmsg.typing = `typing${date}`\nglobal.set(`typing${date}`, true)\n\nif (msg.originalMessage.chat.type === \"group\" && (msg.payload.content.includes(\"http://\") || msg.payload.content.includes(\"https://\") && (msg.payload.chatId === PRIVATE_TG_CHAT ))){\n    \n    return msg.payload.content === '/start' ? [msg, null, null] : [null, null, msg];\n\n    }\nelse  if (msg.originalMessage.chat.type === \"group\") {\n    return msg.payload.content === '/start' ? [msg, null, null] : [null, msg, null]\n}\nelse if(msg.originalMessage.chat.type === \"private\"){\n    return msg.payload.content === '/start' ? [msg, null, null] : [null, msg, null]}\n   else {\n\n    return (msg.payload.type === 'message' &&\n        (msg.payload.content.includes(`@${global.get('process_env').BOT_NAME}`) || msg.payload.content === '/start')) ?\n        ((msg.payload.content === '/start') ? [msg, null,null] : [null, msg, null]) :\n        [null, null];\n}",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
@@ -1216,7 +1214,7 @@
         "method": "GET",
         "ret": "obj",
         "paytoqs": "query",
-        "url": "https://nodered-5716-648622cda77d221100000144.ubos.tech/checkUser",
+        "url": "https://nodered-0131-64942bd3a77d221100000463.ubos.tech/checkUser",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -1238,7 +1236,7 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "save/update",
-        "func": "if(msg.payload.length > 0){\n   return[null,msg]\n}\n\nelse{\n    msg.method=\"POST\"\n    msg.url = 'https://nodered-5716-648622cda77d221100000144.ubos.tech/saveUser'\n    msg.payload = {\n        first_name: msg.originalMessage.from.first_name ? msg.originalMessage.from.first_name :'',\n        last_name: msg.originalMessage.from.last_name ? msg.originalMessage.from.last_name : '',\n        username: msg.originalMessage.from.username,\n        chat_id: msg.originalMessage.from.id,\n        language_code: msg.originalMessage.from.language_code\n    }\n    \nreturn[msg,null]\n}\n\n",
+        "func": "if(msg.payload.length > 0){\n   return[null,msg]\n}\n\nelse{\n    msg.method=\"POST\"\n    msg.url = 'https://nodered-0131-64942bd3a77d221100000463.ubos.tech/saveUser'\n    msg.payload = {\n        first_name: msg.originalMessage.from.first_name ? msg.originalMessage.from.first_name :'',\n        last_name: msg.originalMessage.from.last_name ? msg.originalMessage.from.last_name : '',\n        username: msg.originalMessage.from.username,\n        chat_id: msg.originalMessage.from.id,\n        language_code: msg.originalMessage.from.language_code\n    }\n    \nreturn[msg,null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -1306,7 +1304,7 @@
         "method": "POST",
         "ret": "obj",
         "paytoqs": "ignore",
-        "url": "https://nodered-5716-648622cda77d221100000144.ubos.tech/saveUserMessage",
+        "url": "https://nodered-0131-64942bd3a77d221100000463.ubos.tech/saveUserMessage",
         "tls": "",
         "persist": false,
         "proxy": "",
@@ -2404,7 +2402,7 @@
         "id": "f3044d88f842fe9e",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "fba05a7d77830c14",
         "name": "db",
         "collection": "",
         "payonly": true,
@@ -2419,7 +2417,7 @@
         "id": "4e41ef5ff791e8ec",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "fba05a7d77830c14",
         "name": "db",
         "collection": "",
         "payonly": false,
@@ -2434,7 +2432,7 @@
         "id": "249710f1ad698a20",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "fba05a7d77830c14",
         "name": "db",
         "collection": "",
         "operation": "find",
@@ -2450,7 +2448,7 @@
         "id": "fb78182cc4835041",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "fba05a7d77830c14",
         "name": "db",
         "collection": "",
         "operation": "aggregate",
@@ -9511,7 +9509,7 @@
         "filenameType": "msg",
         "appendNewline": true,
         "createDir": true,
-        "overwriteFile": "false",
+        "overwriteFile": "true",
         "encoding": "none",
         "x": 900,
         "y": 380,
