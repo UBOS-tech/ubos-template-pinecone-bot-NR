@@ -483,7 +483,9 @@
             "29445d42adea56dc"
         ],
         "x": 1354,
-        "y": 39
+        "y": 39,
+        "w": 792,
+        "h": 242
     },
     {
         "id": "0cf1026d3ccdfd21",
@@ -614,7 +616,9 @@
             "2b0b88cae098c7a9"
         ],
         "x": 14,
-        "y": 1039
+        "y": 1039,
+        "w": 2222,
+        "h": 942
     },
     {
         "id": "1f1b365afc8becc5",
@@ -636,7 +640,9 @@
             "d83803be20e467e5"
         ],
         "x": 34,
-        "y": 2359
+        "y": 2359,
+        "w": 1342,
+        "h": 162
     },
     {
         "id": "911c1ee2586e9d4d",
@@ -664,73 +670,9 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019
-    },
-    {
-        "id": "b1c786fa42bee943",
-        "type": "group",
-        "z": "8bea414da58d7b2a",
-        "name": "Actions with Knowlege Base",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "23dd053c7e5e0279",
-            "79e27f35e0c18b92",
-            "fd934799b4a5719d",
-            "a59cf5be5083b2c1",
-            "023e5df9fd23a08e",
-            "8e9279dd29b5f4ab",
-            "2025f86bbe98c3ee",
-            "30b0417fb9229fb4",
-            "c83eb6aa7121bd3d",
-            "fa391679813a5c33",
-            "3e4ce7eebc6e1881",
-            "988e2970299cb4fd",
-            "a4b484ac66b4388e",
-            "0e76b4ad062ef163",
-            "a11ccc0925230525",
-            "e1aeb7deaf58b494",
-            "6996de2c0c8d0fa8",
-            "fef704bbe70d3646",
-            "efa13f7af4d4aa0d",
-            "c3b716fb56af533e",
-            "65ed73cb4ae16bf1",
-            "f17484944cf90183",
-            "295728c752b792e4",
-            "14804b8572e7b79f",
-            "64c97522d4ba8257",
-            "06d81c10fed58ba8",
-            "8fd5d8c14cac66dd",
-            "0e04eae47854a3a9",
-            "62369c5ef1ed0907",
-            "4ed2fbdbf62a5e7a",
-            "f46beb6cf2dc075d",
-            "5d205db14643ab46",
-            "f073650597eacb86",
-            "851f1c7e15090704",
-            "bb6dfd4ee0f8e919",
-            "9cbbcaf890a82b63",
-            "0dcb131f022f1d76",
-            "9c08f8477d2dd098",
-            "08148aa480e2d552",
-            "b66a3e06ffddad2f",
-            "3075be8cbac0e49e",
-            "637268cb92e7ea6b",
-            "a60e2203bc6ca2e0",
-            "a32ac90b6ac83906",
-            "1597a7ba73a46f7e",
-            "d50463b148b4e3b3",
-            "89589d42722d7beb",
-            "3a72a85ffc2e6ffc",
-            "0a618dc98ac1b02f",
-            "5161acd81a934fdf",
-            "0f7183dd968d7d8b",
-            "a9c2a874db422718",
-            "1362f0a166dc1542"
-        ],
-        "x": 14,
-        "y": 39
+        "y": 2019,
+        "w": 1092,
+        "h": 262
     },
     {
         "id": "bc79b0c55ed950a2",
@@ -772,7 +714,9 @@
             "5a3203eb955fd7d9"
         ],
         "x": 1354,
-        "y": 319
+        "y": 319,
+        "w": 932,
+        "h": 622
     },
     {
         "id": "93961f4aeda1b32c",
@@ -815,6 +759,75 @@
         "y": 439,
         "w": 1582,
         "h": 422
+    },
+    {
+        "id": "f492b6dff51635a4",
+        "type": "group",
+        "z": "8bea414da58d7b2a",
+        "name": "Actions with Knowlege Base",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "9c630c78fbfe702f",
+            "e9f90d7b7902781f",
+            "1c1f174f8766fde7",
+            "6bd7710803f1d820",
+            "6fc91f5c4d0e3490",
+            "7794a2dcd291f245",
+            "771b80b405675487",
+            "690fdc4d68fe1d5f",
+            "18a42dddddf41c82",
+            "f49f71f083baf7bb",
+            "166fc8df26886326",
+            "e2e224e9d9c8f414",
+            "744c953cef4529af",
+            "8408b89d02834f5b",
+            "c4901f905e27c955",
+            "19a23ca1d1daa384",
+            "e8bcabbaf9f5fe0f",
+            "2e3e257789bb525c",
+            "f50bcabc95bf1078",
+            "54d5461f44e49a0b",
+            "bacb447dffc74ab2",
+            "8549735ed2fe7cb9",
+            "048a0a6024661886",
+            "45ff3c83b4ab9c78",
+            "12a9ae1d23901673",
+            "d3d95030bea6cb46",
+            "b43d308601b00756",
+            "3b9cee03775bb4e2",
+            "1c2bb360ac942ebc",
+            "223ca06ca0f8571c",
+            "9a230e7c818e0e24",
+            "389c9d57e6764f40",
+            "2f4beb7952be87f4",
+            "ec1fa013809c2a8e",
+            "b9a9ed30709f11c9",
+            "463bc001e4ac3724",
+            "24a270db9a48eed1",
+            "9ccf501c4980a045",
+            "1801d832c75cc75b",
+            "69bd6d7e22148f1f",
+            "0db93a79fec638c1",
+            "6d2119a90f113bc7",
+            "7ff484f04f036fae",
+            "4bf450cf643022a7",
+            "e3ac9e8aee2909b3",
+            "33bd23245aa30043",
+            "82a319adbb1186f9",
+            "cdc9d2d5e10fc245",
+            "ef20b72d14fc716d",
+            "cce6afd14b41a461",
+            "a0e0e2bf42c038d8",
+            "12650f94df4b7bdb",
+            "15dc2420f0bbb19f",
+            "f967b27837fecfdd"
+        ],
+        "x": 14,
+        "y": 59,
+        "w": 1272,
+        "h": 842
     },
     {
         "id": "4b07803a52e468f5",
@@ -7861,632 +7874,6 @@
         "wires": []
     },
     {
-        "id": "23dd053c7e5e0279",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/createBaseKnowlege",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 160,
-        "y": 80,
-        "wires": [
-            [
-                "79e27f35e0c18b92"
-            ]
-        ]
-    },
-    {
-        "id": "79e27f35e0c18b92",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to mongoDB",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    _id: objectid(),\n   name: msg.payload.name\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 410,
-        "y": 80,
-        "wires": [
-            [
-                "fd934799b4a5719d"
-            ]
-        ]
-    },
-    {
-        "id": "fd934799b4a5719d",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "8771d95b528d34d0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 610,
-        "y": 80,
-        "wires": [
-            [
-                "a59cf5be5083b2c1"
-            ]
-        ]
-    },
-    {
-        "id": "a59cf5be5083b2c1",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to front",
-        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully created\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 780,
-        "y": 80,
-        "wires": [
-            [
-                "023e5df9fd23a08e"
-            ]
-        ]
-    },
-    {
-        "id": "023e5df9fd23a08e",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 950,
-        "y": 80,
-        "wires": []
-    },
-    {
-        "id": "8e9279dd29b5f4ab",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/updateBaseKnowlege",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 160,
-        "y": 160,
-        "wires": [
-            [
-                "2025f86bbe98c3ee"
-            ]
-        ]
-    },
-    {
-        "id": "2025f86bbe98c3ee",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to mongoDB",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.query = {\n    _id: objectid(msg.req.query._id)\n}\nmsg.payload={\n    $set:{\n       name: msg.payload.name\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 410,
-        "y": 160,
-        "wires": [
-            [
-                "30b0417fb9229fb4"
-            ]
-        ]
-    },
-    {
-        "id": "30b0417fb9229fb4",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 620,
-        "y": 160,
-        "wires": [
-            [
-                "c83eb6aa7121bd3d"
-            ]
-        ]
-    },
-    {
-        "id": "c83eb6aa7121bd3d",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to front",
-        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 820,
-        "y": 160,
-        "wires": [
-            [
-                "fa391679813a5c33"
-            ]
-        ]
-    },
-    {
-        "id": "fa391679813a5c33",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 950,
-        "y": 160,
-        "wires": []
-    },
-    {
-        "id": "3e4ce7eebc6e1881",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to mongoDB",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n_id: objectid(msg.payload.id)\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 370,
-        "y": 520,
-        "wires": [
-            [
-                "a4b484ac66b4388e"
-            ]
-        ]
-    },
-    {
-        "id": "988e2970299cb4fd",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/getBaseKnowlegeById",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 160,
-        "y": 520,
-        "wires": [
-            [
-                "3e4ce7eebc6e1881"
-            ]
-        ]
-    },
-    {
-        "id": "a4b484ac66b4388e",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 530,
-        "y": 520,
-        "wires": [
-            [
-                "0e76b4ad062ef163"
-            ]
-        ]
-    },
-    {
-        "id": "0e76b4ad062ef163",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 690,
-        "y": 520,
-        "wires": []
-    },
-    {
-        "id": "a11ccc0925230525",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/getBaseKnowlege",
-        "method": "get",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 140,
-        "y": 440,
-        "wires": [
-            [
-                "e1aeb7deaf58b494"
-            ]
-        ]
-    },
-    {
-        "id": "e1aeb7deaf58b494",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to mongoDB",
-        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    deleted: { $ne: true }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 350,
-        "y": 440,
-        "wires": [
-            [
-                "6996de2c0c8d0fa8"
-            ]
-        ]
-    },
-    {
-        "id": "6996de2c0c8d0fa8",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 530,
-        "y": 440,
-        "wires": [
-            [
-                "efa13f7af4d4aa0d"
-            ]
-        ]
-    },
-    {
-        "id": "fef704bbe70d3646",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1210,
-        "y": 440,
-        "wires": []
-    },
-    {
-        "id": "efa13f7af4d4aa0d",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to mongoDB",
-        "func": "msg.old = msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    deleted: { $ne: true }\n\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 710,
-        "y": 440,
-        "wires": [
-            [
-                "c3b716fb56af533e"
-            ]
-        ]
-    },
-    {
-        "id": "c3b716fb56af533e",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 870,
-        "y": 440,
-        "wires": [
-            [
-                "65ed73cb4ae16bf1"
-            ]
-        ]
-    },
-    {
-        "id": "65ed73cb4ae16bf1",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "to front",
-        "func": "msg.payload =msg.old.map((e) => ({\n    ...e,\n    total: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() ).length,\n    links: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'Link').length,\n    files: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'File' ).length,\n    filesFAQ: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FAQ' ).length,\n    filesPDF: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FilePDF').length\n})); \n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1040,
-        "y": 440,
-        "wires": [
-            [
-                "fef704bbe70d3646",
-                "295728c752b792e4"
-            ]
-        ]
-    },
-    {
-        "id": "f17484944cf90183",
-        "type": "inject",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 140,
-        "y": 400,
-        "wires": [
-            [
-                "e1aeb7deaf58b494"
-            ]
-        ]
-    },
-    {
-        "id": "295728c752b792e4",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "debug 423",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1170,
-        "y": 400,
-        "wires": []
-    },
-    {
-        "id": "14804b8572e7b79f",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/updateObjectsBase",
-        "method": "post",
-        "upload": true,
-        "swaggerDoc": "",
-        "x": 150,
-        "y": 620,
-        "wires": [
-            [
-                "64c97522d4ba8257"
-            ]
-        ]
-    },
-    {
-        "id": "64c97522d4ba8257",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "check type",
-        "func": "\nmsg.collection = \"knowledgeObjects\";\nmsg.oldPayload = msg.payload\nmsg.type = msg.payload.type\nmsg._id = objectid();\n\nif (msg.req.files && msg.req.files[0].mimetype === \"application/pdf\"){\n    msg.type = \"FilePDF\"\n\n    return [null, null, msg]\n}\n\n\nif(msg.type ===\"Link\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"FQA\"){\n    return[null,msg,null]\n} if (msg.type === \"File\" || msg.type === \"FilePDF\"){\nreturn[null,null,msg]\n}\n",
-        "outputs": 3,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 390,
-        "y": 620,
-        "wires": [
-            [
-                "06d81c10fed58ba8"
-            ],
-            [
-                "8fd5d8c14cac66dd"
-            ],
-            [
-                "0e04eae47854a3a9"
-            ]
-        ]
-    },
-    {
-        "id": "06d81c10fed58ba8",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "link",
-        "func": "\nmsg.url = msg.oldPayload.link;\n\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    url: msg.url,\n    type: msg.type,\n    name: msg.oldPayload.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 530,
-        "y": 580,
-        "wires": [
-            [
-                "62369c5ef1ed0907"
-            ]
-        ]
-    },
-    {
-        "id": "8fd5d8c14cac66dd",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "faq",
-        "func": "msg.buffer = msg.payload.file[0].data\n\nmsg.decodedFilename = '/data/storage/' + msg.oldPayload.file[0].name;\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.oldPayload.file[0].name,\n    type: \"FAQ\",\n    file: msg.oldPayload.file[0].name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 530,
-        "y": 620,
-        "wires": [
-            [
-                "62369c5ef1ed0907",
-                "5d205db14643ab46"
-            ]
-        ]
-    },
-    {
-        "id": "0e04eae47854a3a9",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "file",
-        "func": "if (msg.type === \"FilePDF\"){\n\n    msg.payload = {\n        id: msg.req.query.id,\n        file:[\n            {\n                name: msg.req.files[0].originalname,\n                data: msg.req.files[0].buffer\n            }\n        ]\n    }\n}\n\n\nmsg.oldPayload = msg.payload\n\nmsg.buffer = msg.payload.file[0].data\n\nmsg.decodedFilename = '/data/storage/' +msg.oldPayload.file[0].name;\nnode.warn(msg.oldPayload.file[0].name)\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.oldPayload.file[0].name,\n    type: msg.type,\n    file: msg.oldPayload.file[0].name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 530,
-        "y": 660,
-        "wires": [
-            [
-                "62369c5ef1ed0907",
-                "5d205db14643ab46"
-            ]
-        ]
-    },
-    {
-        "id": "62369c5ef1ed0907",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "8771d95b528d34d0"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 750,
-        "y": 620,
-        "wires": [
-            [
-                "4ed2fbdbf62a5e7a"
-            ]
-        ]
-    },
-    {
-        "id": "4ed2fbdbf62a5e7a",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "status",
-        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 910,
-        "y": 620,
-        "wires": [
-            [
-                "f46beb6cf2dc075d"
-            ]
-        ]
-    },
-    {
-        "id": "f46beb6cf2dc075d",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1070,
-        "y": 620,
-        "wires": []
-    },
-    {
         "id": "686d5ff43aab4bf9",
         "type": "http in",
         "z": "8bea414da58d7b2a",
@@ -9250,44 +8637,6 @@
         ]
     },
     {
-        "id": "5d205db14643ab46",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "write to file",
-        "func": "msg.payload = msg.buffer\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 660,
-        "wires": [
-            [
-                "f073650597eacb86"
-            ]
-        ]
-    },
-    {
-        "id": "f073650597eacb86",
-        "type": "file",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "filename": "decodedFilename",
-        "filenameType": "msg",
-        "appendNewline": true,
-        "createDir": true,
-        "overwriteFile": "true",
-        "encoding": "none",
-        "x": 900,
-        "y": 660,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "a6174946dc747baa",
         "type": "function",
         "z": "8bea414da58d7b2a",
@@ -9892,379 +9241,6 @@
         ]
     },
     {
-        "id": "851f1c7e15090704",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "update knowlegebase",
-        "func": "msg.collection = \"knowlegebase\"\n\nmsg.query={\n    _id: objectid(msg.req.query.id)\n}\n\nmsg.payload={\n    $set:{\n    'deleted': true\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 360,
-        "y": 240,
-        "wires": [
-            [
-                "9cbbcaf890a82b63"
-            ]
-        ]
-    },
-    {
-        "id": "bb6dfd4ee0f8e919",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/deleteBase",
-        "method": "put",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 120,
-        "y": 280,
-        "wires": [
-            [
-                "851f1c7e15090704",
-                "0dcb131f022f1d76",
-                "08148aa480e2d552"
-            ]
-        ]
-    },
-    {
-        "id": "9cbbcaf890a82b63",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 600,
-        "y": 240,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0dcb131f022f1d76",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "update knowledgeObjects",
-        "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    'knowledgeBaseId': msg.req.query.id,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 380,
-        "y": 280,
-        "wires": [
-            [
-                "9c08f8477d2dd098"
-            ]
-        ]
-    },
-    {
-        "id": "9c08f8477d2dd098",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 600,
-        "y": 280,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "08148aa480e2d552",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "get knowledgeObjects",
-        "func": "msg.old=msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.req.query.id\n}\n\n// msg.payload = {\n//     $set: {\n//         'deleted': true\n//     }\n// }\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 360,
-        "y": 320,
-        "wires": [
-            [
-                "b66a3e06ffddad2f"
-            ]
-        ]
-    },
-    {
-        "id": "b66a3e06ffddad2f",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 590,
-        "y": 320,
-        "wires": [
-            [
-                "3075be8cbac0e49e"
-            ]
-        ]
-    },
-    {
-        "id": "3075be8cbac0e49e",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "delete",
-        "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length>0){\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e=> e.id);\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key':process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}\n\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 730,
-        "y": 320,
-        "wires": [
-            [
-                "637268cb92e7ea6b"
-            ],
-            [
-                "a9c2a874db422718"
-            ]
-        ]
-    },
-    {
-        "id": "637268cb92e7ea6b",
-        "type": "http request",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "method": "DELETE",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 890,
-        "y": 320,
-        "wires": [
-            [
-                "0f7183dd968d7d8b"
-            ]
-        ]
-    },
-    {
-        "id": "a60e2203bc6ca2e0",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "url": "/deleteBaseObject",
-        "method": "delete",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 150,
-        "y": 780,
-        "wires": [
-            [
-                "a32ac90b6ac83906",
-                "1597a7ba73a46f7e"
-            ]
-        ]
-    },
-    {
-        "id": "a32ac90b6ac83906",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "update knowledgeObjects",
-        "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    '_id': objectid(msg.req.query.id) ,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 400,
-        "y": 760,
-        "wires": [
-            [
-                "d50463b148b4e3b3"
-            ]
-        ]
-    },
-    {
-        "id": "1597a7ba73a46f7e",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "get knowledgeObjects",
-        "func": "msg.old = msg.req.query.id\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    '_id': objectid(msg.req.query.id)\n}\n\nreturn msg;\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 380,
-        "y": 800,
-        "wires": [
-            [
-                "89589d42722d7beb"
-            ]
-        ]
-    },
-    {
-        "id": "d50463b148b4e3b3",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 640,
-        "y": 760,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "89589d42722d7beb",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 570,
-        "y": 800,
-        "wires": [
-            [
-                "3a72a85ffc2e6ffc"
-            ]
-        ]
-    },
-    {
-        "id": "3a72a85ffc2e6ffc",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "delete",
-        "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n\n\n    const process_env = global.get(\"process_env\")\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${msg.PIPECONE_UR}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}\n\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 710,
-        "y": 800,
-        "wires": [
-            [
-                "0a618dc98ac1b02f"
-            ],
-            [
-                "1362f0a166dc1542"
-            ]
-        ]
-    },
-    {
-        "id": "0a618dc98ac1b02f",
-        "type": "http request",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "method": "DELETE",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 870,
-        "y": 780,
-        "wires": [
-            [
-                "5161acd81a934fdf"
-            ]
-        ]
-    },
-    {
-        "id": "5161acd81a934fdf",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1010,
-        "y": 780,
-        "wires": []
-    },
-    {
-        "id": "0f7183dd968d7d8b",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 1030,
-        "y": 320,
-        "wires": []
-    },
-    {
         "id": "5dd8bc6925a4d897",
         "type": "pdfparse",
         "z": "8bea414da58d7b2a",
@@ -10424,30 +9400,6 @@
                 "9b9c70ad1de4b56b"
             ]
         ]
-    },
-    {
-        "id": "a9c2a874db422718",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 870,
-        "y": 280,
-        "wires": []
-    },
-    {
-        "id": "1362f0a166dc1542",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "b1c786fa42bee943",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 850,
-        "y": 840,
-        "wires": []
     },
     {
         "id": "6a8ed9cc40220ef6",
@@ -11917,6 +10869,1086 @@
         "statusType": "auto",
         "x": 1690,
         "y": 660,
+        "wires": []
+    },
+    {
+        "id": "9c630c78fbfe702f",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/createBaseKnowlege",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 100,
+        "wires": [
+            [
+                "e9f90d7b7902781f"
+            ]
+        ]
+    },
+    {
+        "id": "e9f90d7b7902781f",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to mongoDB",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    _id: objectid(),\n   name: msg.payload.name\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 410,
+        "y": 100,
+        "wires": [
+            [
+                "1c1f174f8766fde7"
+            ]
+        ]
+    },
+    {
+        "id": "1c1f174f8766fde7",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 610,
+        "y": 100,
+        "wires": [
+            [
+                "6bd7710803f1d820"
+            ]
+        ]
+    },
+    {
+        "id": "6bd7710803f1d820",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to front",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully created\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 780,
+        "y": 100,
+        "wires": [
+            [
+                "6fc91f5c4d0e3490"
+            ]
+        ]
+    },
+    {
+        "id": "6fc91f5c4d0e3490",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 100,
+        "wires": []
+    },
+    {
+        "id": "7794a2dcd291f245",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/updateBaseKnowlege",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 180,
+        "wires": [
+            [
+                "771b80b405675487"
+            ]
+        ]
+    },
+    {
+        "id": "771b80b405675487",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to mongoDB",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.query = {\n    _id: objectid(msg.req.query._id)\n}\nmsg.payload={\n    $set:{\n       name: msg.payload.name\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 410,
+        "y": 180,
+        "wires": [
+            [
+                "690fdc4d68fe1d5f"
+            ]
+        ]
+    },
+    {
+        "id": "690fdc4d68fe1d5f",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 620,
+        "y": 180,
+        "wires": [
+            [
+                "18a42dddddf41c82"
+            ]
+        ]
+    },
+    {
+        "id": "18a42dddddf41c82",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to front",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 820,
+        "y": 180,
+        "wires": [
+            [
+                "f49f71f083baf7bb"
+            ]
+        ]
+    },
+    {
+        "id": "f49f71f083baf7bb",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 950,
+        "y": 180,
+        "wires": []
+    },
+    {
+        "id": "166fc8df26886326",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to mongoDB",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n_id: objectid(msg.payload.id)\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 370,
+        "y": 540,
+        "wires": [
+            [
+                "744c953cef4529af"
+            ]
+        ]
+    },
+    {
+        "id": "e2e224e9d9c8f414",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/getBaseKnowlegeById",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 160,
+        "y": 540,
+        "wires": [
+            [
+                "166fc8df26886326"
+            ]
+        ]
+    },
+    {
+        "id": "744c953cef4529af",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 530,
+        "y": 540,
+        "wires": [
+            [
+                "8408b89d02834f5b"
+            ]
+        ]
+    },
+    {
+        "id": "8408b89d02834f5b",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 690,
+        "y": 540,
+        "wires": []
+    },
+    {
+        "id": "c4901f905e27c955",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/getBaseKnowlege",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 460,
+        "wires": [
+            [
+                "19a23ca1d1daa384"
+            ]
+        ]
+    },
+    {
+        "id": "19a23ca1d1daa384",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to mongoDB",
+        "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    deleted: { $ne: true }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 350,
+        "y": 460,
+        "wires": [
+            [
+                "e8bcabbaf9f5fe0f"
+            ]
+        ]
+    },
+    {
+        "id": "e8bcabbaf9f5fe0f",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 530,
+        "y": 460,
+        "wires": [
+            [
+                "f50bcabc95bf1078"
+            ]
+        ]
+    },
+    {
+        "id": "2e3e257789bb525c",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1210,
+        "y": 460,
+        "wires": []
+    },
+    {
+        "id": "f50bcabc95bf1078",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to mongoDB",
+        "func": "msg.old = msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    deleted: { $ne: true }\n\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 710,
+        "y": 460,
+        "wires": [
+            [
+                "54d5461f44e49a0b"
+            ]
+        ]
+    },
+    {
+        "id": "54d5461f44e49a0b",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 870,
+        "y": 460,
+        "wires": [
+            [
+                "bacb447dffc74ab2"
+            ]
+        ]
+    },
+    {
+        "id": "bacb447dffc74ab2",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "to front",
+        "func": "msg.payload =msg.old.map((e) => ({\n    ...e,\n    total: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() ).length,\n    links: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'Link').length,\n    files: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'File' ).length,\n    filesFAQ: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FAQ' ).length,\n    filesPDF: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FilePDF').length\n})); \n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1040,
+        "y": 460,
+        "wires": [
+            [
+                "2e3e257789bb525c",
+                "048a0a6024661886"
+            ]
+        ]
+    },
+    {
+        "id": "8549735ed2fe7cb9",
+        "type": "inject",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 420,
+        "wires": [
+            [
+                "19a23ca1d1daa384"
+            ]
+        ]
+    },
+    {
+        "id": "048a0a6024661886",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "debug 423",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1170,
+        "y": 420,
+        "wires": []
+    },
+    {
+        "id": "45ff3c83b4ab9c78",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/updateObjectsBase",
+        "method": "post",
+        "upload": true,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 640,
+        "wires": [
+            [
+                "12a9ae1d23901673"
+            ]
+        ]
+    },
+    {
+        "id": "12a9ae1d23901673",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "check type",
+        "func": "\nmsg.collection = \"knowledgeObjects\";\nmsg.oldPayload = msg.req.query\nmsg.type = msg.req.query.type\nmsg._id = objectid();\n\nif (msg.req.files && msg.req.files[0].mimetype === \"application/pdf\"){\n    msg.type = \"FilePDF\"\n\n    return [null, null, msg]\n}\n\n\nif(msg.type ===\"Link\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"FAQ\"){\n    return[null,msg,null]\n} if (msg.type === \"File\" || msg.type === \"FilePDF\"){\nreturn[null,null,msg]\n}\n",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 390,
+        "y": 640,
+        "wires": [
+            [
+                "d3d95030bea6cb46"
+            ],
+            [
+                "b43d308601b00756"
+            ],
+            [
+                "3b9cee03775bb4e2"
+            ]
+        ]
+    },
+    {
+        "id": "d3d95030bea6cb46",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "link",
+        "func": "\nmsg.url = msg.oldPayload.link;\n\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    url: msg.url,\n    type: msg.type,\n    name: msg.oldPayload.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 530,
+        "y": 600,
+        "wires": [
+            [
+                "1c2bb360ac942ebc"
+            ]
+        ]
+    },
+    {
+        "id": "b43d308601b00756",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "faq",
+        "func": "msg.buffer = msg.payload.file[0].data\n\nmsg.decodedFilename = '/data/storage/' + msg.oldPayload.file[0].name;\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.oldPayload.file[0].name,\n    type: \"FAQ\",\n    file: msg.oldPayload.file[0].name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 530,
+        "y": 640,
+        "wires": [
+            [
+                "1c2bb360ac942ebc",
+                "389c9d57e6764f40"
+            ]
+        ]
+    },
+    {
+        "id": "3b9cee03775bb4e2",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "file",
+        "func": "msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + msg.req.files[0].originalname\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.req.files[0].originalname,\n    type: msg.type,\n    file: msg.req.files[0].originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 530,
+        "y": 680,
+        "wires": [
+            [
+                "1c2bb360ac942ebc",
+                "389c9d57e6764f40",
+                "f967b27837fecfdd"
+            ]
+        ]
+    },
+    {
+        "id": "1c2bb360ac942ebc",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 750,
+        "y": 640,
+        "wires": [
+            [
+                "223ca06ca0f8571c"
+            ]
+        ]
+    },
+    {
+        "id": "223ca06ca0f8571c",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 640,
+        "wires": [
+            [
+                "9a230e7c818e0e24"
+            ]
+        ]
+    },
+    {
+        "id": "9a230e7c818e0e24",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1070,
+        "y": 640,
+        "wires": []
+    },
+    {
+        "id": "389c9d57e6764f40",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "write to file",
+        "func": "msg.payload = msg.buffer\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 750,
+        "y": 680,
+        "wires": [
+            [
+                "2f4beb7952be87f4"
+            ]
+        ]
+    },
+    {
+        "id": "2f4beb7952be87f4",
+        "type": "file",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "filename": "decodedFilename",
+        "filenameType": "msg",
+        "appendNewline": true,
+        "createDir": true,
+        "overwriteFile": "true",
+        "encoding": "none",
+        "x": 900,
+        "y": 680,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ec1fa013809c2a8e",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "update knowlegebase",
+        "func": "msg.collection = \"knowlegebase\"\n\nmsg.query={\n    _id: objectid(msg.req.query.id)\n}\n\nmsg.payload={\n    $set:{\n    'deleted': true\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 360,
+        "y": 260,
+        "wires": [
+            [
+                "463bc001e4ac3724"
+            ]
+        ]
+    },
+    {
+        "id": "b9a9ed30709f11c9",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/deleteBase",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 120,
+        "y": 300,
+        "wires": [
+            [
+                "ec1fa013809c2a8e",
+                "24a270db9a48eed1",
+                "1801d832c75cc75b"
+            ]
+        ]
+    },
+    {
+        "id": "463bc001e4ac3724",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 600,
+        "y": 260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "24a270db9a48eed1",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "update knowledgeObjects",
+        "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    'knowledgeBaseId': msg.req.query.id,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 380,
+        "y": 300,
+        "wires": [
+            [
+                "9ccf501c4980a045"
+            ]
+        ]
+    },
+    {
+        "id": "9ccf501c4980a045",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 600,
+        "y": 300,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1801d832c75cc75b",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "get knowledgeObjects",
+        "func": "msg.old=msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.req.query.id\n}\n\n// msg.payload = {\n//     $set: {\n//         'deleted': true\n//     }\n// }\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 360,
+        "y": 340,
+        "wires": [
+            [
+                "69bd6d7e22148f1f"
+            ]
+        ]
+    },
+    {
+        "id": "69bd6d7e22148f1f",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 590,
+        "y": 340,
+        "wires": [
+            [
+                "0db93a79fec638c1"
+            ]
+        ]
+    },
+    {
+        "id": "0db93a79fec638c1",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "delete",
+        "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length>0){\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e=> e.id);\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key':process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 730,
+        "y": 340,
+        "wires": [
+            [
+                "6d2119a90f113bc7"
+            ],
+            [
+                "12650f94df4b7bdb"
+            ]
+        ]
+    },
+    {
+        "id": "6d2119a90f113bc7",
+        "type": "http request",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 890,
+        "y": 340,
+        "wires": [
+            [
+                "a0e0e2bf42c038d8"
+            ]
+        ]
+    },
+    {
+        "id": "7ff484f04f036fae",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "url": "/deleteBaseObject",
+        "method": "delete",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 150,
+        "y": 800,
+        "wires": [
+            [
+                "4bf450cf643022a7",
+                "e3ac9e8aee2909b3"
+            ]
+        ]
+    },
+    {
+        "id": "4bf450cf643022a7",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "update knowledgeObjects",
+        "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    '_id': objectid(msg.req.query.id) ,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 400,
+        "y": 780,
+        "wires": [
+            [
+                "33bd23245aa30043"
+            ]
+        ]
+    },
+    {
+        "id": "e3ac9e8aee2909b3",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "get knowledgeObjects",
+        "func": "msg.old = msg.req.query.id\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    '_id': objectid(msg.req.query.id)\n}\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 380,
+        "y": 820,
+        "wires": [
+            [
+                "82a319adbb1186f9"
+            ]
+        ]
+    },
+    {
+        "id": "33bd23245aa30043",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 640,
+        "y": 780,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "82a319adbb1186f9",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 570,
+        "y": 820,
+        "wires": [
+            [
+                "cdc9d2d5e10fc245"
+            ]
+        ]
+    },
+    {
+        "id": "cdc9d2d5e10fc245",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "delete",
+        "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n\n\n    const process_env = global.get(\"process_env\")\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${msg.PIPECONE_UR}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 710,
+        "y": 820,
+        "wires": [
+            [
+                "ef20b72d14fc716d"
+            ],
+            [
+                "15dc2420f0bbb19f"
+            ]
+        ]
+    },
+    {
+        "id": "ef20b72d14fc716d",
+        "type": "http request",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "method": "DELETE",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 870,
+        "y": 800,
+        "wires": [
+            [
+                "cce6afd14b41a461"
+            ]
+        ]
+    },
+    {
+        "id": "cce6afd14b41a461",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1010,
+        "y": 800,
+        "wires": []
+    },
+    {
+        "id": "a0e0e2bf42c038d8",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1030,
+        "y": 340,
+        "wires": []
+    },
+    {
+        "id": "12650f94df4b7bdb",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 870,
+        "y": 300,
+        "wires": []
+    },
+    {
+        "id": "15dc2420f0bbb19f",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 850,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "f967b27837fecfdd",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "f492b6dff51635a4",
+        "name": "debug 439",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 370,
+        "y": 720,
         "wires": []
     }
 ]
