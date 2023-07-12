@@ -482,9 +482,9 @@
             "2db2b245aa5eabb5",
             "29445d42adea56dc"
         ],
-        "x": 1354,
+        "x": 1344,
         "y": 39,
-        "w": 792,
+        "w": 802,
         "h": 242
     },
     {
@@ -525,9 +525,9 @@
             "1c79434061d7ff76",
             "93961f4aeda1b32c"
         ],
-        "x": 34,
+        "x": 24,
         "y": 179,
-        "w": 2042,
+        "w": 2052,
         "h": 708
     },
     {
@@ -639,9 +639,9 @@
             "434e200cd77ed275",
             "d83803be20e467e5"
         ],
-        "x": 34,
+        "x": 24,
         "y": 2359,
-        "w": 1342,
+        "w": 1352,
         "h": 162
     },
     {
@@ -669,9 +669,9 @@
             "b2634835a69a4769",
             "ed63a752615547a1"
         ],
-        "x": 34,
+        "x": 24,
         "y": 2019,
-        "w": 1092,
+        "w": 1102,
         "h": 262
     },
     {
@@ -713,13 +713,13 @@
             "06b21e1c324bcb90",
             "5a3203eb955fd7d9"
         ],
-        "x": 1354,
+        "x": 1344,
         "y": 319,
-        "w": 932,
+        "w": 942,
         "h": 622
     },
     {
-        "id": "f492b6dff51635a4",
+        "id": "a16a3e4151c2e982",
         "type": "group",
         "z": "8bea414da58d7b2a",
         "name": "Actions with Knowlege Base",
@@ -727,64 +727,70 @@
             "label": true
         },
         "nodes": [
-            "9c630c78fbfe702f",
-            "e9f90d7b7902781f",
-            "1c1f174f8766fde7",
-            "6bd7710803f1d820",
-            "6fc91f5c4d0e3490",
-            "7794a2dcd291f245",
-            "771b80b405675487",
-            "690fdc4d68fe1d5f",
-            "18a42dddddf41c82",
-            "f49f71f083baf7bb",
-            "166fc8df26886326",
-            "e2e224e9d9c8f414",
-            "744c953cef4529af",
-            "8408b89d02834f5b",
-            "c4901f905e27c955",
-            "19a23ca1d1daa384",
-            "e8bcabbaf9f5fe0f",
-            "2e3e257789bb525c",
-            "f50bcabc95bf1078",
-            "54d5461f44e49a0b",
-            "bacb447dffc74ab2",
-            "8549735ed2fe7cb9",
-            "048a0a6024661886",
-            "45ff3c83b4ab9c78",
-            "12a9ae1d23901673",
-            "d3d95030bea6cb46",
-            "b43d308601b00756",
-            "3b9cee03775bb4e2",
-            "1c2bb360ac942ebc",
-            "223ca06ca0f8571c",
-            "9a230e7c818e0e24",
-            "389c9d57e6764f40",
-            "2f4beb7952be87f4",
-            "ec1fa013809c2a8e",
-            "b9a9ed30709f11c9",
-            "463bc001e4ac3724",
-            "24a270db9a48eed1",
-            "9ccf501c4980a045",
-            "1801d832c75cc75b",
-            "69bd6d7e22148f1f",
-            "0db93a79fec638c1",
-            "6d2119a90f113bc7",
-            "7ff484f04f036fae",
-            "4bf450cf643022a7",
-            "e3ac9e8aee2909b3",
-            "33bd23245aa30043",
-            "82a319adbb1186f9",
-            "cdc9d2d5e10fc245",
-            "ef20b72d14fc716d",
-            "cce6afd14b41a461",
-            "a0e0e2bf42c038d8",
-            "12650f94df4b7bdb",
-            "15dc2420f0bbb19f",
-            "f967b27837fecfdd"
+            "2c9aaf57c2401f44",
+            "07624da9521cf777",
+            "d4de0d3bb056d3a4",
+            "ee68ef8d980292c4",
+            "68ac101a9775ddce",
+            "f54db9132beab646",
+            "b4608e27acb2b4f5",
+            "46b05adc2604765c",
+            "62f4c7a8af42963f",
+            "98bec222133fdb0a",
+            "281096775943d58b",
+            "44f53453723f5c75",
+            "6e3cbfc2abcc457d",
+            "00bd3d46bb08b1e6",
+            "30591fa61f0ab740",
+            "3f9c7ffdfcc3f7dc",
+            "152eea09afdeea2d",
+            "ef06a46f33219658",
+            "dc553cd69f080f56",
+            "790871619c7fdbc7",
+            "c1109b6064ebbca9",
+            "8ac6c24559de4776",
+            "53c071bd3c47255c",
+            "a265afe5f6517876",
+            "70bf347cf45632b6",
+            "cdc8d111bf092667",
+            "9bd946aefeb9022c",
+            "e98ea35b295b7995",
+            "09801ef5a703ec17",
+            "1d799e3d024c7f74",
+            "f4162afcbdfcbd78",
+            "aa524198ec55d939",
+            "fd71d53d53cdf6d0",
+            "4d00f14a894c3d1a",
+            "481c73b6eb12dac5",
+            "606aa4d8d05a9287",
+            "6d02cc019a013d48",
+            "e9975ec25168990f",
+            "252629b2941bab49",
+            "f3693d6803a80481",
+            "2400c26a38c58e08",
+            "1917c12fa2c8a4cf",
+            "92f653a488050792",
+            "a6b9a5d614c73e9e",
+            "b5d5f3c0b2235a8b",
+            "9202426fe5eabf3e",
+            "12fd6ccf93e5a7f0",
+            "667bc743d242e13d",
+            "dff98dfc8f9ced2a",
+            "4e937f790d5417e6",
+            "f5fe1f2be3f0a8b2",
+            "f7b854eb2dc1b411",
+            "109911acfae79b7a",
+            "38f3c791faabe8d5",
+            "7987659ba87c382e",
+            "2bdc0d294e3e0bf4",
+            "b8c89fdf8c2d7e0f",
+            "e52229ec8210c159",
+            "5ba244b291afa930",
+            "503e336b80ffc4b0"
         ],
-        "x": 14,
-        "y": 59,
-        "w": 1272,
+        "x": 24,
+        "y": 39,
+        "w": 1302,
         "h": 842
     },
     {
@@ -8004,7 +8010,7 @@
         "z": "8bea414da58d7b2a",
         "g": "e5c2a19a4e324330",
         "name": "Create Pages",
-        "func": "\nlet str = msg.payload\nmsg.payload  = msg.payload\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.split() }))\n\nmsg.array = result;\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "func": "\nlet str = msg.payload\nmsg.payload  = msg.payload\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -8140,7 +8146,7 @@
         "z": "8bea414da58d7b2a",
         "g": "e5c2a19a4e324330",
         "name": "Create Pages",
-        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.split() }))\n\nmsg.array = result;\nnode.warn(msg.array)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -8220,7 +8226,7 @@
         "z": "8bea414da58d7b2a",
         "g": "e5c2a19a4e324330",
         "name": "Create Pages",
-        "func": "let str = msg.payload\nmsg.ll = msg.payload.length;\n\nconst result = str.split('\\n\\n').map(paragraph => ({ text: paragraph }))\n\nmsg.array =result;\n\n\nif (msg.oldPayload.anrichment){\n    return [null, msg]\n}else{\n    return[msg, null]\n}\n\n\n",
+        "func": "let str = msg.payload\nmsg.ll = msg.payload.length;\n\nconst result = str.split('\\n\\n').map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array =result;\n\n\nif (msg.oldPayload.anrichment){\n    return [null, msg]\n}else{\n    return[msg, null]\n}\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -8361,7 +8367,7 @@
         "z": "8bea414da58d7b2a",
         "g": "e5c2a19a4e324330",
         "name": "Create Pages",
-        "func": "let str = msg.payload;\nmsg.ll = msg.payload.length;\nconst result = str.split(/\\r?\\n\\s*\\r?\\n/).map(paragraph => ({ text: paragraph }))\n\nmsg.array = result;\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n\n\n",
+        "func": "let str = msg.payload;\nmsg.ll = msg.payload.length;\nconst result = str.split(/\\r?\\n\\s*\\r?\\n/).map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -9304,7 +9310,7 @@
         "z": "8bea414da58d7b2a",
         "g": "e5c2a19a4e324330",
         "name": "create payload",
-        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.split() }))\n\nmsg.array = result;\nnode.warn(msg.array)\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10872,28 +10878,28 @@
         "wires": []
     },
     {
-        "id": "9c630c78fbfe702f",
+        "id": "2c9aaf57c2401f44",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/createBaseKnowlege",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 100,
+        "x": 180,
+        "y": 80,
         "wires": [
             [
-                "e9f90d7b7902781f"
+                "07624da9521cf777"
             ]
         ]
     },
     {
-        "id": "e9f90d7b7902781f",
+        "id": "07624da9521cf777",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    _id: objectid(),\n   name: msg.payload.name\n}\nreturn msg;",
         "outputs": 1,
@@ -10906,38 +10912,38 @@
                 "module": "objectid"
             }
         ],
-        "x": 410,
-        "y": 100,
+        "x": 430,
+        "y": 80,
         "wires": [
             [
-                "1c1f174f8766fde7"
+                "d4de0d3bb056d3a4"
             ]
         ]
     },
     {
-        "id": "1c1f174f8766fde7",
+        "id": "d4de0d3bb056d3a4",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "8771d95b528d34d0"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 610,
-        "y": 100,
+        "x": 630,
+        "y": 80,
         "wires": [
             [
-                "6bd7710803f1d820"
+                "ee68ef8d980292c4"
             ]
         ]
     },
     {
-        "id": "6bd7710803f1d820",
+        "id": "ee68ef8d980292c4",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to front",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully created\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -10945,49 +10951,49 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 100,
+        "x": 800,
+        "y": 80,
         "wires": [
             [
-                "6fc91f5c4d0e3490"
+                "68ac101a9775ddce"
             ]
         ]
     },
     {
-        "id": "6fc91f5c4d0e3490",
+        "id": "68ac101a9775ddce",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 950,
-        "y": 100,
+        "x": 970,
+        "y": 80,
         "wires": []
     },
     {
-        "id": "7794a2dcd291f245",
+        "id": "f54db9132beab646",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/updateBaseKnowlege",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 180,
+        "x": 180,
+        "y": 160,
         "wires": [
             [
-                "771b80b405675487"
+                "b4608e27acb2b4f5"
             ]
         ]
     },
     {
-        "id": "771b80b405675487",
+        "id": "b4608e27acb2b4f5",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowlegebase\"\nmsg.query = {\n    _id: objectid(msg.req.query._id)\n}\nmsg.payload={\n    $set:{\n       name: msg.payload.name\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -11000,38 +11006,38 @@
                 "module": "objectid"
             }
         ],
-        "x": 410,
-        "y": 180,
+        "x": 430,
+        "y": 160,
         "wires": [
             [
-                "690fdc4d68fe1d5f"
+                "46b05adc2604765c"
             ]
         ]
     },
     {
-        "id": "690fdc4d68fe1d5f",
+        "id": "46b05adc2604765c",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 620,
-        "y": 180,
+        "x": 640,
+        "y": 160,
         "wires": [
             [
-                "18a42dddddf41c82"
+                "62f4c7a8af42963f"
             ]
         ]
     },
     {
-        "id": "18a42dddddf41c82",
+        "id": "62f4c7a8af42963f",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to front",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -11039,31 +11045,31 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
-        "y": 180,
+        "x": 840,
+        "y": 160,
         "wires": [
             [
-                "f49f71f083baf7bb"
+                "98bec222133fdb0a"
             ]
         ]
     },
     {
-        "id": "f49f71f083baf7bb",
+        "id": "98bec222133fdb0a",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 950,
-        "y": 180,
+        "x": 970,
+        "y": 160,
         "wires": []
     },
     {
-        "id": "166fc8df26886326",
+        "id": "281096775943d58b",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n_id: objectid(msg.payload.id)\n}\nreturn msg;",
         "outputs": 1,
@@ -11076,86 +11082,86 @@
                 "module": "objectid"
             }
         ],
-        "x": 370,
-        "y": 540,
+        "x": 390,
+        "y": 520,
         "wires": [
             [
-                "744c953cef4529af"
+                "6e3cbfc2abcc457d"
             ]
         ]
     },
     {
-        "id": "e2e224e9d9c8f414",
+        "id": "44f53453723f5c75",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/getBaseKnowlegeById",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 540,
+        "x": 180,
+        "y": 520,
         "wires": [
             [
-                "166fc8df26886326"
+                "281096775943d58b"
             ]
         ]
     },
     {
-        "id": "744c953cef4529af",
+        "id": "6e3cbfc2abcc457d",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 530,
-        "y": 540,
+        "x": 550,
+        "y": 520,
         "wires": [
             [
-                "8408b89d02834f5b"
+                "00bd3d46bb08b1e6"
             ]
         ]
     },
     {
-        "id": "8408b89d02834f5b",
+        "id": "00bd3d46bb08b1e6",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 690,
-        "y": 540,
+        "x": 710,
+        "y": 520,
         "wires": []
     },
     {
-        "id": "c4901f905e27c955",
+        "id": "30591fa61f0ab740",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/getBaseKnowlege",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 140,
-        "y": 460,
+        "x": 160,
+        "y": 440,
         "wires": [
             [
-                "19a23ca1d1daa384"
+                "3f9c7ffdfcc3f7dc"
             ]
         ]
     },
     {
-        "id": "19a23ca1d1daa384",
+        "id": "3f9c7ffdfcc3f7dc",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowlegebase\"\nmsg.payload ={\n    deleted: { $ne: true }\n}\nreturn msg;",
         "outputs": 1,
@@ -11168,50 +11174,50 @@
                 "module": "objectid"
             }
         ],
-        "x": 350,
-        "y": 460,
+        "x": 370,
+        "y": 440,
         "wires": [
             [
-                "e8bcabbaf9f5fe0f"
+                "152eea09afdeea2d"
             ]
         ]
     },
     {
-        "id": "e8bcabbaf9f5fe0f",
+        "id": "152eea09afdeea2d",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 530,
-        "y": 460,
+        "x": 550,
+        "y": 440,
         "wires": [
             [
-                "f50bcabc95bf1078"
+                "dc553cd69f080f56"
             ]
         ]
     },
     {
-        "id": "2e3e257789bb525c",
+        "id": "ef06a46f33219658",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1210,
-        "y": 460,
+        "x": 1230,
+        "y": 440,
         "wires": []
     },
     {
-        "id": "f50bcabc95bf1078",
+        "id": "dc553cd69f080f56",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to mongoDB",
         "func": "msg.old = msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    deleted: { $ne: true }\n\n}\nreturn msg;",
         "outputs": 1,
@@ -11224,38 +11230,38 @@
                 "module": "objectid"
             }
         ],
-        "x": 710,
-        "y": 460,
+        "x": 730,
+        "y": 440,
         "wires": [
             [
-                "54d5461f44e49a0b"
+                "790871619c7fdbc7"
             ]
         ]
     },
     {
-        "id": "54d5461f44e49a0b",
+        "id": "790871619c7fdbc7",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 870,
-        "y": 460,
+        "x": 890,
+        "y": 440,
         "wires": [
             [
-                "bacb447dffc74ab2"
+                "c1109b6064ebbca9"
             ]
         ]
     },
     {
-        "id": "bacb447dffc74ab2",
+        "id": "c1109b6064ebbca9",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "to front",
         "func": "msg.payload =msg.old.map((e) => ({\n    ...e,\n    total: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() ).length,\n    links: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'Link').length,\n    files: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'File' ).length,\n    filesFAQ: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FAQ' ).length,\n    filesPDF: msg.payload.filter((el) => el.knowledgeBaseId === e._id.toString() && el.type === 'FilePDF').length\n})); \n\nreturn msg;",
         "outputs": 1,
@@ -11263,20 +11269,20 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1040,
-        "y": 460,
+        "x": 1060,
+        "y": 440,
         "wires": [
             [
-                "2e3e257789bb525c",
-                "048a0a6024661886"
+                "ef06a46f33219658",
+                "53c071bd3c47255c"
             ]
         ]
     },
     {
-        "id": "8549735ed2fe7cb9",
+        "id": "8ac6c24559de4776",
         "type": "inject",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "props": [
             {
@@ -11294,19 +11300,19 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 140,
-        "y": 420,
+        "x": 160,
+        "y": 400,
         "wires": [
             [
-                "19a23ca1d1daa384"
+                "3f9c7ffdfcc3f7dc"
             ]
         ]
     },
     {
-        "id": "048a0a6024661886",
+        "id": "53c071bd3c47255c",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "debug 423",
         "active": true,
         "tosidebar": true,
@@ -11316,35 +11322,36 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1170,
-        "y": 420,
+        "x": 1190,
+        "y": 400,
         "wires": []
     },
     {
-        "id": "45ff3c83b4ab9c78",
+        "id": "a265afe5f6517876",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/updateObjectsBase",
         "method": "post",
         "upload": true,
         "swaggerDoc": "",
-        "x": 150,
-        "y": 640,
+        "x": 170,
+        "y": 620,
         "wires": [
             [
-                "12a9ae1d23901673"
+                "70bf347cf45632b6",
+                "2bdc0d294e3e0bf4"
             ]
         ]
     },
     {
-        "id": "12a9ae1d23901673",
+        "id": "70bf347cf45632b6",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "check type",
-        "func": "\nmsg.collection = \"knowledgeObjects\";\nmsg.oldPayload = msg.req.query\nmsg.type = msg.req.query.type\nmsg._id = objectid();\n\nif (msg.req.files && msg.req.files[0].mimetype === \"application/pdf\"){\n    msg.type = \"FilePDF\"\n\n    return [null, null, msg]\n}\n\n\nif(msg.type ===\"Link\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"FAQ\"){\n    return[null,msg,null]\n} if (msg.type === \"File\" || msg.type === \"FilePDF\"){\nreturn[null,null,msg]\n}\n",
+        "func": "\nmsg.collection = \"knowledgeObjects\";\n\nmsg.oldPayloadforlink = msg.payload \n\nmsg.oldPayload =  msg.req.query \n\nmsg.type = msg.req.query.type ? msg.req.query.type : msg.payload.type\n\nmsg._id = objectid();\n\nif (msg.req.files && msg.req.files[0].mimetype === \"application/pdf\"){\n    msg.type = \"FilePDF\"\n\n    return [null, null, msg]\n}\n\n\nif(msg.type ===\"Link\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"FAQ\"){\n    return[null,msg,null]\n} if (msg.type === \"File\" || msg.type === \"FilePDF\"){\nreturn[null,null,msg]\n}\n",
         "outputs": 3,
         "noerr": 0,
         "initialize": "",
@@ -11356,26 +11363,26 @@
             }
         ],
         "x": 390,
-        "y": 640,
+        "y": 620,
         "wires": [
             [
-                "d3d95030bea6cb46"
+                "cdc8d111bf092667"
             ],
             [
-                "b43d308601b00756"
+                "9bd946aefeb9022c"
             ],
             [
-                "3b9cee03775bb4e2"
+                "e98ea35b295b7995"
             ]
         ]
     },
     {
-        "id": "d3d95030bea6cb46",
+        "id": "cdc8d111bf092667",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "link",
-        "func": "\nmsg.url = msg.oldPayload.link;\n\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    url: msg.url,\n    type: msg.type,\n    name: msg.oldPayload.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg\n",
+        "func": "\nmsg.url = msg.oldPayloadforlink.link;\n\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayloadforlink.id,\n    url: msg.url,\n    type: msg.type,\n    name: msg.oldPayloadforlink.name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -11386,19 +11393,20 @@
                 "module": "objectid"
             }
         ],
-        "x": 530,
-        "y": 600,
+        "x": 550,
+        "y": 580,
         "wires": [
             [
-                "1c2bb360ac942ebc"
+                "09801ef5a703ec17",
+                "e52229ec8210c159"
             ]
         ]
     },
     {
-        "id": "b43d308601b00756",
+        "id": "9bd946aefeb9022c",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "faq",
         "func": "msg.buffer = msg.payload.file[0].data\n\nmsg.decodedFilename = '/data/storage/' + msg.oldPayload.file[0].name;\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.oldPayload.file[0].name,\n    type: \"FAQ\",\n    file: msg.oldPayload.file[0].name,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg;",
         "outputs": 1,
@@ -11411,20 +11419,21 @@
                 "module": "objectid"
             }
         ],
-        "x": 530,
-        "y": 640,
+        "x": 550,
+        "y": 620,
         "wires": [
             [
-                "1c2bb360ac942ebc",
-                "389c9d57e6764f40"
+                "09801ef5a703ec17",
+                "aa524198ec55d939",
+                "503e336b80ffc4b0"
             ]
         ]
     },
     {
-        "id": "3b9cee03775bb4e2",
+        "id": "e98ea35b295b7995",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "file",
         "func": "msg.buffer = msg.req.files[0].buffer\n\nmsg.decodedFilename = '/data/storage/' + msg.req.files[0].originalname\n\nmsg.payload = {\n    _id: msg._id,\n    knowledgeBaseId: msg.oldPayload.id,\n    name: msg.req.files[0].originalname,\n    type: msg.type,\n    file: msg.req.files[0].originalname,\n    vectors: [],\n    status: \"Source saved\",\n    deleted: false,\n    createdAt: new Date()\n};\nreturn msg",
         "outputs": 1,
@@ -11437,40 +11446,40 @@
                 "module": "objectid"
             }
         ],
-        "x": 530,
-        "y": 680,
+        "x": 550,
+        "y": 660,
         "wires": [
             [
-                "1c2bb360ac942ebc",
-                "389c9d57e6764f40",
-                "f967b27837fecfdd"
+                "09801ef5a703ec17",
+                "aa524198ec55d939",
+                "5ba244b291afa930"
             ]
         ]
     },
     {
-        "id": "1c2bb360ac942ebc",
+        "id": "09801ef5a703ec17",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "8771d95b528d34d0"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 750,
-        "y": 640,
+        "x": 770,
+        "y": 620,
         "wires": [
             [
-                "223ca06ca0f8571c"
+                "1d799e3d024c7f74"
             ]
         ]
     },
     {
-        "id": "223ca06ca0f8571c",
+        "id": "1d799e3d024c7f74",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "status",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -11478,31 +11487,31 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 910,
-        "y": 640,
+        "x": 930,
+        "y": 620,
         "wires": [
             [
-                "9a230e7c818e0e24"
+                "f4162afcbdfcbd78"
             ]
         ]
     },
     {
-        "id": "9a230e7c818e0e24",
+        "id": "f4162afcbdfcbd78",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1070,
-        "y": 640,
+        "x": 1090,
+        "y": 620,
         "wires": []
     },
     {
-        "id": "389c9d57e6764f40",
+        "id": "aa524198ec55d939",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "write to file",
         "func": "msg.payload = msg.buffer\nreturn msg;",
         "outputs": 1,
@@ -11510,19 +11519,19 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 750,
-        "y": 680,
+        "x": 770,
+        "y": 660,
         "wires": [
             [
-                "2f4beb7952be87f4"
+                "fd71d53d53cdf6d0"
             ]
         ]
     },
     {
-        "id": "2f4beb7952be87f4",
+        "id": "fd71d53d53cdf6d0",
         "type": "file",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "filename": "decodedFilename",
         "filenameType": "msg",
@@ -11530,17 +11539,19 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 900,
-        "y": 680,
+        "x": 920,
+        "y": 660,
         "wires": [
-            []
+            [
+                "7987659ba87c382e"
+            ]
         ]
     },
     {
-        "id": "ec1fa013809c2a8e",
+        "id": "4d00f14a894c3d1a",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "update knowlegebase",
         "func": "msg.collection = \"knowlegebase\"\n\nmsg.query={\n    _id: objectid(msg.req.query.id)\n}\n\nmsg.payload={\n    $set:{\n    'deleted': true\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -11553,56 +11564,57 @@
                 "module": "objectid"
             }
         ],
-        "x": 360,
-        "y": 260,
+        "x": 380,
+        "y": 240,
         "wires": [
             [
-                "463bc001e4ac3724"
+                "606aa4d8d05a9287"
             ]
         ]
     },
     {
-        "id": "b9a9ed30709f11c9",
+        "id": "481c73b6eb12dac5",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/deleteBase",
         "method": "put",
         "upload": false,
         "swaggerDoc": "",
-        "x": 120,
-        "y": 300,
+        "x": 140,
+        "y": 280,
         "wires": [
             [
-                "ec1fa013809c2a8e",
-                "24a270db9a48eed1",
-                "1801d832c75cc75b"
+                "4d00f14a894c3d1a",
+                "6d02cc019a013d48",
+                "252629b2941bab49",
+                "b8c89fdf8c2d7e0f"
             ]
         ]
     },
     {
-        "id": "463bc001e4ac3724",
+        "id": "606aa4d8d05a9287",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 600,
-        "y": 260,
+        "x": 620,
+        "y": 240,
         "wires": [
             []
         ]
     },
     {
-        "id": "24a270db9a48eed1",
+        "id": "6d02cc019a013d48",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "update knowledgeObjects",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    'knowledgeBaseId': msg.req.query.id,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -11610,36 +11622,36 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 380,
-        "y": 300,
+        "x": 400,
+        "y": 280,
         "wires": [
             [
-                "9ccf501c4980a045"
+                "e9975ec25168990f"
             ]
         ]
     },
     {
-        "id": "9ccf501c4980a045",
+        "id": "e9975ec25168990f",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 600,
-        "y": 300,
+        "x": 620,
+        "y": 280,
         "wires": [
             []
         ]
     },
     {
-        "id": "1801d832c75cc75b",
+        "id": "252629b2941bab49",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "get knowledgeObjects",
         "func": "msg.old=msg.payload\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.req.query.id\n}\n\n// msg.payload = {\n//     $set: {\n//         'deleted': true\n//     }\n// }\n\nreturn msg;\n",
         "outputs": 1,
@@ -11647,38 +11659,38 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 360,
-        "y": 340,
+        "x": 380,
+        "y": 320,
         "wires": [
             [
-                "69bd6d7e22148f1f"
+                "f3693d6803a80481"
             ]
         ]
     },
     {
-        "id": "69bd6d7e22148f1f",
+        "id": "f3693d6803a80481",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 590,
-        "y": 340,
+        "x": 610,
+        "y": 320,
         "wires": [
             [
-                "0db93a79fec638c1"
+                "2400c26a38c58e08"
             ]
         ]
     },
     {
-        "id": "0db93a79fec638c1",
+        "id": "2400c26a38c58e08",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "delete",
         "func": "let toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\nif (toDelete.length>0){\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e=> e.id);\nconst process_env = global.get(\"process_env\")\nmsg.headers = {\n    'Api-Key':process_env.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}\n\n\n",
         "outputs": 2,
@@ -11691,22 +11703,22 @@
                 "module": "objectid"
             }
         ],
-        "x": 730,
-        "y": 340,
+        "x": 750,
+        "y": 320,
         "wires": [
             [
-                "6d2119a90f113bc7"
+                "1917c12fa2c8a4cf"
             ],
             [
-                "12650f94df4b7bdb"
+                "f7b854eb2dc1b411"
             ]
         ]
     },
     {
-        "id": "6d2119a90f113bc7",
+        "id": "1917c12fa2c8a4cf",
         "type": "http request",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "method": "DELETE",
         "ret": "txt",
@@ -11719,38 +11731,38 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 890,
-        "y": 340,
+        "x": 910,
+        "y": 320,
         "wires": [
             [
-                "a0e0e2bf42c038d8"
+                "f5fe1f2be3f0a8b2"
             ]
         ]
     },
     {
-        "id": "7ff484f04f036fae",
+        "id": "92f653a488050792",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "url": "/deleteBaseObject",
         "method": "delete",
         "upload": false,
         "swaggerDoc": "",
-        "x": 150,
-        "y": 800,
+        "x": 170,
+        "y": 780,
         "wires": [
             [
-                "4bf450cf643022a7",
-                "e3ac9e8aee2909b3"
+                "a6b9a5d614c73e9e",
+                "b5d5f3c0b2235a8b"
             ]
         ]
     },
     {
-        "id": "4bf450cf643022a7",
+        "id": "a6b9a5d614c73e9e",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "update knowledgeObjects",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.query = {\n    '_id': objectid(msg.req.query.id) ,\n}\n\nmsg.payload = {\n    $set: {\n        'deleted': true\n    }\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -11763,19 +11775,19 @@
                 "module": "objectid"
             }
         ],
-        "x": 400,
-        "y": 780,
+        "x": 480,
+        "y": 760,
         "wires": [
             [
-                "33bd23245aa30043"
+                "9202426fe5eabf3e"
             ]
         ]
     },
     {
-        "id": "e3ac9e8aee2909b3",
+        "id": "b5d5f3c0b2235a8b",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "get knowledgeObjects",
         "func": "msg.old = msg.req.query.id\nmsg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    '_id': objectid(msg.req.query.id)\n}\n\nreturn msg;\n",
         "outputs": 1,
@@ -11788,55 +11800,55 @@
                 "module": "objectid"
             }
         ],
-        "x": 380,
-        "y": 820,
+        "x": 460,
+        "y": 800,
         "wires": [
             [
-                "82a319adbb1186f9"
+                "12fd6ccf93e5a7f0"
             ]
         ]
     },
     {
-        "id": "33bd23245aa30043",
+        "id": "9202426fe5eabf3e",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 640,
-        "y": 780,
+        "x": 720,
+        "y": 760,
         "wires": [
             []
         ]
     },
     {
-        "id": "82a319adbb1186f9",
+        "id": "12fd6ccf93e5a7f0",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 570,
-        "y": 820,
+        "x": 650,
+        "y": 800,
         "wires": [
             [
-                "cdc9d2d5e10fc245"
+                "667bc743d242e13d"
             ]
         ]
     },
     {
-        "id": "cdc9d2d5e10fc245",
+        "id": "667bc743d242e13d",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "delete",
         "func": "\nlet toDelete = msg.payload.filter(e => e.status === 'Saved in Pinecone')\n\nif (toDelete.length > 0) {\n    let vectorIds = toDelete.flatMap(e => e.vectors).map(e => e.id);\n    node.warn(vectorIds);\n\n\n    const process_env = global.get(\"process_env\")\n    msg.PIPECONE_URL = process_env.PIPECONE_URL\n    msg.headers = {\n        'Api-Key': process_env.PIPECONE_API,\n        'Content-Type': 'application/json'\n    };\n\n    msg.url = `${msg.PIPECONE_URL}/vectors/delete`;\n    msg.payload = { ids: vectorIds };\n    msg.ids = vectorIds\n    return [msg, null];\n}\nelse {\n    return [null, msg]\n}\n\n\n",
         "outputs": 2,
@@ -11849,22 +11861,22 @@
                 "module": "objectid"
             }
         ],
-        "x": 710,
-        "y": 820,
+        "x": 790,
+        "y": 800,
         "wires": [
             [
-                "ef20b72d14fc716d"
+                "dff98dfc8f9ced2a"
             ],
             [
-                "15dc2420f0bbb19f"
+                "109911acfae79b7a"
             ]
         ]
     },
     {
-        "id": "ef20b72d14fc716d",
+        "id": "dff98dfc8f9ced2a",
         "type": "http request",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "method": "DELETE",
         "ret": "txt",
@@ -11877,68 +11889,98 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 870,
-        "y": 800,
+        "x": 950,
+        "y": 780,
         "wires": [
             [
-                "cce6afd14b41a461"
+                "4e937f790d5417e6"
             ]
         ]
     },
     {
-        "id": "cce6afd14b41a461",
+        "id": "4e937f790d5417e6",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1010,
-        "y": 800,
+        "x": 1090,
+        "y": 780,
         "wires": []
     },
     {
-        "id": "a0e0e2bf42c038d8",
+        "id": "f5fe1f2be3f0a8b2",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1030,
-        "y": 340,
+        "x": 1050,
+        "y": 320,
         "wires": []
     },
     {
-        "id": "12650f94df4b7bdb",
+        "id": "f7b854eb2dc1b411",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 870,
-        "y": 300,
+        "x": 890,
+        "y": 280,
         "wires": []
     },
     {
-        "id": "15dc2420f0bbb19f",
+        "id": "109911acfae79b7a",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
+        "g": "a16a3e4151c2e982",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 850,
-        "y": 860,
+        "x": 930,
+        "y": 840,
         "wires": []
     },
     {
-        "id": "f967b27837fecfdd",
+        "id": "38f3c791faabe8d5",
+        "type": "inject",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 700,
+        "y": 700,
+        "wires": [
+            [
+                "fd71d53d53cdf6d0"
+            ]
+        ]
+    },
+    {
+        "id": "7987659ba87c382e",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "f492b6dff51635a4",
-        "name": "debug 439",
+        "g": "a16a3e4151c2e982",
+        "name": "debug 441",
         "active": true,
         "tosidebar": true,
         "console": false,
@@ -11947,8 +11989,98 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 370,
+        "x": 1210,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "2bdc0d294e3e0bf4",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "from app",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 340,
+        "y": 700,
+        "wires": []
+    },
+    {
+        "id": "b8c89fdf8c2d7e0f",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "debug 444",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 250,
+        "y": 360,
+        "wires": []
+    },
+    {
+        "id": "e52229ec8210c159",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "link",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 670,
+        "y": 560,
+        "wires": []
+    },
+    {
+        "id": "5ba244b291afa930",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "file",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 570,
         "y": 720,
+        "wires": []
+    },
+    {
+        "id": "503e336b80ffc4b0",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "a16a3e4151c2e982",
+        "name": "faq",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 850,
+        "y": 580,
         "wires": []
     }
 ]
