@@ -482,9 +482,9 @@
             "2db2b245aa5eabb5",
             "29445d42adea56dc"
         ],
-        "x": 1344,
+        "x": 1354,
         "y": 39,
-        "w": 802,
+        "w": 792,
         "h": 242
     },
     {
@@ -639,9 +639,9 @@
             "434e200cd77ed275",
             "d83803be20e467e5"
         ],
-        "x": 24,
+        "x": 34,
         "y": 2359,
-        "w": 1352,
+        "w": 1342,
         "h": 162
     },
     {
@@ -669,9 +669,9 @@
             "b2634835a69a4769",
             "ed63a752615547a1"
         ],
-        "x": 24,
+        "x": 34,
         "y": 2019,
-        "w": 1102,
+        "w": 1092,
         "h": 262
     },
     {
@@ -713,9 +713,9 @@
             "06b21e1c324bcb90",
             "5a3203eb955fd7d9"
         ],
-        "x": 1344,
+        "x": 1354,
         "y": 319,
-        "w": 942,
+        "w": 932,
         "h": 622
     },
     {
@@ -788,9 +788,9 @@
             "5ba244b291afa930",
             "503e336b80ffc4b0"
         ],
-        "x": 24,
+        "x": 34,
         "y": 39,
-        "w": 1302,
+        "w": 1292,
         "h": 842
     },
     {
@@ -859,6 +859,16 @@
         "useselfsignedcertificate": false,
         "sslterminated": false,
         "verboselogging": false
+    },
+    {
+        "id": "bb12522b8ae62236",
+        "type": "mongodb",
+        "hostname": "db647ee0340555f412000000ad-1689687674441mongo-7472.ubos-zd8vb",
+        "topology": "direct",
+        "connectOptions": "authSource=admin",
+        "port": "27017",
+        "db": "mongo-7472",
+        "name": ""
     },
     {
         "id": "9c118fcdb9ebf1db",
@@ -1077,7 +1087,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1290,
+        "x": 1340,
         "y": 320,
         "wires": [
             [
@@ -1415,7 +1425,7 @@
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "c8208e6a65d3c2af",
         "name": "",
-        "x": 330,
+        "x": 320,
         "y": 100,
         "wires": [
             [
@@ -2122,7 +2132,7 @@
             "value": "[]"
         },
         "OPENAI_API_KEY": "",
-        "x": 1125,
+        "x": 1185,
         "y": 320,
         "wires": [
             [
@@ -2138,13 +2148,13 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\n\n\nconst content = msg.fromTG.content.includes(`@${global.get('process_env').BOT_NAME}`) ? msg.fromTG.content.replace(`@${global.get('process_env').BOT_NAME}`, '') : msg.fromTG.content;\n\n\n  msg.messages =  [\n    { \"role\": \"system\", \"content\": `You are a smart and cute support bot.paraphrase this info: ${msg.payload[0].answer}` },\n    { \"role\": \"user\", \"content\": content }\n  ]\n\n\nreturn msg;\n",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\n\n\nconst content = msg.fromTG.content.includes(`@${global.get('process_env').BOT_NAME}`) ? msg.fromTG.content.replace(`@${global.get('process_env').BOT_NAME}`, '') : msg.fromTG.content;\n\n\n  msg.messages =  [\n    { \"role\": \"system\", \"content\": global.get(\"process_env\").PROMPT + msg.payload[0].answer + \", \" + msg.payload[1].answer },\n    { \"role\": \"user\", \"content\": content }\n  ]\n\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 1050,
         "y": 320,
         "wires": [
             [
@@ -2393,7 +2403,7 @@
         "id": "f3044d88f842fe9e",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "bb12522b8ae62236",
         "name": "db",
         "collection": "",
         "payonly": true,
@@ -2408,7 +2418,7 @@
         "id": "4e41ef5ff791e8ec",
         "type": "mongodb out",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "bb12522b8ae62236",
         "name": "db",
         "collection": "",
         "payonly": false,
@@ -2423,7 +2433,7 @@
         "id": "249710f1ad698a20",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "bb12522b8ae62236",
         "name": "db",
         "collection": "",
         "operation": "find",
@@ -2439,7 +2449,7 @@
         "id": "fb78182cc4835041",
         "type": "mongodb in",
         "z": "33ad232901cfdd1c",
-        "mongodb": "",
+        "mongodb": "bb12522b8ae62236",
         "name": "db",
         "collection": "",
         "operation": "aggregate",
@@ -2981,8 +2991,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 600,
+        "x": 870,
+        "y": 540,
         "wires": []
     },
     {
@@ -2994,9 +3004,9 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": ".header{\ntop: 0px !important;\n/* left: 182px !important; */\npadding: 0px !important;\n/* width: 100% !important; */\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\ntop: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\n/* left: 182px !important; */\ntop: 70px !important; \n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}",
+        "template": ".header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\n/* width: 100% !important; */\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.scroll_section{\n    top: 66px !important; \npadding: 0px !important;\n\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}",
         "output": "str",
-        "x": 260,
+        "x": 280,
         "y": 620,
         "wires": [
             [
@@ -3013,7 +3023,7 @@
         "headers": {
             "content-type": "text/css"
         },
-        "x": 410,
+        "x": 430,
         "y": 620,
         "wires": []
     },
@@ -7776,7 +7786,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "ENV",
-        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name,\n    BOT_TOKEN: data.bot_token,\n    OPENAI_API: data.openai_api,\n    PIPECONE_API: data.pipecone_api,\n    PIPECONE_ENV: data.pipecone_env,\n    PIPECONE_INDEX: data.pipecone_index,\n    PRIVATE_TG_CHAT:data.private_chat,\n    PIPECONE_URL: data.pipecone_url\n}\n\nglobal.set(\"process_env\", process_env)\nreturn msg;",
+        "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name,\n    BOT_TOKEN: data.bot_token,\n    OPENAI_API: data.openai_api,\n    PIPECONE_API: data.pipecone_api,\n    PIPECONE_ENV: data.pipecone_env,\n    PIPECONE_INDEX: data.pipecone_index,\n    PRIVATE_TG_CHAT: data.private_chat,\n    PIPECONE_URL: data.pipecone_url,\n    WELCOME: data.welcome,\n    PROMPT: data.prompt\n}\n\nglobal.set(\"process_env\", process_env)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9771,7 +9781,7 @@
         "z": "8bea414da58d7b2a",
         "g": "1f1b365afc8becc5",
         "name": "create vector",
-        "func": "\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\n\nconst content = msg.fromApp.content;\nconst answer = msg.payload.length > 1 ? `${msg.payload[0].answer}\\n ${msg.payload[1].answer}` : msg.payload[0].answer\nlet historyForGPT = global.get(`historyDemo`) || [];\n\nconst historyDemo = global.get('historyDemo') ?? ['']\n\nglobal.set(`historyDemo`, [...historyDemo, { \"role\": \"user\", \"content\": content }]);\nmsg.messages =  [\n    { \"role\": \"system\", \"content\": `You are a smart and cute support bot.paraphrase this info: ${msg.payload[0].answer}` },\n    { \"role\": \"user\", \"content\": content }\n  ]\n\n\nreturn msg;",
+        "func": "\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\n\nconst content = msg.fromApp.content;\nconst answer = msg.payload.length > 1 ? `${msg.payload[0].answer}\\n ${msg.payload[1].answer}` : msg.payload[0].answer\nlet historyForGPT = global.get(`historyDemo`) || [];\n\nconst historyDemo = global.get('historyDemo') ?? ['']\n\nglobal.set(`historyDemo`, [...historyDemo, { \"role\": \"user\", \"content\": content }]);\nmsg.messages =  [\n  { \"role\": \"system\", \"content\": global.get(\"process_env\").PROMPT + msg.payload[0].answer + \", \" + msg.payload[1].answer },\n    { \"role\": \"user\", \"content\": content }\n  ]\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
