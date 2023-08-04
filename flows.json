@@ -551,9 +551,7 @@
             "29445d42adea56dc"
         ],
         "x": 1354,
-        "y": 39,
-        "w": 792,
-        "h": 242
+        "y": 39
     },
     {
         "id": "0cf1026d3ccdfd21",
@@ -685,9 +683,7 @@
             "2b0b88cae098c7a9"
         ],
         "x": 14,
-        "y": 1039,
-        "w": 2222,
-        "h": 942
+        "y": 1039
     },
     {
         "id": "1f1b365afc8becc5",
@@ -709,9 +705,7 @@
             "d83803be20e467e5"
         ],
         "x": 34,
-        "y": 2359,
-        "w": 1342,
-        "h": 162
+        "y": 2359
     },
     {
         "id": "911c1ee2586e9d4d",
@@ -739,9 +733,7 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019,
-        "w": 1092,
-        "h": 262
+        "y": 2019
     },
     {
         "id": "bc79b0c55ed950a2",
@@ -783,9 +775,7 @@
             "5a3203eb955fd7d9"
         ],
         "x": 1354,
-        "y": 319,
-        "w": 932,
-        "h": 622
+        "y": 319
     },
     {
         "id": "a16a3e4151c2e982",
@@ -858,9 +848,7 @@
             "503e336b80ffc4b0"
         ],
         "x": 34,
-        "y": 39,
-        "w": 1292,
-        "h": 842
+        "y": 39
     },
     {
         "id": "93961f4aeda1b32c",
@@ -905,9 +893,128 @@
         "h": 422
     },
     {
+        "id": "ebee837ffce65a75",
+        "type": "group",
+        "z": "c8208e6a65d3c2af",
+        "name": "messanger bot",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "66763628722735fb",
+            "4816299b040f2829",
+            "83503c945cbb4c4d",
+            "caa3ef679b43edbc",
+            "1962e32d56dd9f06",
+            "084250d7ea7b3fe5",
+            "fb2196741549bce1",
+            "650845245a602f3c",
+            "cc2767e9ed1dcea1",
+            "9432065d3374bca1",
+            "baefdb1424cd8868",
+            "62ee4ed8b0807623",
+            "34e51cbe5a4a131a",
+            "ed51dc47c043feec",
+            "c6e7e01c6d4265d6",
+            "ab5370a9f61f6320",
+            "507371b763eddba0",
+            "16b172fced11b810",
+            "d4884dc3f42c77e8",
+            "ff6b626110f2f6ec",
+            "edb73f62309898e3",
+            "96831d7c1dcb47fa",
+            "752a70a77c9750d8"
+        ],
+        "x": 14,
+        "y": 939,
+        "w": 1552,
+        "h": 262
+    },
+    {
+        "id": "40d09c6e6df96683",
+        "type": "group",
+        "z": "c8208e6a65d3c2af",
+        "name": "whatsappbot",
+        "style": {
+            "stroke": "#92d04f",
+            "fill": "#e3f3d3",
+            "label": true
+        },
+        "nodes": [
+            "9f8e791c6b9a642c",
+            "a5f2c2ab21518eb7",
+            "3e397bf3b91a5907",
+            "2a6f94d3c56e842e",
+            "72c0f7facf326866",
+            "0a2e4892c4e243c2",
+            "0e20c35adb5cc171",
+            "09ed5a18c5e2572d",
+            "602464edb3541c8a",
+            "56f20785fda555c8",
+            "a8182a7e59ef243a",
+            "f08426907c45fac4",
+            "f5be53459c334004",
+            "8855b83b6672aa0a",
+            "201d52af1c42d0e7",
+            "12444a1783ffbd19",
+            "83e70ce5a4defd36",
+            "4b273e02e5712214",
+            "71819c13a1025435",
+            "cd6205f05718e984",
+            "db7d2c1d52f05bf9",
+            "7917d687a61f2409"
+        ],
+        "x": 14,
+        "y": 1219,
+        "w": 1492,
+        "h": 342
+    },
+    {
+        "id": "7f86806a4ca0c715",
+        "type": "group",
+        "z": "c8208e6a65d3c2af",
+        "name": "instagram bot",
+        "style": {
+            "stroke": "#ffC000",
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "dba0f7ab6e4b919d",
+            "9901b6a7a9032582",
+            "243611d5c2db94f9",
+            "92213ea20ab9b1ef",
+            "8ba088e5adc829b1",
+            "9fce1c193d7b6ba1",
+            "627bfa9d93208c59",
+            "a8cba982ca4f9115",
+            "b052742bc3945ec3",
+            "5eac3e8dfce81d88",
+            "51b3787563ee1a38",
+            "693d79d4423ce154",
+            "bcf5974f2cef9cba",
+            "99caac847f5df515",
+            "e14a7e1e271547f3",
+            "fbd6146e89b1d42d",
+            "c80e34a79b0d8751",
+            "cf9a6ba45df67d83",
+            "12c72333898f97b7",
+            "504f2332759ef484",
+            "3e64811eeb98af3f",
+            "a83a80258217806d",
+            "beeff7858c8e1db1"
+        ],
+        "x": 14,
+        "y": 1599,
+        "w": 1552,
+        "h": 302
+    },
+    {
         "id": "4b07803a52e468f5",
         "type": "telegram bot",
-        "botname": "{global.get('process_env').BOT_NAME}",
+        "botname": "{global.get('telegram').BOT_NAME}",
         "usernames": "",
         "chatids": "",
         "baseapiurl": "",
@@ -2441,6 +2548,7 @@
         "id": "66763628722735fb",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "confirm token",
         "func": "msg.payload = msg.payload[\"hub.challenge\"]\nreturn msg;\n",
         "outputs": 1,
@@ -2461,6 +2569,7 @@
         "id": "4816299b040f2829",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -2472,6 +2581,7 @@
         "id": "83503c945cbb4c4d",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "url": "/messangerBot",
         "method": "post",
@@ -2490,6 +2600,7 @@
         "id": "caa3ef679b43edbc",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "check payload",
         "func": "if (!msg.payload.entry[0].messaging[0].message.is_echo){\n    msg.old = msg.payload\n    msg.payload={\n        content: msg.payload.entry[0].messaging[0].message.text\n    } \n\nreturn [null,msg];\n} else{\nreturn [msg, null];\n}",
         "outputs": 2,
@@ -2514,6 +2625,7 @@
         "id": "1962e32d56dd9f06",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "statusCode": "",
         "headers": {},
@@ -2525,6 +2637,7 @@
         "id": "084250d7ea7b3fe5",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -2564,6 +2677,7 @@
         "id": "fb2196741549bce1",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "send response",
         "func": "msg.answer = msg.payload.choices[0].message.content\nconst process_env = global.get(\"META\")\nmsg.url = process_env.META_URL\nmsg.token = `Bearer ${process_env.META_TOKEN}`\n\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nconst recipientID = msg.old.entry[0].messaging[0].recipient.id;\nmsg.payload={\n    \n    \"recipient\": {\n        \"id\": senderID\n    },\n    \"messaging_type\": \"RESPONSE\",\n        \"message\": {\n            \"text\": msg.payload.choices[0].message.content,\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -2584,6 +2698,7 @@
         "id": "650845245a602f3c",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -2622,6 +2737,7 @@
         "id": "cc2767e9ed1dcea1",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "chek user",
         "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: Number(senderID) \n}\n\nreturn msg;",
         "outputs": 1,
@@ -2641,6 +2757,7 @@
         "id": "9432065d3374bca1",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "method": "GET",
         "ret": "obj",
@@ -2666,6 +2783,7 @@
         "id": "baefdb1424cd8868",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "save/update",
         "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        chat_id: Number(senderID) ,\n        user_name: Number(senderID) ,\n        type: 'messanger'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
@@ -2687,6 +2805,7 @@
         "id": "62ee4ed8b0807623",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "method": "use",
         "ret": "obj",
@@ -2709,6 +2828,7 @@
         "id": "34e51cbe5a4a131a",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "save history ",
         "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.history.chat_id = Number(senderID) \n    msg.history.user_name = Number(senderID) \n    msg.history.type = 'messanger' \n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
@@ -2728,6 +2848,7 @@
         "id": "ed51dc47c043feec",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -2750,6 +2871,7 @@
         "id": "c6e7e01c6d4265d6",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "get",
         "func": "const content = msg.old.entry[0].messaging[0].message.text\n\nconst { getADAEmbedding } = global.get(\"helpers\");\n\nasync function contextAgent(objective, topK) {\n    const queryEmbedding = await getADAEmbedding(objective);\n\n    try {\n        const results = await msg.main.index.query({\n            queryRequest: {\n                vector: queryEmbedding,\n                includeMetadata: true,\n                topK,\n            },\n        });\n\n        const sortedResults = results.matches?.sort((a, b) => (b?.score ?? 0) - (a?.score ?? 0)) ?? [];\n\n        return sortedResults.map(v => ({ id: v.id, question: v.metadata.question, answer: v.metadata.result }))\n    } catch (error) {\n        node.warn(error);\n    };\n}\n\nconst contextData = await contextAgent(content, 2);\n\nmsg.payload = contextData\nconst process_env = global.get(\"process_env\")\nmsg.PROMPT = process_env.PROMPT\nmsg.token = `Bearer ${process_env.OPENAI_API}`\nmsg.url = 'https://api.openai.com/v1/chat/completions'\n\nmsg.payload = {\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [{ \"role\": \"system\", \"content\": `${msg.PROMPT}: ${msg.payload[0].answer} ${msg.payload[1].answer}`},\n        { \"role\": \"user\", \"content\": msg.old.entry[0].messaging[0].message.text }]\n}\nreturn msg;",
         "outputs": 1,
@@ -2770,6 +2892,7 @@
         "id": "ab5370a9f61f6320",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "url": "/messangerBot",
         "method": "get",
@@ -2787,6 +2910,7 @@
         "id": "507371b763eddba0",
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "",
         "x": 570,
         "y": 1120,
@@ -2800,6 +2924,7 @@
         "id": "16b172fced11b810",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 454",
         "active": true,
         "tosidebar": true,
@@ -2816,6 +2941,7 @@
         "id": "d4884dc3f42c77e8",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 455",
         "active": true,
         "tosidebar": true,
@@ -2833,6 +2959,7 @@
         "id": "ff6b626110f2f6ec",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 456",
         "active": true,
         "tosidebar": true,
@@ -2850,6 +2977,7 @@
         "id": "edb73f62309898e3",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 457",
         "active": true,
         "tosidebar": true,
@@ -2867,13 +2995,14 @@
         "id": "9f8e791c6b9a642c",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "url": "/whatsApp",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
         "x": 120,
-        "y": 1340,
+        "y": 1360,
         "wires": [
             [
                 "a5f2c2ab21518eb7"
@@ -2884,6 +3013,7 @@
         "id": "a5f2c2ab21518eb7",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "check payload",
         "func": "node.warn(msg.payload.entry[0].changes[0].value.messages);\n// const date = msg.payload.entry[0].id\n// msg.typing = `typing${date}`\n// global.set(`typing${date}`, true)\nif(msg.payload.entry[0].changes[0].value.messages){\n    msg.old = msg.payload\n    msg.payload={\n        content: msg.old.entry[0].changes[0].value.messages[0].text.body\n    } \n\nreturn [msg,msg];\n} else{\nreturn [msg, null];\n}",
         "outputs": 2,
@@ -2892,7 +3022,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1340,
+        "y": 1360,
         "wires": [
             [
                 "3e397bf3b91a5907",
@@ -2908,17 +3038,19 @@
         "id": "3e397bf3b91a5907",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "statusCode": "",
         "headers": {},
         "x": 510,
-        "y": 1320,
+        "y": 1340,
         "wires": []
     },
     {
         "id": "2a6f94d3c56e842e",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -2945,7 +3077,7 @@
             }
         ],
         "x": 755,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "72c0f7facf326866",
@@ -2958,6 +3090,7 @@
         "id": "72c0f7facf326866",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "send response",
         "func": "msg.answer = msg.payload.choices[0].message.content\nconst process_env = global.get(\"WHATSAPP\")\nmsg.url = `${process_env.WHATSAPP_URL}`\nmsg.token = `Bearer ${process_env.WHATSAPP_TOKEN}`\nmsg.payload = {\n    \"messaging_product\": \"whatsapp\", \"to\": msg.old.entry[0].changes[0].value.contacts[0].wa_id, \"type\": \"text\", \"text\": { \"body\": msg.payload.choices[0].message.content, preview_url: false}\n}\n\nreturn msg;",
         "outputs": 1,
@@ -2966,7 +3099,7 @@
         "finalize": "",
         "libs": [],
         "x": 900,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "0a2e4892c4e243c2",
@@ -2978,6 +3111,7 @@
         "id": "0a2e4892c4e243c2",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -3004,7 +3138,7 @@
             }
         ],
         "x": 1090,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "201d52af1c42d0e7"
@@ -3015,13 +3149,14 @@
         "id": "0e20c35adb5cc171",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "url": "/whatsApp",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
         "x": 120,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "09ed5a18c5e2572d",
@@ -3033,6 +3168,7 @@
         "id": "09ed5a18c5e2572d",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "webhook",
         "func": "msg.payload = msg.payload[\"hub.challenge\"]\nreturn msg;",
         "outputs": 1,
@@ -3041,7 +3177,7 @@
         "finalize": "",
         "libs": [],
         "x": 320,
-        "y": 1460,
+        "y": 1480,
         "wires": [
             [
                 "56f20785fda555c8"
@@ -3052,6 +3188,7 @@
         "id": "602464edb3541c8a",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "debug 2",
         "active": true,
         "tosidebar": true,
@@ -3062,24 +3199,26 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 320,
-        "y": 1500,
+        "y": 1520,
         "wires": []
     },
     {
         "id": "56f20785fda555c8",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "statusCode": "",
         "headers": {},
         "x": 490,
-        "y": 1460,
+        "y": 1480,
         "wires": []
     },
     {
         "id": "a8182a7e59ef243a",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "chek user",
         "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\n\nmsg.payload = {\n    chat_id: Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id)\n}\n\nreturn msg;",
         "outputs": 1,
@@ -3088,7 +3227,7 @@
         "finalize": "",
         "libs": [],
         "x": 520,
-        "y": 1240,
+        "y": 1260,
         "wires": [
             [
                 "f08426907c45fac4"
@@ -3099,6 +3238,7 @@
         "id": "f08426907c45fac4",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "method": "GET",
         "ret": "obj",
@@ -3112,7 +3252,7 @@
         "senderr": false,
         "headers": [],
         "x": 690,
-        "y": 1240,
+        "y": 1260,
         "wires": [
             [
                 "f5be53459c334004",
@@ -3124,6 +3264,7 @@
         "id": "f5be53459c334004",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "save/update",
         "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        chat_id: Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id),\n        user_name: msg.old.entry[0].changes[0].value.contacts[0].profile.name,\n        type: 'whatsApp'\n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
@@ -3132,7 +3273,7 @@
         "finalize": "",
         "libs": [],
         "x": 870,
-        "y": 1240,
+        "y": 1260,
         "wires": [
             [
                 "8855b83b6672aa0a"
@@ -3144,6 +3285,7 @@
         "id": "8855b83b6672aa0a",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "method": "use",
         "ret": "obj",
@@ -3157,7 +3299,7 @@
         "senderr": false,
         "headers": [],
         "x": 1030,
-        "y": 1240,
+        "y": 1260,
         "wires": [
             []
         ]
@@ -3166,6 +3308,7 @@
         "id": "201d52af1c42d0e7",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "save history ",
         "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].changes[0].value.messages[0].text.body\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.type = 'whatsApp' \n    msg.history.chat_id = Number(msg.old.entry[0].changes[0].value.contacts[0].wa_id)\n    msg.history.user_name = msg.old.entry[0].changes[0].value.contacts[0].profile.name\n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
@@ -3174,7 +3317,7 @@
         "finalize": "",
         "libs": [],
         "x": 1250,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "12444a1783ffbd19"
@@ -3185,6 +3328,7 @@
         "id": "12444a1783ffbd19",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -3198,7 +3342,7 @@
         "senderr": false,
         "headers": [],
         "x": 1410,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             []
         ]
@@ -3207,6 +3351,7 @@
         "id": "83e70ce5a4defd36",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "debug 445",
         "active": true,
         "tosidebar": true,
@@ -3217,13 +3362,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 890,
-        "y": 1420,
+        "y": 1440,
         "wires": []
     },
     {
         "id": "4b273e02e5712214",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "get",
         "func": "const content = msg.old.entry[0].changes[0].value.messages[0].text.body\n\nconst { getADAEmbedding } = global.get(\"helpers\");\n\nasync function contextAgent(objective, topK) {\n    const queryEmbedding = await getADAEmbedding(objective);\n\n    try {\n        const results = await msg.main.index.query({\n            queryRequest: {\n                vector: queryEmbedding,\n                includeMetadata: true,\n                topK,\n            },\n        });\n\n        node.warn(results)\n        const sortedResults = results.matches?.sort((a, b) => (b?.score ?? 0) - (a?.score ?? 0)) ?? [];\n\n        return sortedResults.map(v => ({ id: v.id, question: v.metadata.question, answer: v.metadata.result }))\n    } catch (error) {\n        node.warn(error);\n    };\n}\n\nconst contextData = await contextAgent(content, 2);\n\nmsg.payload = contextData\nconst process_env = global.get(\"process_env\")\nmsg.PROMPT = process_env.PROMPT\nmsg.token = `Bearer ${process_env.OPENAI_API}`\n\nmsg.url = 'https://api.openai.com/v1/chat/completions'\n\nmsg.payload = {\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [{ \"role\": \"system\", \"content\": `${msg.PROMPT}: ${msg.payload[0].answer} ${msg.payload[1].answer}`},\n    { \"role\": \"user\", \"content\": msg.old.entry[0].changes[0].value.messages[0].text.body }]\n}\nreturn msg;",
         "outputs": 1,
@@ -3232,7 +3378,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "2a6f94d3c56e842e"
@@ -3244,9 +3390,10 @@
         "id": "71819c13a1025435",
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "",
         "x": 520,
-        "y": 1380,
+        "y": 1400,
         "wires": [
             [
                 "4b273e02e5712214"
@@ -3257,6 +3404,7 @@
         "id": "cd6205f05718e984",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "debug 446",
         "active": true,
         "tosidebar": true,
@@ -3267,13 +3415,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 870,
-        "y": 1280,
+        "y": 1300,
         "wires": []
     },
     {
         "id": "db7d2c1d52f05bf9",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "debug 450",
         "active": true,
         "tosidebar": true,
@@ -3284,13 +3433,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 530,
-        "y": 1280,
+        "y": 1300,
         "wires": []
     },
     {
         "id": "7917d687a61f2409",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "40d09c6e6df96683",
         "name": "debug 453",
         "active": true,
         "tosidebar": true,
@@ -3301,13 +3451,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1090,
-        "y": 1340,
+        "y": 1360,
         "wires": []
     },
     {
         "id": "96831d7c1dcb47fa",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 458",
         "active": true,
         "tosidebar": true,
@@ -3324,6 +3475,7 @@
         "id": "dba0f7ab6e4b919d",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "confirm token",
         "func": "msg.payload = msg.payload[\"hub.challenge\"]\nreturn msg;\n",
         "outputs": 1,
@@ -3332,7 +3484,7 @@
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 1600,
+        "y": 1640,
         "wires": [
             [
                 "9901b6a7a9032582",
@@ -3344,24 +3496,26 @@
         "id": "9901b6a7a9032582",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "statusCode": "",
         "headers": {},
         "x": 530,
-        "y": 1600,
+        "y": 1640,
         "wires": []
     },
     {
         "id": "243611d5c2db94f9",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "url": "/instagramBot",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1720,
+        "y": 1760,
         "wires": [
             [
                 "92213ea20ab9b1ef",
@@ -3373,15 +3527,16 @@
         "id": "92213ea20ab9b1ef",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "check payload",
-        "func": "node.warn(msg.payload.entry[0]?.messaging)\nif (msg.payload.entry[0]?.messaging && !msg.payload.entry[0]?.messaging[0]?.message?.is_echo ){\n\n    msg.old = msg.payload\n    msg.payload={\n        content: msg.payload.entry[0].messaging[0].message.text\n    } \n\nreturn [null,msg];\n}\nif (msg.payload.entry[0].standby[0].message.text) {\n    msg.old = msg.payload\n    node.warn(msg);\n    msg.old.entry[0].messaging = msg.old.entry[0].standby\n    msg.payload = {\n        content: msg.payload.entry[0].standby[0].message.text\n    }\n\n    return [null, msg];\n} else{\nreturn [msg, null];\n}",
+        "func": "node.warn(msg.payload.entry[0]?.messaging[0]?.message?.is_echo);\nif (msg.payload.entry[0]?.messaging && msg.payload.entry[0]?.messaging[0]?.message?.is_echo === undefined){\n    node.warn(\"my warning\");\n\n    msg.old = msg.payload\n    msg.payload={\n        content: msg.payload.entry[0].messaging[0].message.text\n    } \nreturn [null,msg];\n}\n else{\nreturn [msg, null];\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 360,
-        "y": 1720,
+        "y": 1760,
         "wires": [
             [
                 "8ba088e5adc829b1"
@@ -3397,17 +3552,19 @@
         "id": "8ba088e5adc829b1",
         "type": "http response",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "statusCode": "",
         "headers": {},
         "x": 570,
-        "y": 1720,
+        "y": 1760,
         "wires": []
     },
     {
         "id": "9fce1c193d7b6ba1",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -3434,7 +3591,7 @@
             }
         ],
         "x": 805,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
                 "627bfa9d93208c59",
@@ -3447,6 +3604,7 @@
         "id": "627bfa9d93208c59",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "send response",
         "func": "msg.answer = msg.payload.choices[0].message.content\nconst process_env = global.get(\"META\")\nmsg.url = process_env.META_URL\nmsg.token = `Bearer ${process_env.META_TOKEN}`\n\nmsg.senderID = msg.old.entry[0].messaging[0].sender.id;\n\nmsg.payload={\n    \n    \"recipient\": {\n        \"id\": msg.senderID\n    },\n    \"messaging_type\": \"RESPONSE\",\n        \"message\": {\n            \"text\": msg.payload.choices[0].message.content,\n    }\n}\nreturn msg;",
         "outputs": 1,
@@ -3455,7 +3613,7 @@
         "finalize": "",
         "libs": [],
         "x": 940,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
                 "a8cba982ca4f9115",
@@ -3467,6 +3625,7 @@
         "id": "a8cba982ca4f9115",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -3493,7 +3652,7 @@
             }
         ],
         "x": 1130,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
                 "bcf5974f2cef9cba",
@@ -3505,6 +3664,7 @@
         "id": "b052742bc3945ec3",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "chek user",
         "func": "msg.url = env.get(\"nodered\") + `/checkUser`;\nconst senderID = msg.old.entry[0].messaging[0].sender.id;\nmsg.payload = {\n    chat_id: Number(senderID) \n}\n\nreturn msg;",
         "outputs": 1,
@@ -3513,7 +3673,7 @@
         "finalize": "",
         "libs": [],
         "x": 560,
-        "y": 1660,
+        "y": 1700,
         "wires": [
             [
                 "5eac3e8dfce81d88"
@@ -3524,6 +3684,7 @@
         "id": "5eac3e8dfce81d88",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "method": "GET",
         "ret": "obj",
@@ -3537,7 +3698,7 @@
         "senderr": false,
         "headers": [],
         "x": 710,
-        "y": 1660,
+        "y": 1700,
         "wires": [
             [
                 "51b3787563ee1a38",
@@ -3549,6 +3710,7 @@
         "id": "51b3787563ee1a38",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "save/update",
         "func": "if (msg.payload.length > 0) {\n    return [null, msg]\n}\n\nelse {\n    const senderID = msg.old.entry[0].messaging[0].sender.id;\n    msg.method = \"POST\"\n    msg.url = env.get(\"nodered\") + `/saveUser`;\n    msg.payload = {\n        chat_id: Number(senderID),\n        user_name: Number(senderID),\n        type: 'instagram' \n    }\n\n    return [msg, null]\n}\n\n",
         "outputs": 2,
@@ -3557,7 +3719,7 @@
         "finalize": "",
         "libs": [],
         "x": 890,
-        "y": 1660,
+        "y": 1700,
         "wires": [
             [
                 "693d79d4423ce154",
@@ -3570,6 +3732,7 @@
         "id": "693d79d4423ce154",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "method": "use",
         "ret": "obj",
@@ -3583,7 +3746,7 @@
         "senderr": false,
         "headers": [],
         "x": 1050,
-        "y": 1660,
+        "y": 1700,
         "wires": [
             []
         ]
@@ -3592,6 +3755,7 @@
         "id": "bcf5974f2cef9cba",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "save history ",
         "func": "if (msg.statusCode === 200) {\n    msg.history = {}\n    msg.history.requestText = msg.old.entry[0].messaging[0].message.text\n    msg.history.answer = msg.answer\n    msg.history.date = Date.now()\n    msg.history.chat_id = Number(msg.senderID) \n    msg.history.user_name = Number(msg.senderID) \n    msg.history.type = 'instagram' \n    msg.payload = msg.history\n    msg.url = env.get(\"nodered\") + `/saveUserMessage`;\n    return msg;\n}\n",
         "outputs": 1,
@@ -3600,7 +3764,7 @@
         "finalize": "",
         "libs": [],
         "x": 1310,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
                 "99caac847f5df515",
@@ -3612,6 +3776,7 @@
         "id": "99caac847f5df515",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "method": "POST",
         "ret": "obj",
@@ -3625,7 +3790,7 @@
         "senderr": false,
         "headers": [],
         "x": 1470,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             []
         ]
@@ -3634,18 +3799,20 @@
         "id": "e14a7e1e271547f3",
         "type": "function",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "get",
-        "func": "const content = msg.old.entry[0].messaging[0].message.text\n\nconst { getADAEmbedding } = global.get(\"helpers\");\n\nasync function contextAgent(objective, topK) {\n    const queryEmbedding = await getADAEmbedding(objective);\n\n    try {\n        const results = await msg.main.index.query({\n            queryRequest: {\n                vector: queryEmbedding,\n                includeMetadata: true,\n                topK,\n            },\n        });\n\n        const sortedResults = results.matches?.sort((a, b) => (b?.score ?? 0) - (a?.score ?? 0)) ?? [];\n\n        return sortedResults.map(v => ({ id: v.id, question: v.metadata.question, answer: v.metadata.result }))\n    } catch (error) {\n        node.warn(error);\n    };\n}\n\nconst contextData = await contextAgent(content, 2);\n\nmsg.payload = contextData\nconst process_env = global.get(\"process_env\")\nmsg.PROMPT = process_env.PROMPT\nmsg.token = `Bearer ${process_env.OPENAI_API}`\n\nmsg.url = 'https://api.openai.com/v1/chat/completions'\n\nmsg.payload = {\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [{ \"role\": \"system\", \"content\": `${msg.PROMPT}: ${msg.payload[0].answer} ${msg.payload[1].answer}`},\n        { \"role\": \"user\", \"content\": msg.old.entry[0].messaging[0].message.text }]\n}\nreturn msg;",
+        "func": "const content = msg.old.entry[0].messaging[0].message.text\n\nconst { getADAEmbedding } = global.get(\"helpers\");\n\nasync function contextAgent(objective, topK) {\n    const queryEmbedding = await getADAEmbedding(objective);\n\n    try {\n        const results = await msg.main.index.query({\n            queryRequest: {\n                vector: queryEmbedding,\n                includeMetadata: true,\n                topK,\n            },\n        });\n\n        const sortedResults = results.matches?.sort((a, b) => (b?.score ?? 0) - (a?.score ?? 0)) ?? [];\n\n        return sortedResults.map(v => ({ id: v.id, question: v.metadata.question, answer: v.metadata.result }))\n    } catch (error) {\n        node.warn(error);\n    };\n}\n\nconst contextData = await contextAgent(content, 2);\n\nmsg.payload = contextData\nconst process_env = global.get(\"process_env\")\nmsg.PROMPT = process_env.PROMPT\nmsg.token = `Bearer ${process_env.OPENAI_API}`\n\nmsg.url = 'https://api.openai.com/v1/chat/completions'\n\nmsg.payload = {\n    \"model\": \"gpt-3.5-turbo\",\n    \"messages\": [{ \"role\": \"system\", \"content\": `${msg.PROMPT}: ${msg.payload[0].answer} ${msg.payload[1].answer}. Your response must be less than 1000 characters`},\n        { \"role\": \"user\", \"content\": msg.old.entry[0].messaging[0].message.text }]\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
         "x": 700,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
-                "9fce1c193d7b6ba1"
+                "9fce1c193d7b6ba1",
+                "12c72333898f97b7"
             ]
         ],
         "icon": "node-red/db.svg"
@@ -3654,13 +3821,14 @@
         "id": "fbd6146e89b1d42d",
         "type": "http in",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "url": "/instagramBot",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
         "x": 130,
-        "y": 1600,
+        "y": 1640,
         "wires": [
             [
                 "dba0f7ab6e4b919d"
@@ -3671,9 +3839,10 @@
         "id": "c80e34a79b0d8751",
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "",
         "x": 570,
-        "y": 1780,
+        "y": 1820,
         "wires": [
             [
                 "e14a7e1e271547f3"
@@ -3684,6 +3853,7 @@
         "id": "cf9a6ba45df67d83",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 459",
         "active": true,
         "tosidebar": true,
@@ -3693,13 +3863,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 690,
-        "y": 1600,
+        "y": 1640,
         "wires": []
     },
     {
         "id": "12c72333898f97b7",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 460",
         "active": true,
         "tosidebar": true,
@@ -3710,13 +3881,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 930,
-        "y": 1820,
+        "y": 1860,
         "wires": []
     },
     {
         "id": "504f2332759ef484",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 461",
         "active": true,
         "tosidebar": true,
@@ -3727,13 +3899,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1130,
-        "y": 1820,
+        "y": 1860,
         "wires": []
     },
     {
         "id": "3e64811eeb98af3f",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 462",
         "active": true,
         "tosidebar": true,
@@ -3744,13 +3917,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1310,
-        "y": 1740,
+        "y": 1780,
         "wires": []
     },
     {
         "id": "a83a80258217806d",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 463",
         "active": true,
         "tosidebar": true,
@@ -3760,13 +3934,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 350,
-        "y": 1760,
+        "y": 1800,
         "wires": []
     },
     {
         "id": "752a70a77c9750d8",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "ebee837ffce65a75",
         "name": "debug 464",
         "active": true,
         "tosidebar": true,
@@ -3802,6 +3977,7 @@
         "id": "beeff7858c8e1db1",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
+        "g": "7f86806a4ca0c715",
         "name": "debug 465",
         "active": true,
         "tosidebar": true,
@@ -3811,7 +3987,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 910,
-        "y": 1700,
+        "y": 1740,
         "wires": []
     },
     {
@@ -4632,150 +4808,6 @@
         "wires": [
             [
                 "9e73142cfd50b560"
-            ]
-        ]
-    },
-    {
-        "id": "77695da6ca2b5625",
-        "type": "inject",
-        "z": "4004e7d2fbdbf6a9",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 740,
-        "wires": [
-            [
-                "d94b26f503fefd90"
-            ]
-        ]
-    },
-    {
-        "id": "fc97334dc93fe2cf",
-        "type": "mongodb out",
-        "z": "4004e7d2fbdbf6a9",
-        "mongodb": "7908a755f1520aa7",
-        "name": "",
-        "collection": "users",
-        "payonly": false,
-        "upsert": false,
-        "multi": false,
-        "operation": "delete",
-        "x": 790,
-        "y": 720,
-        "wires": []
-    },
-    {
-        "id": "d94b26f503fefd90",
-        "type": "function",
-        "z": "4004e7d2fbdbf6a9",
-        "name": "function 331",
-        "func": "msg.payload={}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 350,
-        "y": 740,
-        "wires": [
-            [
-                "fc97334dc93fe2cf"
-            ]
-        ]
-    },
-    {
-        "id": "370b3c494b34cfa7",
-        "type": "function",
-        "z": "4004e7d2fbdbf6a9",
-        "name": "function 332",
-        "func": "msg.payload={\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 370,
-        "y": 820,
-        "wires": [
-            [
-                "2c04c32a75164dc2"
-            ]
-        ]
-    },
-    {
-        "id": "6a627ed0c24dcc35",
-        "type": "inject",
-        "z": "4004e7d2fbdbf6a9",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 820,
-        "wires": [
-            [
-                "370b3c494b34cfa7"
-            ]
-        ]
-    },
-    {
-        "id": "bcfd65f87d141c8e",
-        "type": "debug",
-        "z": "4004e7d2fbdbf6a9",
-        "name": "debug 466",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 810,
-        "y": 840,
-        "wires": []
-    },
-    {
-        "id": "2c04c32a75164dc2",
-        "type": "mongodb in",
-        "z": "4004e7d2fbdbf6a9",
-        "mongodb": "7908a755f1520aa7",
-        "name": "users_messages",
-        "collection": "users_messages",
-        "operation": "find",
-        "x": 570,
-        "y": 860,
-        "wires": [
-            [
-                "bcfd65f87d141c8e"
             ]
         ]
     },
@@ -9392,7 +9424,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_name\": '',\n        \"bot_token\": '',\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        //\"is_limit\": true,\n        //\"limit\": 30\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        \"prompt\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9778,7 +9810,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_name\": '',\n        \"bot_token\": '',\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        //\"is_limit\": true,\n        //\"limit\": 30\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_token\": '',\n        \"bot_name\": '',\n        \"private_chat\": '',\n        \"welcome\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10164,7 +10196,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_name\": '',\n        \"bot_token\": '',\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        //\"is_limit\": true,\n        //\"limit\": 30\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"whatsApp_url\": '',\n        \"whatsApp_token\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10550,7 +10582,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_name\": '',\n        \"bot_token\": '',\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        //\"is_limit\": true,\n        //\"limit\": 30\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"meta_token\": '',\n        \"response_URL\": ''\n\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
