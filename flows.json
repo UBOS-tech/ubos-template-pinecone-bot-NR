@@ -1316,7 +1316,7 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "/start",
-        "func": "msg.payload.content = \"Hello\"\n\nreturn msg;",
+        "func": "msg.payload.content = global.get(\"telegram\").WELCOME;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
