@@ -261,7 +261,9 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 1139
+        "y": 1139,
+        "w": 712,
+        "h": 902
     },
     {
         "id": "7cf09a5628ba29e5",
@@ -346,7 +348,9 @@
             "56afed1bb13cc979"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 1952,
+        "h": 1022
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -370,7 +374,9 @@
             "4ca2aafdce75631b"
         ],
         "x": 774,
-        "y": 1139
+        "y": 1139,
+        "w": 1012,
+        "h": 162
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -421,7 +427,9 @@
             "5322da50da8b810a"
         ],
         "x": 774,
-        "y": 1339
+        "y": 1339,
+        "w": 1652,
+        "h": 622
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -465,7 +473,9 @@
             "db9c3ea65883774f"
         ],
         "x": 14,
-        "y": 3039
+        "y": 3039,
+        "w": 1172,
+        "h": 662
     },
     {
         "id": "a89d39ed625d493a",
@@ -518,10 +528,13 @@
             "0da57daeb8571c67",
             "bc255567ba2f7b55",
             "aed0f134a3d46198",
-            "22995a8e4464c6e5"
+            "22995a8e4464c6e5",
+            "daa9252c4d5e4a15"
         ],
-        "x": 4,
-        "y": 2079
+        "x": 14,
+        "y": 2079,
+        "w": 1032,
+        "h": 922
     },
     {
         "id": "080a4b05e6b518fc",
@@ -551,9 +564,7 @@
             "29445d42adea56dc"
         ],
         "x": 1354,
-        "y": 39,
-        "w": 792,
-        "h": 242
+        "y": 39
     },
     {
         "id": "0cf1026d3ccdfd21",
@@ -685,9 +696,7 @@
             "2b0b88cae098c7a9"
         ],
         "x": 14,
-        "y": 1039,
-        "w": 2222,
-        "h": 942
+        "y": 1039
     },
     {
         "id": "1f1b365afc8becc5",
@@ -709,9 +718,7 @@
             "d83803be20e467e5"
         ],
         "x": 34,
-        "y": 2359,
-        "w": 1342,
-        "h": 162
+        "y": 2359
     },
     {
         "id": "911c1ee2586e9d4d",
@@ -739,9 +746,7 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019,
-        "w": 1092,
-        "h": 262
+        "y": 2019
     },
     {
         "id": "bc79b0c55ed950a2",
@@ -783,9 +788,7 @@
             "5a3203eb955fd7d9"
         ],
         "x": 1354,
-        "y": 319,
-        "w": 932,
-        "h": 622
+        "y": 319
     },
     {
         "id": "a16a3e4151c2e982",
@@ -858,9 +861,7 @@
             "503e336b80ffc4b0"
         ],
         "x": 34,
-        "y": 39,
-        "w": 1292,
-        "h": 842
+        "y": 39
     },
     {
         "id": "ebee837ffce65a75",
@@ -1051,11 +1052,11 @@
     {
         "id": "7908a755f1520aa7",
         "type": "mongodb",
-        "hostname": "",
+        "hostname": "db64942bd3a77d221100000464-1689153294276mongo-9047.ubos-blfvw",
         "topology": "direct",
         "connectOptions": "authSource=admin",
         "port": "27017",
-        "db": "",
+        "db": "mongo-9047",
         "name": ""
     },
     {
@@ -4709,7 +4710,7 @@
         "fieldType": "msg",
         "format": "css",
         "syntax": "mustache",
-        "template": ".header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\n/* width: 100% !important; */\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.scroll_section{\n    height: 100% !important;\n    top: 66px !important; \npadding: 0px !important;\n\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}",
+        "template": ".header{\ntop: 0px !important;\nheight: 66px !important;\npadding: 0px !important;\n/* width: 100% !important; */\nborder-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n.menu_section{\nbox-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\nheight: 100vh !important;\npadding: 0px !important;\nleft: 0px !important;\nborder-right: 2px solid rgb(241, 243, 244) !important;\n}\n\n.main_section{\npadding: 0px !important;\nheight: 100vh !important;\nposition: fixed !important;\ntop: 66px !important; \n}\n\n.tab_login>div>div>div>div{\nbox-shadow: none !important;\n}\n\n.tab_login>div>div>div>div>div{\nbackground: transparent !important;\n}\n\n.frame_section{\nheight: 100vh !important;\nposition: fixed !important;\ntop: 16px !important; \n}\n\n.scroll_section{\n    height: 100% !important;\n    top: 66px !important; \npadding: 0px !important;\n\n}\n\n.image{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n    height: 75px !important;\n}\n\n\n.menu .active span{\ncolor: #2a2f36 !important;\n}\n\n.menu .active {\n    background: #ebf1fb !important;\n}\n\n.menu button:hover{\nbackground: #ebf1fb;\n}\n\n.menu span[role=\"img\"]{\nmargin-left: 8px !important;\nmargin-top: 3px !important;\n\n}\n.menu .bp3-collapse-body .sub_category {\n    padding: 5px 5px 5px 20px !important;\n}\n.menu button{\n    box-shadow: none !important;\n}\n\n.menu span{\n    font-size: 16px !important;\n    font-weight: 400 !important;\n    color: #00000099 !important;\n}\n\n.menu {\n    left: 0px !important;\n    width: 100% !important;\n    padding: 0 !important;\n}\n\n.menu_wrap{\n    position: fixed !important;\n    left: 0px!important;\n    top: 0px !important;\n    height: 100vh !important;\n    /* width: 178.312px!important; */\n    padding: 0px!important;\n    box-shadow: rgba(0, 0, 0, 0.25) 1px 2px 3px !important;\n}\n\n.menu button {\n    justify-content: start !important;\n    padding: 5px 10px 5px 15px !important;\n    margin-bottom: 5px !important;\n}\n\n.setting_title{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important;\n}\n\n\n.setting_text{\n    padding: 4px 14px !important;\n    left: 0px !important;\n    width: 100% !important;\n    border-bottom: 2px solid rgb(241, 243, 244) !important; \n}\n\n.setting_text .bp3-ui-text {\n    font-weight: 500 !important;\n    font-size: 16px !important;\n}\n\n.setting_title .bp3-ui-text {\n    font-weight: 600 !important;\n    font-size: 18px !important;\n}\n\n.telegramList {\n    padding: 10px 20px !important;\n}\n\n.telegramList .custom-wrapper-canvas-list{\n    display: flex;\n    flex-direction: column !important;\n}\n.telegramList .custom-wrapper-canvas-list button {\n    display: none !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget{\n    width: 90% !important;\n    position: static !important;\n    border-radius: 8px!important;\n    padding: 0 !important;\n    margin-bottom: 7px;\n    margin-right: auto !important;\n    margin-left: 0 !important;\n    background-color: #cfcfdb !important;\n}\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd){\n    margin-right: 0 !important;\n    margin-left: auto !important;\n    background-color: #e5e5e6 !important;\n}\n.telegramList .t--widget-textwidget{\n    width: auto !important;\n    position: static !important;\n    padding: 5px 15px !important;\n    height: 100% !important;\n}\n.telegramList .t--widget-textwidget span{\n    font-weight: 500; \n    font-size: 16px;\n    line-height: 125%;\n}\n\n.telegramList .custom-wrapper-canvas-list .t--widget-containerwidget:nth-of-type(odd) .t--widget-textwidget span{\n    text-align: end;\n}\n\n.telegramWrap{\n    padding: 0!important;\n}\n\n.container{\n    min-height: 100vh;\n}\n\n.selectedTab{\n    box-shadow: rgb(235, 239, 242) -1px 0px 0px inset, rgb(235, 239, 242) 0px 0px 0px inset, rgb(55 169 235) 0px 4px 0px inset !important;\n}",
         "output": "str",
         "x": 280,
         "y": 620,
@@ -9228,6 +9229,703 @@
         "wires": []
     },
     {
+        "id": "dfc0082f4e1725eb",
+        "type": "http in",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "url": "/checkData",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 100,
+        "y": 3840,
+        "wires": [
+            [
+                "0ed5ffc9543206b2"
+            ]
+        ]
+    },
+    {
+        "id": "0ed5ffc9543206b2",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "get users query",
+        "func": "msg.collection = \"admins\";\n\nmsg.payload= {\n        deleted:false\n      }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 300,
+        "y": 3840,
+        "wires": [
+            [
+                "a16c674049b8b976"
+            ]
+        ]
+    },
+    {
+        "id": "a16c674049b8b976",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 470,
+        "y": 3840,
+        "wires": [
+            [
+                "c43d6bc4af4d5ccb",
+                "c72a2c8a045b457d"
+            ]
+        ]
+    },
+    {
+        "id": "c43d6bc4af4d5ccb",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 470",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 530,
+        "y": 3780,
+        "wires": []
+    },
+    {
+        "id": "b15d2ce54c34793a",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 120,
+        "y": 3800,
+        "wires": [
+            [
+                "0ed5ffc9543206b2"
+            ]
+        ]
+    },
+    {
+        "id": "70ee1c32372fcc96",
+        "type": "http response",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 810,
+        "y": 3840,
+        "wires": []
+    },
+    {
+        "id": "9a8108100cd6ee7f",
+        "type": "http in",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "url": "/makeSetting",
+        "method": "get",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 110,
+        "y": 4080,
+        "wires": [
+            [
+                "87633d946b21622f"
+            ]
+        ]
+    },
+    {
+        "id": "87633d946b21622f",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 335",
+        "func": "msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 4080,
+        "wires": [
+            [
+                "b2a92124f982054e"
+            ]
+        ]
+    },
+    {
+        "id": "b2a92124f982054e",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 490,
+        "y": 4080,
+        "wires": [
+            [
+                "c805efab107b12f5",
+                "27cb7798ca8f35c8"
+            ]
+        ]
+    },
+    {
+        "id": "c805efab107b12f5",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 471",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 490,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "62b62daee225d3a2",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 337",
+        "func": "msg.collection = \"admin_modules\"\nmsg.payload={deleted:false}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 710,
+        "y": 4080,
+        "wires": [
+            [
+                "70e4181ae3f0275a"
+            ]
+        ]
+    },
+    {
+        "id": "70e4181ae3f0275a",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 870,
+        "y": 4080,
+        "wires": [
+            [
+                "ad8d80973130a52d",
+                "ad74a30c946b78c9"
+            ]
+        ]
+    },
+    {
+        "id": "ad8d80973130a52d",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 339",
+        "func": "msg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1030,
+        "y": 4080,
+        "wires": [
+            [
+                "5116a17ede9b9174",
+                "ad74a30c946b78c9"
+            ]
+        ]
+    },
+    {
+        "id": "5116a17ede9b9174",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1190,
+        "y": 4080,
+        "wires": [
+            [
+                "ad74a30c946b78c9",
+                "961e3c913cd2112c"
+            ]
+        ]
+    },
+    {
+        "id": "7daf979c3e2c7a76",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 340",
+        "func": "msg.collection = \"admin_roles\"\nmsg.payload={deleted:false}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1410,
+        "y": 4080,
+        "wires": [
+            [
+                "2f1541549a290ef7",
+                "02055edbb88c7aed"
+            ]
+        ]
+    },
+    {
+        "id": "2f1541549a290ef7",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1570,
+        "y": 4080,
+        "wires": [
+            [
+                "412065b46f705832",
+                "89a826aed605c070"
+            ]
+        ]
+    },
+    {
+        "id": "ad74a30c946b78c9",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 472",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1190,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "02055edbb88c7aed",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 473",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1410,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "412065b46f705832",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 474",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1630,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "89a826aed605c070",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 342",
+        "func": "let result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "bcrypt",
+                "module": "bcrypt"
+            }
+        ],
+        "x": 1750,
+        "y": 4080,
+        "wires": [
+            [
+                "a38a8f1480c9758d",
+                "77510917bdf855be"
+            ]
+        ]
+    },
+    {
+        "id": "a38a8f1480c9758d",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "8771d95b528d34d0"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1910,
+        "y": 4080,
+        "wires": [
+            [
+                "f9a5ece7a7b6bc85"
+            ]
+        ]
+    },
+    {
+        "id": "7c4aea010b5ff46a",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 343",
+        "func": "msg.collection = \"admins\";\n\nmsg.payload = {\n    \"deleted\": false\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2130,
+        "y": 4080,
+        "wires": [
+            [
+                "44c1d1f78ec482d1",
+                "77510917bdf855be"
+            ]
+        ]
+    },
+    {
+        "id": "44c1d1f78ec482d1",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2290,
+        "y": 4080,
+        "wires": [
+            [
+                "ea6e2fbb4b416587",
+                "77510917bdf855be"
+            ]
+        ]
+    },
+    {
+        "id": "ea6e2fbb4b416587",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 344",
+        "func": "msg.payload={\n    email: msg.payload[0].email,\n    password: msg.password\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2450,
+        "y": 4080,
+        "wires": [
+            [
+                "ebea711cc8d850d3",
+                "77510917bdf855be"
+            ]
+        ]
+    },
+    {
+        "id": "ebea711cc8d850d3",
+        "type": "http response",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2610,
+        "y": 4080,
+        "wires": []
+    },
+    {
+        "id": "77510917bdf855be",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 475",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2490,
+        "y": 4040,
+        "wires": []
+    },
+    {
+        "id": "8346c76a2202c4b6",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1960,
+        "y": 4020,
+        "wires": [
+            [
+                "7c4aea010b5ff46a"
+            ]
+        ]
+    },
+    {
+        "id": "b48b6d0b2379ca03",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 346",
+        "func": "msg.collection = \"admin_roles\"\nmsg.payload={deleted:false}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1430,
+        "y": 4180,
+        "wires": [
+            [
+                "99f226bef772f1cb"
+            ]
+        ]
+    },
+    {
+        "id": "99f226bef772f1cb",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1590,
+        "y": 4180,
+        "wires": [
+            [
+                "412065b46f705832"
+            ]
+        ]
+    },
+    {
+        "id": "bb575be46f8121c2",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1240,
+        "y": 4180,
+        "wires": [
+            [
+                "b48b6d0b2379ca03"
+            ]
+        ]
+    },
+    {
+        "id": "27cb7798ca8f35c8",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 595,
+        "y": 4080,
+        "wires": [
+            [
+                "62b62daee225d3a2"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "961e3c913cd2112c",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1305,
+        "y": 4080,
+        "wires": [
+            [
+                "7daf979c3e2c7a76"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "f9a5ece7a7b6bc85",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2025,
+        "y": 4080,
+        "wires": [
+            [
+                "7c4aea010b5ff46a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "c72a2c8a045b457d",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 347",
+        "func": "if(msg.payload.length>0){\n    msg.payload=[{data:true}]\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 650,
+        "y": 3840,
+        "wires": [
+            [
+                "70ee1c32372fcc96"
+            ]
+        ]
+    },
+    {
+        "id": "daa9252c4d5e4a15",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "g": "a89d39ed625d493a",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 180,
+        "y": 2200,
+        "wires": [
+            [
+                "aa8ef0110ab08941"
+            ]
+        ]
+    },
+    {
         "id": "b9dfba77cf0659da",
         "type": "http in",
         "z": "4cba6f8219137af4",
@@ -9783,7 +10481,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "return res",
-        "func": "msg.statusCode = 200\nglobal.set('isCredentialsSent', true)\n\nreturn msg;",
+        "func": "msg.statusCode = 200\nglobal.set('iscredentialsTelegramSent', true)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9802,7 +10500,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "set filename",
-        "func": "msg.filename = '/data/credentialsTelegram.json'\nglobal.set('isCredentialsSent', false)\nreturn msg;",
+        "func": "msg.filename = '/data/credentialsTelegram.json'\nglobal.set('iscredentialsTelegramSent', false)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9822,7 +10520,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"bot_token\": '',\n        \"bot_name\": '',\n        \"private_chat\": '',\n        \"welcome\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('iscredentialsTelegramSent') === false){\n    msg.payload = {\n        \"bot_token\": '',\n        \"bot_name\": '',\n        \"private_chat\": '',\n        \"welcome\": ''\n    }\n    global.set('iscredentialsTelegramSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10169,7 +10867,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "return res",
-        "func": "msg.statusCode = 200\nglobal.set('isCredentialsSent', true)\n\nreturn msg;",
+        "func": "msg.statusCode = 200\nglobal.set('isCredentialsWhatsAppSent', true)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10188,7 +10886,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "set filename",
-        "func": "msg.filename = '/data/credentialsWhatsApp.json'\nglobal.set('isCredentialsSent', false)\nreturn msg;",
+        "func": "msg.filename = '/data/credentialsWhatsApp.json'\nglobal.set('isCredentialsWhatsAppSent', false)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10208,7 +10906,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"whatsApp_url\": '',\n        \"whatsApp_token\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsWhatsAppSent') === false){\n    msg.payload = {\n        \"whatsApp_url\": '',\n        \"whatsApp_token\": ''\n    }\n    global.set('isCredentialsWhatsAppSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10555,7 +11253,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "return res",
-        "func": "msg.statusCode = 200\nglobal.set('isCredentialsSent', true)\n\nreturn msg;",
+        "func": "msg.statusCode = 200\nglobal.set('isCredentialsMetaSent', true)\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10574,7 +11272,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "set filename",
-        "func": "msg.filename = '/data/credentialsMeta.json'\nglobal.set('isCredentialsSent', false)\nreturn msg;",
+        "func": "msg.filename = '/data/credentialsMeta.json'\nglobal.set('isCredentialsMetaSent', false)\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -10594,7 +11292,7 @@
         "type": "function",
         "z": "4cba6f8219137af4",
         "name": "default data",
-        "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"meta_token\": '',\n        \"response_URL\": ''\n\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
+        "func": "if (global.get('isCredentialsMetaSent') === false){\n    msg.payload = {\n        \"meta_token\": '',\n        \"response_URL\": ''\n\n    }\n    global.set('isCredentialsMetaSent', true)\n    return msg;\n}\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
