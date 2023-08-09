@@ -572,7 +572,9 @@
         "z": "c8208e6a65d3c2af",
         "name": "TG",
         "style": {
-            "label": true
+            "label": true,
+            "stroke": "#7fb7df",
+            "fill": "#bfdbef"
         },
         "nodes": [
             "666747ce63dfca18",
@@ -602,13 +604,38 @@
             "baf7420b5b216cc2",
             "62ddf71e3259e377",
             "1c79434061d7ff76",
-            "93961f4aeda1b32c",
-            "411ca984487686ba"
+            "411ca984487686ba",
+            "d1fe775ad04641c1",
+            "6bcf93306278ae07",
+            "079317a7798ae7d0",
+            "70d89be8294e4cc1",
+            "e288b3035af24eaa",
+            "ef767d928767cb70",
+            "9406da99327c9644",
+            "ca9798d997d772fd",
+            "d10542b05ef1f56d",
+            "d9ec1bb17c6cb2e5",
+            "681ed7fd92333081",
+            "7c1bf4b5923a9948",
+            "1043346252c517a7",
+            "17c46e8b98657bce",
+            "2037f13cdb05275d",
+            "78726ae519ab086a",
+            "28c49149129d34ef",
+            "6fae5298f072ae66",
+            "42c541d584f35255",
+            "8e058063d7977bdc",
+            "c79f68ae78c2fa0a",
+            "b5149a289a574835",
+            "03eaa5c76a7cc0b0",
+            "0b1926129388787b",
+            "9fc1615f16cc61ed",
+            "8fe93679b9f619bc"
         ],
         "x": 24,
-        "y": 179,
+        "y": 219,
         "w": 2052,
-        "h": 708
+        "h": 682
     },
     {
         "id": "e5c2a19a4e324330",
@@ -983,46 +1010,156 @@
         "h": 302
     },
     {
-        "id": "93961f4aeda1b32c",
+        "id": "80544ac2e67c2381",
         "type": "group",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "TG private chat ",
+        "z": "4cba6f8219137af4",
+        "name": "General",
         "style": {
+            "stroke": "#92d04f",
+            "fill": "#e3f3d3",
             "label": true
         },
         "nodes": [
-            "d1fe775ad04641c1",
-            "6bcf93306278ae07",
-            "079317a7798ae7d0",
-            "70d89be8294e4cc1",
-            "e288b3035af24eaa",
-            "ef767d928767cb70",
-            "9406da99327c9644",
-            "ca9798d997d772fd",
-            "d10542b05ef1f56d",
-            "d9ec1bb17c6cb2e5",
-            "681ed7fd92333081",
-            "7c1bf4b5923a9948",
-            "1043346252c517a7",
-            "17c46e8b98657bce",
-            "2037f13cdb05275d",
-            "78726ae519ab086a",
-            "28c49149129d34ef",
-            "6fae5298f072ae66",
-            "42c541d584f35255",
-            "8e058063d7977bdc",
-            "c79f68ae78c2fa0a",
-            "b5149a289a574835",
-            "03eaa5c76a7cc0b0",
-            "0b1926129388787b",
-            "9fc1615f16cc61ed",
-            "8fe93679b9f619bc"
+            "b9dfba77cf0659da",
+            "0225b679b27c7cb6",
+            "cebe20a19da025cb",
+            "18bd79bbe3db2336",
+            "14d2abc0b3f41cf9",
+            "31926911dc3e927a",
+            "1a1acd007e534462",
+            "cbd59739d47324a6",
+            "bf38233f75e9e634",
+            "4bf84b38cabfd2b8",
+            "0b634a02e2f46fc7",
+            "04ad2bf4e767fd19",
+            "fd42a251b9afd49b",
+            "d7144c5acabd38c0",
+            "2cd32bbc5f43b1e9",
+            "e3b8c26d52822ba0",
+            "219438abb376baad",
+            "5ed03305ad9ca676",
+            "8fe2f86059898917",
+            "22c15a24c4d0adfa",
+            "e2ddfce36897aa9d"
         ],
-        "x": 164,
-        "y": 439,
-        "w": 1582,
-        "h": 422
+        "x": 34,
+        "y": 39,
+        "w": 1012,
+        "h": 442
+    },
+    {
+        "id": "7ab0a46dbaab3e33",
+        "type": "group",
+        "z": "4cba6f8219137af4",
+        "name": "Telegram",
+        "style": {
+            "stroke": "#ffC000",
+            "fill": "#ffefbf",
+            "label": true
+        },
+        "nodes": [
+            "b7d26d9f317a4ce9",
+            "a44d45874ebeb754",
+            "a33aa3cab944b729",
+            "0f3a84ec943e5b13",
+            "24c4d892d84069d7",
+            "77e03324263dd58d",
+            "ef69804671bc03dd",
+            "6608ddc70a4b2b60",
+            "8bea79732db57d81",
+            "2fbc0da069ce400e",
+            "6eeabcaa5729b632",
+            "165d1d33afaf1c2e",
+            "c277b27f50de7b47",
+            "fd3c761bbe5711a4",
+            "70087cd5c5a5c551",
+            "5ad1a8b7bc330500",
+            "3d0bcba9e1b0867e",
+            "fda135fec557af97",
+            "175fb1669ebe74b6",
+            "0dc15aa186445a0f",
+            "2baefbb8c45261ea"
+        ],
+        "x": 34,
+        "y": 519,
+        "w": 1112,
+        "h": 402
+    },
+    {
+        "id": "7a0dc49638e7953f",
+        "type": "group",
+        "z": "4cba6f8219137af4",
+        "name": "WhatsApp",
+        "style": {
+            "stroke": "#ffff00",
+            "fill": "#ffffbf",
+            "label": true
+        },
+        "nodes": [
+            "bb96d23ed888929e",
+            "fcbb92757366bf33",
+            "54e078af5c0d3adc",
+            "81f9b8c4177c260c",
+            "4e7b3768b3931cfb",
+            "604fb55d3034b5b3",
+            "55b4fb10f4eea162",
+            "446fd365d7fa0305",
+            "6c030d2588a9b206",
+            "01556533647dfef3",
+            "07800ad0b4f9213f",
+            "4216ad203406f19d",
+            "a5527e8d9cc266fe",
+            "fe2d7ebe90fcf111",
+            "1f8a739ea5ee02cd",
+            "f22993bbddeb18b5",
+            "746c06b58c3b2d30",
+            "02f3af026c6e9af0",
+            "97ecf733940516b3",
+            "e9e2f318883d6af3",
+            "0f0d30344ca45f4a"
+        ],
+        "x": 34,
+        "y": 939,
+        "w": 1152,
+        "h": 442
+    },
+    {
+        "id": "5cf2bc7a9091263d",
+        "type": "group",
+        "z": "4cba6f8219137af4",
+        "name": "Meta",
+        "style": {
+            "stroke": "#0070c0",
+            "fill": "#bfdbef",
+            "label": true
+        },
+        "nodes": [
+            "80b27f596185b0b5",
+            "5c07c1802edd7436",
+            "a1e983d79486f057",
+            "5a28a0e9ba4c93ae",
+            "d09342e7a96a3a1b",
+            "eb6e8f5ff083dd6b",
+            "80328f5fc0f8cc4f",
+            "4e85fd2ea67195c3",
+            "4eff46ab12c5c07e",
+            "b303bbd2a2f63ba0",
+            "411e5fefe630bd97",
+            "47f53d27d5551493",
+            "7e12ce9603e46ae8",
+            "82e272bb8a733aad",
+            "788b05fb52c4fe79",
+            "097d5a354e0f8ea6",
+            "5008af5f7461f232",
+            "db66ea7be2d27d87",
+            "eb9f04e925a2c58e",
+            "8a7b40691c947077",
+            "b1cb89a3b4ba7937"
+        ],
+        "x": 34,
+        "y": 1419,
+        "w": 1072,
+        "h": 442
     },
     {
         "id": "4b07803a52e468f5",
@@ -1052,11 +1189,11 @@
     {
         "id": "7908a755f1520aa7",
         "type": "mongodb",
-        "hostname": "db64942bd3a77d221100000464-1689153294276mongo-9047.ubos-blfvw",
+        "hostname": "${MONGO_HOST_NAME}",
         "topology": "direct",
         "connectOptions": "authSource=admin",
         "port": "27017",
-        "db": "mongo-9047",
+        "db": "${MONGO_DB_NAME}",
         "name": ""
     },
     {
@@ -1296,7 +1433,7 @@
         "finalize": "",
         "libs": [],
         "x": 340,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "a71a7acbd224bbc2"
@@ -1324,7 +1461,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 260,
+        "y": 300,
         "wires": [
             [
                 "991562c24c1dbb8a",
@@ -1345,7 +1482,7 @@
         "finalize": "",
         "libs": [],
         "x": 1340,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "0b18dada9196baa4",
@@ -1368,7 +1505,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1150,
-        "y": 380,
+        "y": 420,
         "wires": []
     },
     {
@@ -1386,7 +1523,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 320,
-        "y": 260,
+        "y": 300,
         "wires": []
     },
     {
@@ -1404,7 +1541,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1370,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
@@ -1420,7 +1557,7 @@
         "finalize": "",
         "libs": [],
         "x": 900,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "f5d2d824f63b0eed",
@@ -1436,7 +1573,7 @@
         "g": "0cf1026d3ccdfd21",
         "name": "",
         "x": 730,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "460b8b5ab15ecb0a"
@@ -1456,7 +1593,7 @@
         "finalize": "",
         "libs": [],
         "x": 780,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "1b678c07805e900a",
@@ -1482,7 +1619,7 @@
         "senderr": false,
         "headers": [],
         "x": 950,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "59f43ba9fea18da2",
@@ -1503,7 +1640,7 @@
         "finalize": "",
         "libs": [],
         "x": 1130,
-        "y": 220,
+        "y": 260,
         "wires": [
             [
                 "483948c77608cd63",
@@ -1530,7 +1667,7 @@
         "senderr": false,
         "headers": [],
         "x": 1290,
-        "y": 220,
+        "y": 260,
         "wires": [
             []
         ]
@@ -1548,7 +1685,7 @@
         "finalize": "",
         "libs": [],
         "x": 1800,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "09abf79dd626bde6",
@@ -1574,7 +1711,7 @@
         "senderr": false,
         "headers": [],
         "x": 1980,
-        "y": 300,
+        "y": 340,
         "wires": [
             []
         ]
@@ -1593,7 +1730,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1790,
-        "y": 360,
+        "y": 400,
         "wires": []
     },
     {
@@ -1611,7 +1748,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1570,
-        "y": 380,
+        "y": 420,
         "wires": []
     },
     {
@@ -1629,7 +1766,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 940,
-        "y": 400,
+        "y": 440,
         "wires": []
     },
     {
@@ -1745,7 +1882,7 @@
         "payload": "",
         "payloadType": "date",
         "x": 800,
-        "y": 360,
+        "y": 400,
         "wires": [
             [
                 "460b8b5ab15ecb0a"
@@ -1756,7 +1893,7 @@
         "id": "d1fe775ad04641c1",
         "type": "http request",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "Get Link Info",
         "method": "GET",
         "ret": "txt",
@@ -1770,7 +1907,7 @@
         "senderr": false,
         "headers": [],
         "x": 460,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "70d89be8294e4cc1",
@@ -1782,7 +1919,7 @@
         "id": "6bcf93306278ae07",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "func": "let regex = /(http[s]?:\\/\\/[^\\s]+)/g;\n\nmsg.collection = \"knowlegebase\"\n\nvar result = msg.payload.content.match(regex);\nmsg.payload.link = result[0];\n\nmsg.current_link = result[0];\nmsg.url = result[0];\n\nif(msg._id){\n    msg._id = objectid(msg._id)\n    node.warn(\"1\")\n    return [msg,null]\n    \n}else{\n    msg._id = objectid();\n    msg.payload = {\n        _id: msg._id,\n        name: msg.payload.name,\n        file: msg.payload.file,\n        url: msg.payload.link,\n        vectors: [],\n        status: \"pending\",\n        deleted: false,\n        createdAt: new Date()\n    };\n    node.warn(\"2\")\n    return [null,msg]\n}\n\n\n\n\n\n",
         "outputs": 2,
@@ -1796,7 +1933,7 @@
             }
         ],
         "x": 250,
-        "y": 640,
+        "y": 680,
         "wires": [
             [
                 "d1fe775ad04641c1",
@@ -1813,7 +1950,7 @@
         "id": "079317a7798ae7d0",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "Create Pages",
         "func": "msg.filename = \"/data/\" + msg.current_link.split(\"://\")[1].replace(/\\//g, '_') + \".txt\";\nlet str = msg.payload.text;\nmsg.ll = msg.payload.text.length;\n\nfunction test2(str, index) {\n    const result = [];\n\n    while (index < str.length) {\n        let endIndex = index + 500 <= str.length ? index + 500 : str.length;\n        let sub = str.slice(index, endIndex);\n        let last = sub.lastIndexOf(\".\");\n\n        if (last !== -1) {\n            result.push({\n                \"text\": str.slice(index, index + last + 1)\n            });\n            index += last + 1;\n        } else {\n            result.push({\n                \"text\": str.slice(index, endIndex)\n            });\n            index = endIndex;\n        }\n    }\n\n    return result;\n}\n\nmsg.pages = test2(str, 0);\nnode.warn(msg.pages)\nmsg.array = msg.pages;\nreturn msg",
         "outputs": 1,
@@ -1822,7 +1959,7 @@
         "finalize": "",
         "libs": [],
         "x": 830,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "c79f68ae78c2fa0a"
@@ -1833,7 +1970,7 @@
         "id": "70d89be8294e4cc1",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "Scrape",
         "func": "\nconst { extractor } = unfluff;\n\nmsg.payload = unfluff(msg.payload);\nmsg.payload.originalSourceUrl = msg.responseUrl;\n\nreturn msg;",
         "outputs": 1,
@@ -1847,7 +1984,7 @@
             }
         ],
         "x": 650,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "079317a7798ae7d0"
@@ -1858,7 +1995,7 @@
         "id": "e288b3035af24eaa",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "debug 410",
         "active": true,
         "tosidebar": true,
@@ -1869,14 +2006,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 830,
-        "y": 580,
+        "y": 620,
         "wires": []
     },
     {
         "id": "ef767d928767cb70",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "ToPinecone",
         "active": true,
         "tosidebar": true,
@@ -1887,14 +2024,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1430,
-        "y": 740,
+        "y": 780,
         "wires": []
     },
     {
         "id": "9406da99327c9644",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "post",
         "func": "const { getADAEmbedding } = global.get(\"helpers\");\nmsg.collection = \"knowlegebase\"\n\nconst question = msg.fromApp.question\nconst result = msg.fromApp.result\nnode.warn(msg.fromApp)\nconst embeddingResult = await getADAEmbedding(result);\n\nawait msg.main.index.upsert({\n    upsertRequest: {\n        vectors: [\n            {\n                id: Date.now().toString(),\n                values: embeddingResult,\n                metadata: { question: question, result },\n            },\n        ],\n    },\n});\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n    \"$push\": {\n        \"vectors\": {\n            id: Date.now().toString(),\n            metadata: { question: question, result },\n        }\n    }\n\n};\n\n\nreturn msg",
         "outputs": 1,
@@ -1903,7 +2040,7 @@
         "finalize": "",
         "libs": [],
         "x": 1310,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "c79f68ae78c2fa0a",
@@ -1915,10 +2052,10 @@
         "id": "ca9798d997d772fd",
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "x": 1180,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "ef767d928767cb70",
@@ -1930,7 +2067,7 @@
         "id": "d10542b05ef1f56d",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "create vector",
         "func": "delete msg.filepath;\ndelete msg.filename;\n\n\nmsg.payload = {\n   question: msg.payload.choices[0].message.content,\n   result: msg.text\n}\n\nreturn msg;",
         "outputs": 1,
@@ -1939,7 +2076,7 @@
         "finalize": "",
         "libs": [],
         "x": 990,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "2037f13cdb05275d",
@@ -1951,7 +2088,7 @@
         "id": "d9ec1bb17c6cb2e5",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "the end",
         "func": "const date = msg.originalMessage.date\n// delete msg.payload\nglobal.set(`typing${date}`, undefined)\nmsg.payload = {\n    chatId: msg.fromTG1.chatId,\n    messageId: msg.fromTG1.messageId,\n    content: \"upload finish\",\n    type: \"message\",\n    date: msg.fromTG1.date\n}\n\n\n\nreturn msg;",
         "outputs": 1,
@@ -1960,7 +2097,7 @@
         "finalize": "",
         "libs": [],
         "x": 1230,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "42c541d584f35255"
@@ -1971,7 +2108,7 @@
         "id": "681ed7fd92333081",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "update knowlegebase",
         "func": "msg.collection = \"knowlegebase\"\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n \n        $set: {\n            status: \"done\"\n        }\n    };\n\n\nreturn msg;",
         "outputs": 1,
@@ -1980,7 +2117,7 @@
         "finalize": "",
         "libs": [],
         "x": 1270,
-        "y": 580,
+        "y": 620,
         "wires": [
             [
                 "8fe93679b9f619bc"
@@ -2000,7 +2137,7 @@
         "finalize": "",
         "libs": [],
         "x": 490,
-        "y": 400,
+        "y": 440,
         "wires": [
             [
                 "588935d38b66c7b2"
@@ -2026,7 +2163,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 665,
-        "y": 400,
+        "y": 440,
         "wires": [
             [
                 "baf7420b5b216cc2"
@@ -2038,7 +2175,7 @@
         "id": "7c1bf4b5923a9948",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "typing",
         "func": "msg.payload = {\n    chatId: msg.payload.chatId,\n    type: 'action',\n    content: \"upload_document\"\n};\nreturn msg;",
         "outputs": 1,
@@ -2047,7 +2184,7 @@
         "finalize": "",
         "libs": [],
         "x": 310,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "6fae5298f072ae66"
@@ -2058,7 +2195,7 @@
         "id": "1043346252c517a7",
         "type": "delay",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "pauseType": "delay",
         "timeout": "5",
@@ -2073,7 +2210,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 495,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "8e058063d7977bdc"
@@ -2085,7 +2222,7 @@
         "id": "17c46e8b98657bce",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "debug 411",
         "active": true,
         "tosidebar": true,
@@ -2096,14 +2233,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1630,
-        "y": 620,
+        "y": 660,
         "wires": []
     },
     {
         "id": "2037f13cdb05275d",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "create VEC",
         "active": true,
         "tosidebar": true,
@@ -2114,14 +2251,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 960,
-        "y": 760,
+        "y": 800,
         "wires": []
     },
     {
         "id": "78726ae519ab086a",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "2",
         "active": true,
         "tosidebar": true,
@@ -2132,14 +2269,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 340,
-        "y": 720,
+        "y": 760,
         "wires": []
     },
     {
         "id": "28c49149129d34ef",
         "type": "debug",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "1",
         "active": true,
         "tosidebar": true,
@@ -2150,7 +2287,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 320,
-        "y": 600,
+        "y": 640,
         "wires": []
     },
     {
@@ -2163,7 +2300,7 @@
         "saveDataDir": "",
         "filterCommands": false,
         "x": 140,
-        "y": 300,
+        "y": 340,
         "wires": [
             [
                 "1d797e0280d34dfb",
@@ -2182,7 +2319,7 @@
         "haserroroutput": false,
         "outputs": 1,
         "x": 750,
-        "y": 260,
+        "y": 300,
         "wires": [
             []
         ]
@@ -2197,7 +2334,7 @@
         "haserroroutput": true,
         "outputs": 2,
         "x": 1600,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "c9fb5769ca6ccbec",
@@ -2218,7 +2355,7 @@
         "haserroroutput": false,
         "outputs": 1,
         "x": 605,
-        "y": 400,
+        "y": 440,
         "wires": [
             [
                 "44b3fdac09e09d2a"
@@ -2230,13 +2367,13 @@
         "id": "6fae5298f072ae66",
         "type": "telegram sender",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "bot": "4b07803a52e468f5",
         "haserroroutput": false,
         "outputs": 1,
         "x": 425,
-        "y": 540,
+        "y": 580,
         "wires": [
             [
                 "1043346252c517a7"
@@ -2248,13 +2385,13 @@
         "id": "42c541d584f35255",
         "type": "telegram sender",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "bot": "4b07803a52e468f5",
         "haserroroutput": false,
         "outputs": 1,
         "x": 1430,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "17c46e8b98657bce"
@@ -2273,7 +2410,7 @@
         "time": "counter",
         "timeType": "msg",
         "x": 605,
-        "y": 340,
+        "y": 380,
         "wires": [
             [],
             [
@@ -2286,7 +2423,7 @@
         "id": "8e058063d7977bdc",
         "type": "while-loop",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "condi": "global.get(`${msg.typing}`) === true",
         "limit": true,
@@ -2294,7 +2431,7 @@
         "time": "counter",
         "timeType": "msg",
         "x": 385,
-        "y": 480,
+        "y": 520,
         "wires": [
             [],
             [
@@ -2307,7 +2444,7 @@
         "id": "c79f68ae78c2fa0a",
         "type": "array-loop",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "key": "count",
         "keyType": "msg",
@@ -2316,7 +2453,7 @@
         "array": "array",
         "arrayType": "msg",
         "x": 1050,
-        "y": 620,
+        "y": 660,
         "wires": [
             [
                 "681ed7fd92333081",
@@ -2331,7 +2468,7 @@
         "id": "b5149a289a574835",
         "type": "openai-ubos",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "genarate unswer",
         "model": "gpt-3.5-turbo",
         "temperature": 0.02,
@@ -2346,7 +2483,7 @@
         },
         "OPENAI_API_KEY": "",
         "x": 790,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "d10542b05ef1f56d"
@@ -2357,7 +2494,7 @@
         "id": "03eaa5c76a7cc0b0",
         "type": "function",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "create vector",
         "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\nmsg.text = msg.payload.text\n  msg.messages= [\n    { \"role\": \"system\", \"content\": `create me the questionfor this text : ${msg.payload.text}`},\n     \n    ]\n\n\nreturn msg;",
         "outputs": 1,
@@ -2366,7 +2503,7 @@
         "finalize": "",
         "libs": [],
         "x": 550,
-        "y": 820,
+        "y": 860,
         "wires": [
             [
                 "b5149a289a574835",
@@ -2393,7 +2530,7 @@
         },
         "OPENAI_API_KEY": "",
         "x": 1185,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "5c39762c2eac8a7e",
@@ -2415,79 +2552,13 @@
         "finalize": "",
         "libs": [],
         "x": 1050,
-        "y": 320,
+        "y": 360,
         "wires": [
             [
                 "62ddf71e3259e377",
                 "c1577d630be65884"
             ]
         ]
-    },
-    {
-        "id": "603d55409e1a73c9",
-        "type": "inject",
-        "z": "c8208e6a65d3c2af",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 180,
-        "y": 2620,
-        "wires": [
-            [
-                "6b175c5c18273161"
-            ]
-        ]
-    },
-    {
-        "id": "6b175c5c18273161",
-        "type": "file in",
-        "z": "c8208e6a65d3c2af",
-        "name": "",
-        "filename": "/data/storage/text (9).docx",
-        "filenameType": "str",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 440,
-        "y": 2620,
-        "wires": [
-            [
-                "902324c817667cda"
-            ]
-        ]
-    },
-    {
-        "id": "902324c817667cda",
-        "type": "debug",
-        "z": "c8208e6a65d3c2af",
-        "name": "debug 419",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 2620,
-        "wires": []
     },
     {
         "id": "b493d5d518a52f1e",
@@ -2510,7 +2581,7 @@
         "id": "0b1926129388787b",
         "type": "link call",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "links": [
             "8771d95b528d34d0"
@@ -2518,7 +2589,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 490,
-        "y": 680,
+        "y": 720,
         "wires": [
             []
         ]
@@ -2527,7 +2598,7 @@
         "id": "9fc1615f16cc61ed",
         "type": "link call",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
@@ -2535,7 +2606,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 1490,
-        "y": 820,
+        "y": 860,
         "wires": [
             []
         ]
@@ -2544,7 +2615,7 @@
         "id": "8fe93679b9f619bc",
         "type": "link call",
         "z": "c8208e6a65d3c2af",
-        "g": "93961f4aeda1b32c",
+        "g": "0cf1026d3ccdfd21",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
@@ -2552,7 +2623,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 1520,
-        "y": 580,
+        "y": 620,
         "wires": [
             []
         ]
@@ -3983,7 +4054,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1040,
-        "y": 280,
+        "y": 320,
         "wires": []
     },
     {
@@ -9238,7 +9309,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 100,
-        "y": 3840,
+        "y": 4040,
         "wires": [
             [
                 "0ed5ffc9543206b2"
@@ -9257,7 +9328,7 @@
         "finalize": "",
         "libs": [],
         "x": 300,
-        "y": 3840,
+        "y": 4040,
         "wires": [
             [
                 "a16c674049b8b976"
@@ -9275,56 +9346,10 @@
         "linkType": "static",
         "timeout": "30",
         "x": 470,
-        "y": 3840,
+        "y": 4040,
         "wires": [
             [
-                "c43d6bc4af4d5ccb",
                 "c72a2c8a045b457d"
-            ]
-        ]
-    },
-    {
-        "id": "c43d6bc4af4d5ccb",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 470",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 530,
-        "y": 3780,
-        "wires": []
-    },
-    {
-        "id": "b15d2ce54c34793a",
-        "type": "inject",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 120,
-        "y": 3800,
-        "wires": [
-            [
-                "0ed5ffc9543206b2"
             ]
         ]
     },
@@ -9336,7 +9361,7 @@
         "statusCode": "",
         "headers": {},
         "x": 810,
-        "y": 3840,
+        "y": 4040,
         "wires": []
     },
     {
@@ -9352,7 +9377,7 @@
         "y": 4080,
         "wires": [
             [
-                "87633d946b21622f"
+                "8f1a371dd4f3b4c8"
             ]
         ]
     },
@@ -9360,14 +9385,14 @@
         "id": "87633d946b21622f",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 335",
-        "func": "msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;",
+        "name": "admin_modules",
+        "func": "if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
+        "x": 620,
         "y": 4080,
         "wires": [
             [
@@ -9385,43 +9410,26 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 490,
+        "x": 790,
         "y": 4080,
         "wires": [
             [
-                "c805efab107b12f5",
                 "27cb7798ca8f35c8"
             ]
         ]
     },
     {
-        "id": "c805efab107b12f5",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 471",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 490,
-        "y": 4040,
-        "wires": []
-    },
-    {
         "id": "62b62daee225d3a2",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 337",
+        "name": "get module",
         "func": "msg.collection = \"admin_modules\"\nmsg.payload={deleted:false}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 710,
+        "x": 1030,
         "y": 4080,
         "wires": [
             [
@@ -9439,12 +9447,11 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 870,
+        "x": 1190,
         "y": 4080,
         "wires": [
             [
-                "ad8d80973130a52d",
-                "ad74a30c946b78c9"
+                "ad8d80973130a52d"
             ]
         ]
     },
@@ -9452,19 +9459,18 @@
         "id": "ad8d80973130a52d",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 339",
+        "name": "admin_roles",
         "func": "msg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1030,
+        "x": 1370,
         "y": 4080,
         "wires": [
             [
-                "5116a17ede9b9174",
-                "ad74a30c946b78c9"
+                "5116a17ede9b9174"
             ]
         ]
     },
@@ -9478,11 +9484,10 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1190,
+        "x": 1530,
         "y": 4080,
         "wires": [
             [
-                "ad74a30c946b78c9",
                 "961e3c913cd2112c"
             ]
         ]
@@ -9491,19 +9496,18 @@
         "id": "7daf979c3e2c7a76",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 340",
+        "name": "get roles",
         "func": "msg.collection = \"admin_roles\"\nmsg.payload={deleted:false}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1410,
+        "x": 1740,
         "y": 4080,
         "wires": [
             [
-                "2f1541549a290ef7",
-                "02055edbb88c7aed"
+                "2f1541549a290ef7"
             ]
         ]
     },
@@ -9517,68 +9521,19 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1570,
+        "x": 1910,
         "y": 4080,
         "wires": [
             [
-                "412065b46f705832",
                 "89a826aed605c070"
             ]
         ]
     },
     {
-        "id": "ad74a30c946b78c9",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 472",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1190,
-        "y": 4040,
-        "wires": []
-    },
-    {
-        "id": "02055edbb88c7aed",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 473",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1410,
-        "y": 4040,
-        "wires": []
-    },
-    {
-        "id": "412065b46f705832",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 474",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1630,
-        "y": 4040,
-        "wires": []
-    },
-    {
         "id": "89a826aed605c070",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 342",
+        "name": "admins",
         "func": "let result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
@@ -9590,12 +9545,11 @@
                 "module": "bcrypt"
             }
         ],
-        "x": 1750,
+        "x": 2080,
         "y": 4080,
         "wires": [
             [
-                "a38a8f1480c9758d",
-                "77510917bdf855be"
+                "a38a8f1480c9758d"
             ]
         ]
     },
@@ -9609,7 +9563,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1910,
+        "x": 2250,
         "y": 4080,
         "wires": [
             [
@@ -9621,19 +9575,18 @@
         "id": "7c4aea010b5ff46a",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 343",
+        "name": "get admin",
         "func": "msg.collection = \"admins\";\n\nmsg.payload = {\n    \"deleted\": false\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2130,
+        "x": 2460,
         "y": 4080,
         "wires": [
             [
-                "44c1d1f78ec482d1",
-                "77510917bdf855be"
+                "44c1d1f78ec482d1"
             ]
         ]
     },
@@ -9647,12 +9600,11 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2290,
+        "x": 2630,
         "y": 4080,
         "wires": [
             [
-                "ea6e2fbb4b416587",
-                "77510917bdf855be"
+                "ea6e2fbb4b416587"
             ]
         ]
     },
@@ -9660,19 +9612,18 @@
         "id": "ea6e2fbb4b416587",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "function 344",
+        "name": "send response",
         "func": "msg.payload={\n    email: msg.payload[0].email,\n    password: msg.password\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2450,
+        "x": 2800,
         "y": 4080,
         "wires": [
             [
-                "ebea711cc8d850d3",
-                "77510917bdf855be"
+                "ebea711cc8d850d3"
             ]
         ]
     },
@@ -9683,120 +9634,9 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2610,
+        "x": 2950,
         "y": 4080,
         "wires": []
-    },
-    {
-        "id": "77510917bdf855be",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 475",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2490,
-        "y": 4040,
-        "wires": []
-    },
-    {
-        "id": "8346c76a2202c4b6",
-        "type": "inject",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1960,
-        "y": 4020,
-        "wires": [
-            [
-                "7c4aea010b5ff46a"
-            ]
-        ]
-    },
-    {
-        "id": "b48b6d0b2379ca03",
-        "type": "function",
-        "z": "f4036141cc030bcf",
-        "name": "function 346",
-        "func": "msg.collection = \"admin_roles\"\nmsg.payload={deleted:false}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1430,
-        "y": 4180,
-        "wires": [
-            [
-                "99f226bef772f1cb"
-            ]
-        ]
-    },
-    {
-        "id": "99f226bef772f1cb",
-        "type": "link call",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "links": [
-            "2677414dc3b763e4"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1590,
-        "y": 4180,
-        "wires": [
-            [
-                "412065b46f705832"
-            ]
-        ]
-    },
-    {
-        "id": "bb575be46f8121c2",
-        "type": "inject",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 1240,
-        "y": 4180,
-        "wires": [
-            [
-                "b48b6d0b2379ca03"
-            ]
-        ]
     },
     {
         "id": "27cb7798ca8f35c8",
@@ -9815,7 +9655,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 595,
+        "x": 915,
         "y": 4080,
         "wires": [
             [
@@ -9841,7 +9681,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1305,
+        "x": 1645,
         "y": 4080,
         "wires": [
             [
@@ -9867,7 +9707,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2025,
+        "x": 2365,
         "y": 4080,
         "wires": [
             [
@@ -9888,7 +9728,7 @@
         "finalize": "",
         "libs": [],
         "x": 650,
-        "y": 3840,
+        "y": 4040,
         "wires": [
             [
                 "70ee1c32372fcc96"
@@ -9926,16 +9766,54 @@
         ]
     },
     {
+        "id": "8f1a371dd4f3b4c8",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "check",
+        "func": "msg.collection = \"admins\";\n\nmsg.payload= {\n        deleted:false\n      }\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 290,
+        "y": 4080,
+        "wires": [
+            [
+                "d9b51a25d7cf31a5"
+            ]
+        ]
+    },
+    {
+        "id": "d9b51a25d7cf31a5",
+        "type": "link call",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "links": [
+            "2677414dc3b763e4"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 450,
+        "y": 4080,
+        "wires": [
+            [
+                "87633d946b21622f"
+            ]
+        ]
+    },
+    {
         "id": "b9dfba77cf0659da",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "url": "/saveCredentials",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 120,
-        "y": 240,
+        "x": 160,
+        "y": 280,
         "wires": [
             [
                 "cebe20a19da025cb"
@@ -9946,17 +9824,19 @@
         "id": "0225b679b27c7cb6",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "saveCredentials",
         "statusCode": "",
         "headers": {},
-        "x": 900,
-        "y": 240,
+        "x": 940,
+        "y": 280,
         "wires": []
     },
     {
         "id": "cebe20a19da025cb",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "set filename",
         "func": "msg.filename = '/data/credentials.json'\n\nreturn msg;",
         "outputs": 1,
@@ -9964,8 +9844,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
-        "y": 240,
+        "x": 370,
+        "y": 280,
         "wires": [
             [
                 "31926911dc3e927a"
@@ -9976,6 +9856,7 @@
         "id": "18bd79bbe3db2336",
         "type": "file",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -9983,8 +9864,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 600,
-        "y": 240,
+        "x": 640,
+        "y": 280,
         "wires": [
             [
                 "14d2abc0b3f41cf9"
@@ -9995,6 +9876,7 @@
         "id": "14d2abc0b3f41cf9",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "return res",
         "func": "msg.payload={\n    success: true,\n    payload: \"Success!\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
         "outputs": 1,
@@ -10002,8 +9884,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 740,
-        "y": 240,
+        "x": 780,
+        "y": 280,
         "wires": [
             [
                 "0225b679b27c7cb6"
@@ -10014,12 +9896,13 @@
         "id": "31926911dc3e927a",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 470,
-        "y": 240,
+        "x": 510,
+        "y": 280,
         "wires": [
             [
                 "18bd79bbe3db2336"
@@ -10030,6 +9913,7 @@
         "id": "1a1acd007e534462",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10038,8 +9922,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 500,
-        "y": 360,
+        "x": 540,
+        "y": 400,
         "wires": [
             [
                 "cbd59739d47324a6"
@@ -10050,12 +9934,13 @@
         "id": "cbd59739d47324a6",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 630,
-        "y": 360,
+        "x": 670,
+        "y": 400,
         "wires": [
             [
                 "0b634a02e2f46fc7"
@@ -10066,13 +9951,14 @@
         "id": "bf38233f75e9e634",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "url": "/getCredentials",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 110,
-        "y": 360,
+        "x": 150,
+        "y": 400,
         "wires": [
             [
                 "04ad2bf4e767fd19"
@@ -10083,17 +9969,19 @@
         "id": "4bf84b38cabfd2b8",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 910,
-        "y": 360,
+        "x": 950,
+        "y": 400,
         "wires": []
     },
     {
         "id": "0b634a02e2f46fc7",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "return res",
         "func": "msg.statusCode = 200\nglobal.set('isCredentialsSent', true)\n\nreturn msg;",
         "outputs": 1,
@@ -10101,8 +9989,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 360,
+        "x": 820,
+        "y": 400,
         "wires": [
             [
                 "4bf84b38cabfd2b8"
@@ -10113,6 +10001,7 @@
         "id": "04ad2bf4e767fd19",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "set filename",
         "func": "msg.filename = '/data/credentials.json'\nglobal.set('isCredentialsSent', false)\nreturn msg;",
         "outputs": 1,
@@ -10120,8 +10009,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 350,
-        "y": 360,
+        "x": 390,
+        "y": 400,
         "wires": [
             [
                 "1a1acd007e534462",
@@ -10133,6 +10022,7 @@
         "id": "fd42a251b9afd49b",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "default data",
         "func": "if (global.get('isCredentialsSent') === false){\n    msg.payload = {\n        \"openai_api\": '',\n        \"pipecone_api\": '',\n        \"pipecone_env\": '',\n        \"pipecone_index\": '',\n        \"prompt\": ''\n    }\n    global.set('isCredentialsSent', true)\n    return msg;\n}\n",
         "outputs": 1,
@@ -10140,8 +10030,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 590,
-        "y": 400,
+        "x": 630,
+        "y": 440,
         "wires": [
             [
                 "0b634a02e2f46fc7"
@@ -10152,6 +10042,7 @@
         "id": "d7144c5acabd38c0",
         "type": "delay",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -10165,8 +10056,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 475,
-        "y": 400,
+        "x": 515,
+        "y": 440,
         "wires": [
             [
                 "fd42a251b9afd49b"
@@ -10178,6 +10069,7 @@
         "id": "2cd32bbc5f43b1e9",
         "type": "inject",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "props": [
             {
@@ -10195,8 +10087,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 130,
-        "y": 80,
+        "x": 170,
+        "y": 120,
         "wires": [
             [
                 "5ed03305ad9ca676"
@@ -10207,6 +10099,7 @@
         "id": "e3b8c26d52822ba0",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "ENV",
         "func": "const data = msg.payload\n\nlet process_env = {\n    OPENAI_API: data.openai_api,\n    PIPECONE_API: data.pipecone_api,\n    PIPECONE_ENV: data.pipecone_env,\n    PIPECONE_INDEX: data.pipecone_index,\n    PIPECONE_URL: data.pipecone_url,\n    PROMPT: data.prompt,\n}\n\nglobal.set(\"process_env\", process_env)\nreturn msg;",
         "outputs": 1,
@@ -10214,8 +10107,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 630,
-        "y": 60,
+        "x": 670,
+        "y": 100,
         "wires": [
             []
         ]
@@ -10224,13 +10117,14 @@
         "id": "219438abb376baad",
         "type": "complete",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "scope": [
             "0225b679b27c7cb6"
         ],
         "uncaught": false,
-        "x": 110,
-        "y": 40,
+        "x": 150,
+        "y": 80,
         "wires": [
             [
                 "5ed03305ad9ca676"
@@ -10241,6 +10135,7 @@
         "id": "5ed03305ad9ca676",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "getEnvs",
         "func": "msg.filename = '/data/credentials.json'\nreturn msg;",
         "outputs": 1,
@@ -10248,8 +10143,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 300,
-        "y": 60,
+        "x": 340,
+        "y": 100,
         "wires": [
             [
                 "8fe2f86059898917"
@@ -10260,6 +10155,7 @@
         "id": "8fe2f86059898917",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10268,8 +10164,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 460,
-        "y": 60,
+        "x": 500,
+        "y": 100,
         "wires": [
             [
                 "22c15a24c4d0adfa"
@@ -10280,12 +10176,13 @@
         "id": "22c15a24c4d0adfa",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 545,
-        "y": 60,
+        "x": 585,
+        "y": 100,
         "wires": [
             [
                 "e3b8c26d52822ba0",
@@ -10298,6 +10195,7 @@
         "id": "e2ddfce36897aa9d",
         "type": "debug",
         "z": "4cba6f8219137af4",
+        "g": "80544ac2e67c2381",
         "name": "debug 425",
         "active": true,
         "tosidebar": true,
@@ -10307,20 +10205,21 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 570,
-        "y": 100,
+        "x": 610,
+        "y": 140,
         "wires": []
     },
     {
         "id": "b7d26d9f317a4ce9",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "url": "/saveCredentialsTelegram",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 170,
+        "x": 190,
         "y": 720,
         "wires": [
             [
@@ -10332,10 +10231,11 @@
         "id": "a44d45874ebeb754",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "saveCredentialsTelegram",
         "statusCode": "",
         "headers": {},
-        "x": 990,
+        "x": 1010,
         "y": 720,
         "wires": []
     },
@@ -10343,6 +10243,7 @@
         "id": "a33aa3cab944b729",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsTelegram.json'\n\nreturn msg;",
         "outputs": 1,
@@ -10350,7 +10251,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 390,
+        "x": 410,
         "y": 720,
         "wires": [
             [
@@ -10362,6 +10263,7 @@
         "id": "0f3a84ec943e5b13",
         "type": "file",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10369,7 +10271,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 660,
+        "x": 680,
         "y": 720,
         "wires": [
             [
@@ -10381,6 +10283,7 @@
         "id": "24c4d892d84069d7",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "return res",
         "func": "msg.payload={\n    success: true,\n    payload: \"Success!\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
         "outputs": 1,
@@ -10388,7 +10291,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 820,
         "y": 720,
         "wires": [
             [
@@ -10400,11 +10303,12 @@
         "id": "77e03324263dd58d",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 530,
+        "x": 550,
         "y": 720,
         "wires": [
             [
@@ -10416,6 +10320,7 @@
         "id": "ef69804671bc03dd",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10424,7 +10329,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
+        "x": 540,
         "y": 840,
         "wires": [
             [
@@ -10436,11 +10341,12 @@
         "id": "6608ddc70a4b2b60",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
+        "x": 670,
         "y": 840,
         "wires": [
             [
@@ -10452,12 +10358,13 @@
         "id": "8bea79732db57d81",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "url": "/getCredentialsTelegram",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
+        "x": 180,
         "y": 840,
         "wires": [
             [
@@ -10469,10 +10376,11 @@
         "id": "2fbc0da069ce400e",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 930,
+        "x": 950,
         "y": 840,
         "wires": []
     },
@@ -10480,6 +10388,7 @@
         "id": "6eeabcaa5729b632",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "return res",
         "func": "msg.statusCode = 200\nglobal.set('iscredentialsTelegramSent', true)\n\nreturn msg;",
         "outputs": 1,
@@ -10487,7 +10396,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 820,
         "y": 840,
         "wires": [
             [
@@ -10499,6 +10408,7 @@
         "id": "165d1d33afaf1c2e",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsTelegram.json'\nglobal.set('iscredentialsTelegramSent', false)\nreturn msg;",
         "outputs": 1,
@@ -10506,7 +10416,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 390,
         "y": 840,
         "wires": [
             [
@@ -10519,6 +10429,7 @@
         "id": "c277b27f50de7b47",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "default data",
         "func": "if (global.get('iscredentialsTelegramSent') === false){\n    msg.payload = {\n        \"bot_token\": '',\n        \"bot_name\": '',\n        \"private_chat\": '',\n        \"welcome\": ''\n    }\n    global.set('iscredentialsTelegramSent', true)\n    return msg;\n}\n",
         "outputs": 1,
@@ -10526,7 +10437,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 630,
         "y": 880,
         "wires": [
             [
@@ -10538,6 +10449,7 @@
         "id": "fd3c761bbe5711a4",
         "type": "delay",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -10551,7 +10463,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 495,
+        "x": 515,
         "y": 880,
         "wires": [
             [
@@ -10564,6 +10476,7 @@
         "id": "70087cd5c5a5c551",
         "type": "inject",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "props": [
             {
@@ -10581,8 +10494,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 560,
+        "x": 170,
+        "y": 600,
         "wires": [
             [
                 "fda135fec557af97"
@@ -10593,6 +10506,7 @@
         "id": "5ad1a8b7bc330500",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "ENV",
         "func": "const data = msg.payload\n\nlet process_env = {\n    BOT_NAME: data.bot_name,\n    BOT_TOKEN: data.bot_token,\n    PRIVATE_TG_CHAT: data.private_chat,\n    WELCOME: data.welcome,\n}\n\nglobal.set(\"telegram\", process_env)\nreturn msg;",
         "outputs": 1,
@@ -10600,8 +10514,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 540,
+        "x": 670,
+        "y": 580,
         "wires": [
             []
         ]
@@ -10610,13 +10524,14 @@
         "id": "3d0bcba9e1b0867e",
         "type": "complete",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "scope": [
             "a44d45874ebeb754"
         ],
         "uncaught": false,
-        "x": 130,
-        "y": 520,
+        "x": 150,
+        "y": 560,
         "wires": [
             [
                 "fda135fec557af97"
@@ -10627,6 +10542,7 @@
         "id": "fda135fec557af97",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "getEnvs",
         "func": "msg.filename = '/data/credentialsTelegram.json'\nreturn msg;",
         "outputs": 1,
@@ -10634,8 +10550,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 540,
+        "x": 340,
+        "y": 580,
         "wires": [
             [
                 "175fb1669ebe74b6"
@@ -10646,6 +10562,7 @@
         "id": "175fb1669ebe74b6",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10654,8 +10571,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 480,
-        "y": 540,
+        "x": 500,
+        "y": 580,
         "wires": [
             [
                 "0dc15aa186445a0f"
@@ -10666,12 +10583,13 @@
         "id": "0dc15aa186445a0f",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 565,
-        "y": 540,
+        "x": 585,
+        "y": 580,
         "wires": [
             [
                 "5ad1a8b7bc330500",
@@ -10684,6 +10602,7 @@
         "id": "2baefbb8c45261ea",
         "type": "debug",
         "z": "4cba6f8219137af4",
+        "g": "7ab0a46dbaab3e33",
         "name": "debug 467",
         "active": true,
         "tosidebar": true,
@@ -10693,20 +10612,21 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 580,
+        "x": 610,
+        "y": 620,
         "wires": []
     },
     {
         "id": "bb96d23ed888929e",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "url": "/saveCredentialsWhatsApp",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 170,
+        "x": 190,
         "y": 1180,
         "wires": [
             [
@@ -10718,10 +10638,11 @@
         "id": "fcbb92757366bf33",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "saveCredentialsWhatsApp",
         "statusCode": "",
         "headers": {},
-        "x": 1020,
+        "x": 1040,
         "y": 1180,
         "wires": []
     },
@@ -10729,6 +10650,7 @@
         "id": "54e078af5c0d3adc",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsWhatsApp.json'\n\nreturn msg;",
         "outputs": 1,
@@ -10736,7 +10658,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 410,
+        "x": 430,
         "y": 1180,
         "wires": [
             [
@@ -10748,6 +10670,7 @@
         "id": "81f9b8c4177c260c",
         "type": "file",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10755,7 +10678,7 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 680,
+        "x": 700,
         "y": 1180,
         "wires": [
             [
@@ -10767,6 +10690,7 @@
         "id": "4e7b3768b3931cfb",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "return res",
         "func": "msg.payload={\n    success: true,\n    payload: \"Success!\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
         "outputs": 1,
@@ -10774,7 +10698,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 820,
+        "x": 840,
         "y": 1180,
         "wires": [
             [
@@ -10786,11 +10710,12 @@
         "id": "604fb55d3034b5b3",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 550,
+        "x": 570,
         "y": 1180,
         "wires": [
             [
@@ -10802,6 +10727,7 @@
         "id": "55b4fb10f4eea162",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -10810,7 +10736,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
+        "x": 540,
         "y": 1300,
         "wires": [
             [
@@ -10822,11 +10748,12 @@
         "id": "446fd365d7fa0305",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
+        "x": 670,
         "y": 1300,
         "wires": [
             [
@@ -10838,12 +10765,13 @@
         "id": "6c030d2588a9b206",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "url": "/getCredentialsWhatsApp",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
+        "x": 180,
         "y": 1300,
         "wires": [
             [
@@ -10855,10 +10783,11 @@
         "id": "01556533647dfef3",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 930,
+        "x": 950,
         "y": 1300,
         "wires": []
     },
@@ -10866,6 +10795,7 @@
         "id": "07800ad0b4f9213f",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "return res",
         "func": "msg.statusCode = 200\nglobal.set('isCredentialsWhatsAppSent', true)\n\nreturn msg;",
         "outputs": 1,
@@ -10873,7 +10803,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
+        "x": 820,
         "y": 1300,
         "wires": [
             [
@@ -10885,6 +10815,7 @@
         "id": "4216ad203406f19d",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsWhatsApp.json'\nglobal.set('isCredentialsWhatsAppSent', false)\nreturn msg;",
         "outputs": 1,
@@ -10892,7 +10823,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
+        "x": 390,
         "y": 1300,
         "wires": [
             [
@@ -10905,6 +10836,7 @@
         "id": "a5527e8d9cc266fe",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "default data",
         "func": "if (global.get('isCredentialsWhatsAppSent') === false){\n    msg.payload = {\n        \"whatsApp_url\": '',\n        \"whatsApp_token\": ''\n    }\n    global.set('isCredentialsWhatsAppSent', true)\n    return msg;\n}\n",
         "outputs": 1,
@@ -10912,7 +10844,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
+        "x": 630,
         "y": 1340,
         "wires": [
             [
@@ -10924,6 +10856,7 @@
         "id": "fe2d7ebe90fcf111",
         "type": "delay",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -10937,7 +10870,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 495,
+        "x": 515,
         "y": 1340,
         "wires": [
             [
@@ -10950,6 +10883,7 @@
         "id": "1f8a739ea5ee02cd",
         "type": "inject",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "props": [
             {
@@ -10967,7 +10901,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
+        "x": 170,
         "y": 1020,
         "wires": [
             [
@@ -10979,6 +10913,7 @@
         "id": "f22993bbddeb18b5",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "ENV",
         "func": "const data = msg.payload\n\nlet process_env = {\n    WHATSAPP_URL: data.whatsApp_url,\n    WHATSAPP_TOKEN: data.whatsApp_token\n}\n\nglobal.set(\"WHATSAPP\", process_env)\nreturn msg;",
         "outputs": 1,
@@ -10986,7 +10921,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
+        "x": 670,
         "y": 1000,
         "wires": [
             []
@@ -10996,12 +10931,13 @@
         "id": "746c06b58c3b2d30",
         "type": "complete",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "scope": [
             "fcbb92757366bf33"
         ],
         "uncaught": false,
-        "x": 130,
+        "x": 150,
         "y": 980,
         "wires": [
             [
@@ -11013,6 +10949,7 @@
         "id": "02f3af026c6e9af0",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "getEnvs",
         "func": "msg.filename = '/data/credentialsWhatsApp.json'\nreturn msg;",
         "outputs": 1,
@@ -11020,7 +10957,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
+        "x": 340,
         "y": 1000,
         "wires": [
             [
@@ -11032,6 +10969,7 @@
         "id": "97ecf733940516b3",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -11040,7 +10978,7 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 480,
+        "x": 500,
         "y": 1000,
         "wires": [
             [
@@ -11052,11 +10990,12 @@
         "id": "e9e2f318883d6af3",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 565,
+        "x": 585,
         "y": 1000,
         "wires": [
             [
@@ -11070,6 +11009,7 @@
         "id": "0f0d30344ca45f4a",
         "type": "debug",
         "z": "4cba6f8219137af4",
+        "g": "7a0dc49638e7953f",
         "name": "debug 468",
         "active": true,
         "tosidebar": true,
@@ -11079,7 +11019,7 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
+        "x": 610,
         "y": 1040,
         "wires": []
     },
@@ -11087,13 +11027,14 @@
         "id": "80b27f596185b0b5",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "url": "/saveCredentialsMeta",
         "method": "post",
         "upload": false,
         "swaggerDoc": "",
-        "x": 160,
-        "y": 1640,
+        "x": 180,
+        "y": 1660,
         "wires": [
             [
                 "a1e983d79486f057"
@@ -11104,17 +11045,19 @@
         "id": "5c07c1802edd7436",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "saveCredentialsMeta",
         "statusCode": "",
         "headers": {},
-        "x": 960,
-        "y": 1640,
+        "x": 980,
+        "y": 1660,
         "wires": []
     },
     {
         "id": "a1e983d79486f057",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsMeta.json'\n\nreturn msg;",
         "outputs": 1,
@@ -11122,8 +11065,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 1640,
+        "x": 390,
+        "y": 1660,
         "wires": [
             [
                 "eb6e8f5ff083dd6b"
@@ -11134,6 +11077,7 @@
         "id": "5a28a0e9ba4c93ae",
         "type": "file",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -11141,8 +11085,8 @@
         "createDir": true,
         "overwriteFile": "true",
         "encoding": "none",
-        "x": 640,
-        "y": 1640,
+        "x": 660,
+        "y": 1660,
         "wires": [
             [
                 "d09342e7a96a3a1b"
@@ -11153,6 +11097,7 @@
         "id": "d09342e7a96a3a1b",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "return res",
         "func": "msg.payload={\n    success: true,\n    payload: \"Success!\"\n}\nmsg.statusCode = 200\n\nreturn msg;",
         "outputs": 1,
@@ -11160,8 +11105,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 1640,
+        "x": 800,
+        "y": 1660,
         "wires": [
             [
                 "5c07c1802edd7436"
@@ -11172,12 +11117,13 @@
         "id": "eb6e8f5ff083dd6b",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 510,
-        "y": 1640,
+        "x": 530,
+        "y": 1660,
         "wires": [
             [
                 "5a28a0e9ba4c93ae"
@@ -11188,6 +11134,7 @@
         "id": "80328f5fc0f8cc4f",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -11196,8 +11143,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 520,
-        "y": 1760,
+        "x": 540,
+        "y": 1780,
         "wires": [
             [
                 "4e85fd2ea67195c3"
@@ -11208,12 +11155,13 @@
         "id": "4e85fd2ea67195c3",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 650,
-        "y": 1760,
+        "x": 670,
+        "y": 1780,
         "wires": [
             [
                 "411e5fefe630bd97"
@@ -11224,13 +11172,14 @@
         "id": "4eff46ab12c5c07e",
         "type": "http in",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "url": "/getCredentialsMeta",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 150,
-        "y": 1760,
+        "x": 170,
+        "y": 1780,
         "wires": [
             [
                 "47f53d27d5551493"
@@ -11241,17 +11190,19 @@
         "id": "b303bbd2a2f63ba0",
         "type": "http response",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 930,
-        "y": 1760,
+        "x": 950,
+        "y": 1780,
         "wires": []
     },
     {
         "id": "411e5fefe630bd97",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "return res",
         "func": "msg.statusCode = 200\nglobal.set('isCredentialsMetaSent', true)\n\nreturn msg;",
         "outputs": 1,
@@ -11259,8 +11210,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 800,
-        "y": 1760,
+        "x": 820,
+        "y": 1780,
         "wires": [
             [
                 "b303bbd2a2f63ba0"
@@ -11271,6 +11222,7 @@
         "id": "47f53d27d5551493",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "set filename",
         "func": "msg.filename = '/data/credentialsMeta.json'\nglobal.set('isCredentialsMetaSent', false)\nreturn msg;",
         "outputs": 1,
@@ -11278,8 +11230,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 370,
-        "y": 1760,
+        "x": 390,
+        "y": 1780,
         "wires": [
             [
                 "80328f5fc0f8cc4f",
@@ -11291,6 +11243,7 @@
         "id": "7e12ce9603e46ae8",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "default data",
         "func": "if (global.get('isCredentialsMetaSent') === false){\n    msg.payload = {\n        \"meta_token\": '',\n        \"response_URL\": ''\n\n    }\n    global.set('isCredentialsMetaSent', true)\n    return msg;\n}\n",
         "outputs": 1,
@@ -11298,8 +11251,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 610,
-        "y": 1800,
+        "x": 630,
+        "y": 1820,
         "wires": [
             [
                 "411e5fefe630bd97"
@@ -11310,6 +11263,7 @@
         "id": "82e272bb8a733aad",
         "type": "delay",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "pauseType": "delay",
         "timeout": "3",
@@ -11323,8 +11277,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 495,
-        "y": 1800,
+        "x": 515,
+        "y": 1820,
         "wires": [
             [
                 "7e12ce9603e46ae8"
@@ -11336,6 +11290,7 @@
         "id": "788b05fb52c4fe79",
         "type": "inject",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "props": [
             {
@@ -11353,8 +11308,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 150,
-        "y": 1480,
+        "x": 170,
+        "y": 1500,
         "wires": [
             [
                 "db66ea7be2d27d87"
@@ -11365,6 +11320,7 @@
         "id": "097d5a354e0f8ea6",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "ENV",
         "func": "const data = msg.payload\n\nlet process_env = {\n    META_TOKEN: data.meta_token,\n    META_URL: data.response_URL\n}\n\nglobal.set(\"META\", process_env)\nreturn msg;",
         "outputs": 1,
@@ -11372,8 +11328,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 650,
-        "y": 1460,
+        "x": 670,
+        "y": 1480,
         "wires": [
             []
         ]
@@ -11382,13 +11338,14 @@
         "id": "5008af5f7461f232",
         "type": "complete",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "scope": [
             "5c07c1802edd7436"
         ],
         "uncaught": false,
-        "x": 130,
-        "y": 1440,
+        "x": 150,
+        "y": 1460,
         "wires": [
             [
                 "db66ea7be2d27d87"
@@ -11399,6 +11356,7 @@
         "id": "db66ea7be2d27d87",
         "type": "function",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "getEnvs",
         "func": "msg.filename = '/data/credentialsMeta.json'\nreturn msg;",
         "outputs": 1,
@@ -11406,8 +11364,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 320,
-        "y": 1460,
+        "x": 340,
+        "y": 1480,
         "wires": [
             [
                 "eb9f04e925a2c58e"
@@ -11418,6 +11376,7 @@
         "id": "eb9f04e925a2c58e",
         "type": "file in",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "filename": "filename",
         "filenameType": "msg",
@@ -11426,8 +11385,8 @@
         "sendError": false,
         "encoding": "none",
         "allProps": false,
-        "x": 480,
-        "y": 1460,
+        "x": 500,
+        "y": 1480,
         "wires": [
             [
                 "8a7b40691c947077"
@@ -11438,12 +11397,13 @@
         "id": "8a7b40691c947077",
         "type": "json",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "",
         "property": "payload",
         "action": "",
         "pretty": false,
-        "x": 565,
-        "y": 1460,
+        "x": 585,
+        "y": 1480,
         "wires": [
             [
                 "097d5a354e0f8ea6",
@@ -11456,6 +11416,7 @@
         "id": "b1cb89a3b4ba7937",
         "type": "debug",
         "z": "4cba6f8219137af4",
+        "g": "5cf2bc7a9091263d",
         "name": "debug 469",
         "active": true,
         "tosidebar": true,
@@ -11465,8 +11426,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 590,
-        "y": 1500,
+        "x": 610,
+        "y": 1520,
         "wires": []
     },
     {
