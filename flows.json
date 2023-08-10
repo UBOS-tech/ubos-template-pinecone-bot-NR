@@ -564,7 +564,9 @@
             "29445d42adea56dc"
         ],
         "x": 1354,
-        "y": 39
+        "y": 39,
+        "w": 792,
+        "h": 242
     },
     {
         "id": "0cf1026d3ccdfd21",
@@ -723,7 +725,9 @@
             "2b0b88cae098c7a9"
         ],
         "x": 14,
-        "y": 1039
+        "y": 1039,
+        "w": 2222,
+        "h": 942
     },
     {
         "id": "1f1b365afc8becc5",
@@ -745,7 +749,9 @@
             "d83803be20e467e5"
         ],
         "x": 34,
-        "y": 2359
+        "y": 2359,
+        "w": 1342,
+        "h": 162
     },
     {
         "id": "911c1ee2586e9d4d",
@@ -773,7 +779,9 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019
+        "y": 2019,
+        "w": 1092,
+        "h": 262
     },
     {
         "id": "bc79b0c55ed950a2",
@@ -815,7 +823,9 @@
             "5a3203eb955fd7d9"
         ],
         "x": 1354,
-        "y": 319
+        "y": 319,
+        "w": 932,
+        "h": 622
     },
     {
         "id": "a16a3e4151c2e982",
@@ -888,7 +898,9 @@
             "503e336b80ffc4b0"
         ],
         "x": 34,
-        "y": 39
+        "y": 39,
+        "w": 1292,
+        "h": 842
     },
     {
         "id": "ebee837ffce65a75",
@@ -9384,7 +9396,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 660,
+        "x": 620,
         "y": 4080,
         "wires": [
             [
@@ -9396,13 +9408,13 @@
         "id": "b2a92124f982054e",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "8771d95b528d34d0"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 830,
+        "x": 770,
         "y": 4080,
         "wires": [
             [
@@ -9421,7 +9433,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1070,
+        "x": 990,
         "y": 4080,
         "wires": [
             [
@@ -9433,13 +9445,13 @@
         "id": "70e4181ae3f0275a",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1230,
+        "x": 1130,
         "y": 4080,
         "wires": [
             [
@@ -9458,7 +9470,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1410,
+        "x": 1290,
         "y": 4080,
         "wires": [
             [
@@ -9470,13 +9482,13 @@
         "id": "5116a17ede9b9174",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "8771d95b528d34d0"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1570,
+        "x": 1450,
         "y": 4080,
         "wires": [
             [
@@ -9495,7 +9507,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1780,
+        "x": 1660,
         "y": 4080,
         "wires": [
             [
@@ -9507,13 +9519,13 @@
         "id": "2f1541549a290ef7",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1950,
+        "x": 1810,
         "y": 4080,
         "wires": [
             [
@@ -9537,7 +9549,7 @@
                 "module": "bcrypt"
             }
         ],
-        "x": 2120,
+        "x": 1940,
         "y": 4080,
         "wires": [
             [
@@ -9549,13 +9561,13 @@
         "id": "a38a8f1480c9758d",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "8771d95b528d34d0"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2290,
+        "x": 2090,
         "y": 4080,
         "wires": [
             [
@@ -9574,7 +9586,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2500,
+        "x": 2300,
         "y": 4080,
         "wires": [
             [
@@ -9586,13 +9598,13 @@
         "id": "44c1d1f78ec482d1",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2670,
+        "x": 2450,
         "y": 4080,
         "wires": [
             [
@@ -9611,7 +9623,7 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2840,
+        "x": 2600,
         "y": 4080,
         "wires": [
             [
@@ -9626,7 +9638,7 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2990,
+        "x": 2750,
         "y": 4080,
         "wires": []
     },
@@ -9647,7 +9659,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 955,
+        "x": 875,
         "y": 4080,
         "wires": [
             [
@@ -9673,7 +9685,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1685,
+        "x": 1565,
         "y": 4080,
         "wires": [
             [
@@ -9699,7 +9711,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2405,
+        "x": 2205,
         "y": 4080,
         "wires": [
             [
@@ -9761,14 +9773,14 @@
         "id": "8f1a371dd4f3b4c8",
         "type": "function",
         "z": "f4036141cc030bcf",
-        "name": "check",
+        "name": "check_",
         "func": "msg.collection = \"admins\";\n\nmsg.payload= {\n        deleted:false\n      }\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 330,
+        "x": 340,
         "y": 4080,
         "wires": [
             [
@@ -9780,13 +9792,13 @@
         "id": "d9b51a25d7cf31a5",
         "type": "link call",
         "z": "f4036141cc030bcf",
-        "name": "",
+        "name": "find_",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 490,
+        "x": 470,
         "y": 4080,
         "wires": [
             [
@@ -9819,6 +9831,277 @@
             ]
         ],
         "l": false
+    },
+    {
+        "id": "b44b44bb4b0f2f4b",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 350",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 3840,
+        "wires": [
+            [
+                "41014bddaa8f4b6a"
+            ]
+        ]
+    },
+    {
+        "id": "20bbf87127801a07",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 140,
+        "y": 3820,
+        "wires": [
+            [
+                "b44b44bb4b0f2f4b",
+                "648369c115041c8b",
+                "eb96c84a0464939f"
+            ]
+        ]
+    },
+    {
+        "id": "41014bddaa8f4b6a",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_roles",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 680,
+        "y": 3840,
+        "wires": []
+    },
+    {
+        "id": "648369c115041c8b",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 348",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 270,
+        "y": 3760,
+        "wires": [
+            [
+                "6fb622b50a830bf9"
+            ]
+        ]
+    },
+    {
+        "id": "eb96c84a0464939f",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 349",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 310,
+        "y": 3800,
+        "wires": [
+            [
+                "d3f9908adf6b7db1"
+            ]
+        ]
+    },
+    {
+        "id": "6fb622b50a830bf9",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admins",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 600,
+        "y": 3760,
+        "wires": []
+    },
+    {
+        "id": "d3f9908adf6b7db1",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_modules",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 670,
+        "y": 3800,
+        "wires": []
+    },
+    {
+        "id": "25fbfb6c510a78e3",
+        "type": "catch",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "scope": [
+            "9a8108100cd6ee7f",
+            "87633d946b21622f",
+            "62b62daee225d3a2",
+            "ad8d80973130a52d",
+            "7daf979c3e2c7a76",
+            "89a826aed605c070",
+            "7c4aea010b5ff46a",
+            "ea6e2fbb4b416587",
+            "44c1d1f78ec482d1"
+        ],
+        "uncaught": false,
+        "x": 1390,
+        "y": 4280,
+        "wires": [
+            [
+                "ba4b22d80c1c5e19"
+            ]
+        ]
+    },
+    {
+        "id": "fcdafe8c0d80cff3",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 351",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1750,
+        "y": 4300,
+        "wires": [
+            [
+                "1b5e108dc61af00c"
+            ]
+        ]
+    },
+    {
+        "id": "1b5e108dc61af00c",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_roles",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 2100,
+        "y": 4300,
+        "wires": []
+    },
+    {
+        "id": "909b6dc35a1bf271",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 352",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 4220,
+        "wires": [
+            [
+                "9979252923793062"
+            ]
+        ]
+    },
+    {
+        "id": "b8765ebf35fcbee2",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 353",
+        "func": "msg.payload={}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1730,
+        "y": 4260,
+        "wires": [
+            [
+                "c6316eee1e014afc"
+            ]
+        ]
+    },
+    {
+        "id": "9979252923793062",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admins",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 2020,
+        "y": 4220,
+        "wires": []
+    },
+    {
+        "id": "c6316eee1e014afc",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_modules",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 2090,
+        "y": 4260,
+        "wires": []
+    },
+    {
+        "id": "ba4b22d80c1c5e19",
+        "type": "http response",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 1550,
+        "y": 4380,
+        "wires": []
     },
     {
         "id": "b9dfba77cf0659da",
