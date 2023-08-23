@@ -564,9 +564,7 @@
             "29445d42adea56dc"
         ],
         "x": 1354,
-        "y": 39,
-        "w": 792,
-        "h": 242
+        "y": 39
     },
     {
         "id": "0cf1026d3ccdfd21",
@@ -725,9 +723,7 @@
             "2b0b88cae098c7a9"
         ],
         "x": 14,
-        "y": 1039,
-        "w": 2222,
-        "h": 942
+        "y": 1039
     },
     {
         "id": "1f1b365afc8becc5",
@@ -749,9 +745,7 @@
             "d83803be20e467e5"
         ],
         "x": 34,
-        "y": 2359,
-        "w": 1342,
-        "h": 162
+        "y": 2359
     },
     {
         "id": "911c1ee2586e9d4d",
@@ -779,9 +773,7 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019,
-        "w": 1092,
-        "h": 262
+        "y": 2019
     },
     {
         "id": "bc79b0c55ed950a2",
@@ -823,9 +815,7 @@
             "5a3203eb955fd7d9"
         ],
         "x": 1354,
-        "y": 319,
-        "w": 932,
-        "h": 622
+        "y": 319
     },
     {
         "id": "a16a3e4151c2e982",
@@ -898,9 +888,7 @@
             "503e336b80ffc4b0"
         ],
         "x": 34,
-        "y": 39,
-        "w": 1292,
-        "h": 842
+        "y": 39
     },
     {
         "id": "ebee837ffce65a75",
@@ -9390,7 +9378,7 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admin_modules",
-        "func": "if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n}",
+        "func": "// if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n// }",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9400,7 +9388,8 @@
         "y": 4080,
         "wires": [
             [
-                "b2a92124f982054e"
+                "b2a92124f982054e",
+                "953c7e91c0f3f5f5"
             ]
         ]
     },
@@ -9629,7 +9618,8 @@
         "y": 4080,
         "wires": [
             [
-                "ebea711cc8d850d3"
+                "ebea711cc8d850d3",
+                "f3e689179c45a333"
             ]
         ]
     },
@@ -10007,8 +9997,130 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 550,
+        "x": 650,
+        "y": 4160,
+        "wires": []
+    },
+    {
+        "id": "7124e7f2f0849613",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "{}",
+        "payloadType": "json",
+        "x": 330,
         "y": 4140,
+        "wires": [
+            [
+                "87633d946b21622f",
+                "953c7e91c0f3f5f5"
+            ]
+        ]
+    },
+    {
+        "id": "e180581e8c37fa2c",
+        "type": "inject",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 160,
+        "y": 4380,
+        "wires": [
+            [
+                "909b6dc35a1bf271",
+                "b8765ebf35fcbee2",
+                "fcdafe8c0d80cff3",
+                "dbd0601d6a61d27f"
+            ]
+        ]
+    },
+    {
+        "id": "f3e689179c45a333",
+        "type": "function",
+        "z": "f4036141cc030bcf",
+        "name": "function 355",
+        "func": "if(msg.payload.error===false){\nmsg.url =`http://nodered-svc.nodered:1880/checkUserTime`\nmsg.payload={\n    id: env.get(\"USER_ID\")\n}\nreturn msg;\n}",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2770,
+        "y": 4120,
+        "wires": [
+            [
+                "25823646b3e742b1",
+                "870b84aa943a56e1"
+            ]
+        ]
+    },
+    {
+        "id": "25823646b3e742b1",
+        "type": "http request",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "method": "POST",
+        "ret": "obj",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 2970,
+        "y": 4120,
+        "wires": [
+            [
+                "870b84aa943a56e1"
+            ]
+        ]
+    },
+    {
+        "id": "870b84aa943a56e1",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 481",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "false",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2790,
+        "y": 4160,
         "wires": []
     },
     {
