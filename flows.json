@@ -9378,7 +9378,7 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admin_modules",
-        "func": "// if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n// }",
+        "func": "if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9388,8 +9388,7 @@
         "y": 4080,
         "wires": [
             [
-                "b2a92124f982054e",
-                "953c7e91c0f3f5f5"
+                "b2a92124f982054e"
             ]
         ]
     },
@@ -9407,8 +9406,7 @@
         "y": 4080,
         "wires": [
             [
-                "27cb7798ca8f35c8",
-                "953c7e91c0f3f5f5"
+                "27cb7798ca8f35c8"
             ]
         ]
     },
@@ -9445,8 +9443,7 @@
         "y": 4080,
         "wires": [
             [
-                "ad8d80973130a52d",
-                "953c7e91c0f3f5f5"
+                "ad8d80973130a52d"
             ]
         ]
     },
@@ -9794,8 +9791,7 @@
         "y": 4080,
         "wires": [
             [
-                "87633d946b21622f",
-                "953c7e91c0f3f5f5"
+                "87633d946b21622f"
             ]
         ]
     },
@@ -9982,84 +9978,6 @@
         "wires": [
             [
                 "ba4b22d80c1c5e19"
-            ]
-        ]
-    },
-    {
-        "id": "953c7e91c0f3f5f5",
-        "type": "debug",
-        "z": "f4036141cc030bcf",
-        "name": "debug 470",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "false",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 650,
-        "y": 4160,
-        "wires": []
-    },
-    {
-        "id": "7124e7f2f0849613",
-        "type": "inject",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "{}",
-        "payloadType": "json",
-        "x": 330,
-        "y": 4140,
-        "wires": [
-            [
-                "87633d946b21622f",
-                "953c7e91c0f3f5f5"
-            ]
-        ]
-    },
-    {
-        "id": "e180581e8c37fa2c",
-        "type": "inject",
-        "z": "f4036141cc030bcf",
-        "name": "",
-        "props": [
-            {
-                "p": "payload"
-            },
-            {
-                "p": "topic",
-                "vt": "str"
-            }
-        ],
-        "repeat": "",
-        "crontab": "",
-        "once": false,
-        "onceDelay": 0.1,
-        "topic": "",
-        "payload": "",
-        "payloadType": "date",
-        "x": 160,
-        "y": 4380,
-        "wires": [
-            [
-                "909b6dc35a1bf271",
-                "b8765ebf35fcbee2",
-                "fcdafe8c0d80cff3",
-                "dbd0601d6a61d27f"
             ]
         ]
     },
