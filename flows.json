@@ -618,12 +618,13 @@
             "03eaa5c76a7cc0b0",
             "0b1926129388787b",
             "9fc1615f16cc61ed",
-            "8fe93679b9f619bc"
+            "8fe93679b9f619bc",
+            "991562c24c1dbb8a"
         ],
         "x": 24,
-        "y": 219,
-        "w": 2052,
-        "h": 682
+        "y": 179,
+        "w": 2072,
+        "h": 722
     },
     {
         "id": "e5c2a19a4e324330",
@@ -1142,6 +1143,16 @@
         "y": 1419
     },
     {
+        "id": "7908a755f1520aa7",
+        "type": "mongodb",
+        "hostname": "${AIBOTDB-MONGO-HOST-NAME}",
+        "topology": "direct",
+        "connectOptions": "authSource=admin",
+        "port": "27017",
+        "db": "${AIBOTDB-MONGO-DB-NAME}",
+        "name": ""
+    },
+    {
         "id": "4b07803a52e468f5",
         "type": "telegram bot",
         "botname": "{global.get('telegram').BOT_NAME}",
@@ -1167,21 +1178,11 @@
         "verboselogging": false
     },
     {
-        "id": "7908a755f1520aa7",
-        "type": "mongodb",
-        "hostname": "${AIBOTDB-MONGO-HOST-NAME}",
-        "topology": "direct",
-        "connectOptions": "authSource=admin",
-        "port": "27017",
-        "db": "${AIBOTDB-MONGO-DB-NAME}",
-        "name": ""
-    },
-    {
         "id": "9c118fcdb9ebf1db",
         "type": "function",
         "z": "a36ef6d92fe6c77f",
         "name": "initialMain",
-        "func": "\n\nmsg.fromApp = msg.payload\nmsg.fromTG = msg.payload\n\n\n\nconst { Configuration, OpenAIApi } = openai;\nconst { PineconeClient } = pineconeBD;\nconst { CreateIndexRequest } = pineconeDBPFetch;\n\n\n\nconst process_env = global.get(\"process_env\")\nconst OPENAI_API_KEY = process_env.OPENAI_API\nconst PINECONE_API_KEY = process_env.PIPECONE_API\nconst PINECONE_ENVIRONMENT = process_env.PIPECONE_ENV\nconst PIPECONE_INDEX = process_env.PIPECONE_INDEX\nnode.warn(OPENAI_API_KEY)\nnode.warn(PINECONE_API_KEY)\nnode.warn(PINECONE_ENVIRONMENT)\nnode.warn(PIPECONE_INDEX)\nglobal.set(\"TABLE_NAME\", PIPECONE_INDEX);\nglobal.set(\"tasks_storage\", []);\nglobal.set(\"results_storage\", []);\nglobal.set(\"taskId\", 0);\n// ============================\n\nconst configuration = new Configuration({\n    apiKey: OPENAI_API_KEY,\n});\nconst openAI = new OpenAIApi(configuration);\n\nconst pinecone = new PineconeClient();\nawait pinecone.init({\n    apiKey: PINECONE_API_KEY,\n    environment: PINECONE_ENVIRONMENT,\n});\n\nconst indexList = await pinecone.listIndexes();\nlet index = pinecone.Index(global.get(\"TABLE_NAME\"));\n\nlet embeddingList = new Map();\nglobal.set(\"embeddingList\", embeddingList);\n\nmsg.main = { indexList, openAI, pinecone, index };\n\n\n\nasync function getADAEmbedding(text) {\n    try {\n        const response = await axios.post(\n            'https://api.openai.com/v1/embeddings',\n            {\n                input: `${text}`,\n                model: \"text-embedding-ada-002\"\n            },\n            {\n                headers: {\n                    'Authorization': `Bearer ${OPENAI_API_KEY}`,\n                    'Content-Type': 'application/json'\n                }\n            }\n        );\n\n        const embeddings = response.data.data[0].embedding;\n        return embeddings;\n    } catch (error) {\n        //node.warn(`Error: ${error}`);\n    }\n}\n\nglobal.set(\"helpers\", {\n    getADAEmbedding\n});\n\nreturn msg;",
+        "func": "\nmsg.fromApp = msg.payload\nmsg.fromTG = msg.payload\n\nconst { OpenAI } = openai;\nconst { PineconeClient } = pineconeBD;\nconst { CreateIndexRequest } = pineconeDBPFetch;\nnode.warn(OpenAI);\nconst process_env = global.get(\"process_env\")\nconst OPENAI_API_KEY = process_env.OPENAI_API\nconst PINECONE_API_KEY = process_env.PIPECONE_API\nconst PINECONE_ENVIRONMENT = process_env.PIPECONE_ENV\nconst PIPECONE_INDEX = process_env.PIPECONE_INDEX\n\n\nglobal.set(\"TABLE_NAME\", PIPECONE_INDEX);\nglobal.set(\"tasks_storage\", []);\nglobal.set(\"results_storage\", []);\nglobal.set(\"taskId\", 0);\n// ============================\n\n\nconst configuration = new OpenAI({\n    apiKey: OPENAI_API_KEY,\n});\nconst openAI = new OpenAI(configuration);\n\nconst pinecone = new PineconeClient();\nawait pinecone.init({\n    apiKey: PINECONE_API_KEY,\n    environment: PINECONE_ENVIRONMENT,\n});\n\nconst indexList = await pinecone.listIndexes();\nlet index = pinecone.Index(global.get(\"TABLE_NAME\"));\n\nlet embeddingList = new Map();\nglobal.set(\"embeddingList\", embeddingList);\n\nmsg.main = { indexList, openAI, pinecone, index };\n\n\n\nasync function getADAEmbedding(text) {\n\n    const embeddingList = global.get(\"embeddingList\");\n\n    if (embeddingList.has(text)) {\n        return embeddingList.get(text);\n    }\n\n    const embedding = (\n        await openAI.embeddings.create({\n            input: [text],\n            model: \"text-embedding-ada-002\",\n        })\n    ).data?.[0].embedding;\n\n\n    embeddingList.set(text, embedding);\n\n    return embedding;\n}\n\nglobal.set(\"helpers\", {\n    getADAEmbedding\n});\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -1412,8 +1413,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 340,
-        "y": 340,
+        "x": 360,
+        "y": 300,
         "wires": [
             [
                 "a71a7acbd224bbc2"
@@ -1440,8 +1441,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 300,
+        "x": 510,
+        "y": 260,
         "wires": [
             [
                 "991562c24c1dbb8a",
@@ -1461,8 +1462,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1340,
-        "y": 360,
+        "x": 1360,
+        "y": 320,
         "wires": [
             [
                 "0b18dada9196baa4",
@@ -1484,8 +1485,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1150,
-        "y": 420,
+        "x": 1170,
+        "y": 380,
         "wires": []
     },
     {
@@ -1502,8 +1503,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 300,
+        "x": 340,
+        "y": 260,
         "wires": []
     },
     {
@@ -1520,8 +1521,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1370,
-        "y": 400,
+        "x": 1390,
+        "y": 360,
         "wires": []
     },
     {
@@ -1536,8 +1537,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 900,
-        "y": 360,
+        "x": 920,
+        "y": 320,
         "wires": [
             [
                 "f5d2d824f63b0eed",
@@ -1552,8 +1553,8 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "",
-        "x": 730,
-        "y": 360,
+        "x": 750,
+        "y": 320,
         "wires": [
             [
                 "460b8b5ab15ecb0a"
@@ -1572,8 +1573,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 780,
-        "y": 260,
+        "x": 760,
+        "y": 220,
         "wires": [
             [
                 "1b678c07805e900a",
@@ -1599,7 +1600,7 @@
         "senderr": false,
         "headers": [],
         "x": 950,
-        "y": 260,
+        "y": 220,
         "wires": [
             [
                 "59f43ba9fea18da2",
@@ -1619,8 +1620,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1130,
-        "y": 260,
+        "x": 1150,
+        "y": 220,
         "wires": [
             [
                 "483948c77608cd63",
@@ -1646,8 +1647,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1290,
-        "y": 260,
+        "x": 1310,
+        "y": 220,
         "wires": [
             []
         ]
@@ -1664,8 +1665,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1800,
-        "y": 340,
+        "x": 1820,
+        "y": 300,
         "wires": [
             [
                 "09abf79dd626bde6",
@@ -1690,8 +1691,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1980,
-        "y": 340,
+        "x": 2000,
+        "y": 300,
         "wires": [
             []
         ]
@@ -1709,8 +1710,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1790,
-        "y": 400,
+        "x": 1810,
+        "y": 360,
         "wires": []
     },
     {
@@ -1727,8 +1728,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1570,
-        "y": 420,
+        "x": 1590,
+        "y": 380,
         "wires": []
     },
     {
@@ -1745,8 +1746,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 940,
-        "y": 440,
+        "x": 960,
+        "y": 400,
         "wires": []
     },
     {
@@ -1861,8 +1862,8 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 800,
-        "y": 400,
+        "x": 820,
+        "y": 360,
         "wires": [
             [
                 "460b8b5ab15ecb0a"
@@ -1886,8 +1887,8 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 460,
-        "y": 660,
+        "x": 480,
+        "y": 620,
         "wires": [
             [
                 "70d89be8294e4cc1",
@@ -1912,8 +1913,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 250,
-        "y": 680,
+        "x": 270,
+        "y": 640,
         "wires": [
             [
                 "d1fe775ad04641c1",
@@ -1938,8 +1939,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 830,
-        "y": 660,
+        "x": 850,
+        "y": 620,
         "wires": [
             [
                 "c79f68ae78c2fa0a"
@@ -1963,8 +1964,8 @@
                 "module": "unfluff"
             }
         ],
-        "x": 650,
-        "y": 660,
+        "x": 670,
+        "y": 620,
         "wires": [
             [
                 "079317a7798ae7d0"
@@ -1985,8 +1986,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 830,
-        "y": 620,
+        "x": 850,
+        "y": 580,
         "wires": []
     },
     {
@@ -2003,8 +2004,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1430,
-        "y": 780,
+        "x": 1450,
+        "y": 740,
         "wires": []
     },
     {
@@ -2019,8 +2020,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1310,
-        "y": 860,
+        "x": 1330,
+        "y": 820,
         "wires": [
             [
                 "c79f68ae78c2fa0a",
@@ -2034,8 +2035,8 @@
         "z": "c8208e6a65d3c2af",
         "g": "0cf1026d3ccdfd21",
         "name": "",
-        "x": 1180,
-        "y": 860,
+        "x": 1200,
+        "y": 820,
         "wires": [
             [
                 "ef767d928767cb70",
@@ -2055,8 +2056,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 990,
-        "y": 860,
+        "x": 1010,
+        "y": 820,
         "wires": [
             [
                 "2037f13cdb05275d",
@@ -2076,8 +2077,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1230,
-        "y": 660,
+        "x": 1250,
+        "y": 620,
         "wires": [
             [
                 "42c541d584f35255"
@@ -2096,8 +2097,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1270,
-        "y": 620,
+        "x": 1290,
+        "y": 580,
         "wires": [
             [
                 "8fe93679b9f619bc"
@@ -2116,8 +2117,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 490,
-        "y": 440,
+        "x": 510,
+        "y": 400,
         "wires": [
             [
                 "588935d38b66c7b2"
@@ -2142,8 +2143,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 665,
-        "y": 440,
+        "x": 685,
+        "y": 400,
         "wires": [
             [
                 "baf7420b5b216cc2"
@@ -2163,8 +2164,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 310,
-        "y": 580,
+        "x": 330,
+        "y": 540,
         "wires": [
             [
                 "6fae5298f072ae66"
@@ -2189,8 +2190,8 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 495,
-        "y": 580,
+        "x": 515,
+        "y": 540,
         "wires": [
             [
                 "8e058063d7977bdc"
@@ -2212,8 +2213,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1630,
-        "y": 660,
+        "x": 1650,
+        "y": 620,
         "wires": []
     },
     {
@@ -2230,8 +2231,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 960,
-        "y": 800,
+        "x": 980,
+        "y": 760,
         "wires": []
     },
     {
@@ -2248,8 +2249,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 340,
-        "y": 760,
+        "x": 360,
+        "y": 720,
         "wires": []
     },
     {
@@ -2266,209 +2267,9 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 320,
-        "y": 640,
+        "x": 340,
+        "y": 600,
         "wires": []
-    },
-    {
-        "id": "82e139d665440e8d",
-        "type": "telegram receiver",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "saveDataDir": "",
-        "filterCommands": false,
-        "x": 140,
-        "y": 340,
-        "wires": [
-            [
-                "1d797e0280d34dfb",
-                "666747ce63dfca18"
-            ],
-            []
-        ]
-    },
-    {
-        "id": "991562c24c1dbb8a",
-        "type": "telegram sender",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 750,
-        "y": 300,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0b18dada9196baa4",
-        "type": "telegram sender",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "haserroroutput": true,
-        "outputs": 2,
-        "x": 1600,
-        "y": 360,
-        "wires": [
-            [
-                "c9fb5769ca6ccbec",
-                "47c066e4018176fa"
-            ],
-            [
-                "47c066e4018176fa"
-            ]
-        ]
-    },
-    {
-        "id": "588935d38b66c7b2",
-        "type": "telegram sender",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 605,
-        "y": 440,
-        "wires": [
-            [
-                "44b3fdac09e09d2a"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6fae5298f072ae66",
-        "type": "telegram sender",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 425,
-        "y": 580,
-        "wires": [
-            [
-                "1043346252c517a7"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "42c541d584f35255",
-        "type": "telegram sender",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "bot": "4b07803a52e468f5",
-        "haserroroutput": false,
-        "outputs": 1,
-        "x": 1430,
-        "y": 660,
-        "wires": [
-            [
-                "17c46e8b98657bce"
-            ]
-        ]
-    },
-    {
-        "id": "baf7420b5b216cc2",
-        "type": "while-loop",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "condi": "global.get(`${msg.typing}`) === true",
-        "limit": true,
-        "limitTime": "100",
-        "time": "counter",
-        "timeType": "msg",
-        "x": 605,
-        "y": 380,
-        "wires": [
-            [],
-            [
-                "db7c93f50d03cd4e"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "8e058063d7977bdc",
-        "type": "while-loop",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "condi": "global.get(`${msg.typing}`) === true",
-        "limit": true,
-        "limitTime": "100",
-        "time": "counter",
-        "timeType": "msg",
-        "x": 385,
-        "y": 520,
-        "wires": [
-            [],
-            [
-                "7c1bf4b5923a9948"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "c79f68ae78c2fa0a",
-        "type": "array-loop",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1050,
-        "y": 660,
-        "wires": [
-            [
-                "681ed7fd92333081",
-                "d9ec1bb17c6cb2e5"
-            ],
-            [
-                "03eaa5c76a7cc0b0"
-            ]
-        ]
-    },
-    {
-        "id": "b5149a289a574835",
-        "type": "openai-ubos",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 790,
-        "y": 860,
-        "wires": [
-            [
-                "d10542b05ef1f56d"
-            ]
-        ]
     },
     {
         "id": "03eaa5c76a7cc0b0",
@@ -2482,42 +2283,14 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 550,
-        "y": 860,
+        "x": 570,
+        "y": 820,
         "wires": [
             [
                 "b5149a289a574835",
                 "2037f13cdb05275d"
             ]
         ]
-    },
-    {
-        "id": "62ddf71e3259e377",
-        "type": "openai-ubos",
-        "z": "c8208e6a65d3c2af",
-        "g": "0cf1026d3ccdfd21",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1185,
-        "y": 360,
-        "wires": [
-            [
-                "5c39762c2eac8a7e",
-                "569bafc9227ab6cd"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "1c79434061d7ff76",
@@ -2531,8 +2304,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1050,
-        "y": 360,
+        "x": 1070,
+        "y": 320,
         "wires": [
             [
                 "62ddf71e3259e377",
@@ -2568,8 +2341,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 490,
-        "y": 720,
+        "x": 510,
+        "y": 680,
         "wires": [
             []
         ]
@@ -2585,8 +2358,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1490,
-        "y": 860,
+        "x": 1510,
+        "y": 820,
         "wires": [
             []
         ]
@@ -2602,8 +2375,8 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1520,
-        "y": 620,
+        "x": 1540,
+        "y": 580,
         "wires": [
             []
         ]
@@ -4033,8 +3806,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1040,
-        "y": 320,
+        "x": 980,
+        "y": 280,
         "wires": []
     },
     {
@@ -4053,6 +3826,234 @@
         "x": 910,
         "y": 1740,
         "wires": []
+    },
+    {
+        "id": "82e139d665440e8d",
+        "type": "telegram receiver",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "saveDataDir": "",
+        "filterCommands": false,
+        "x": 140,
+        "y": 340,
+        "wires": [
+            [
+                "1d797e0280d34dfb",
+                "666747ce63dfca18"
+            ],
+            []
+        ]
+    },
+    {
+        "id": "991562c24c1dbb8a",
+        "type": "telegram sender",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 790,
+        "y": 280,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "0b18dada9196baa4",
+        "type": "telegram sender",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "haserroroutput": true,
+        "outputs": 2,
+        "x": 1600,
+        "y": 360,
+        "wires": [
+            [
+                "c9fb5769ca6ccbec",
+                "47c066e4018176fa"
+            ],
+            [
+                "47c066e4018176fa"
+            ]
+        ]
+    },
+    {
+        "id": "588935d38b66c7b2",
+        "type": "telegram sender",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 605,
+        "y": 440,
+        "wires": [
+            [
+                "44b3fdac09e09d2a"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "6fae5298f072ae66",
+        "type": "telegram sender",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 425,
+        "y": 580,
+        "wires": [
+            [
+                "1043346252c517a7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "42c541d584f35255",
+        "type": "telegram sender",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "bot": "4b07803a52e468f5",
+        "haserroroutput": false,
+        "outputs": 1,
+        "x": 1430,
+        "y": 660,
+        "wires": [
+            [
+                "17c46e8b98657bce"
+            ]
+        ]
+    },
+    {
+        "id": "c79f68ae78c2fa0a",
+        "type": "array-loop",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1050,
+        "y": 660,
+        "wires": [
+            [
+                "681ed7fd92333081",
+                "d9ec1bb17c6cb2e5"
+            ],
+            [
+                "03eaa5c76a7cc0b0"
+            ]
+        ]
+    },
+    {
+        "id": "baf7420b5b216cc2",
+        "type": "while-loop",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "condi": "global.get(`${msg.typing}`) === true",
+        "limit": true,
+        "limitTime": "100",
+        "time": "counter",
+        "timeType": "msg",
+        "x": 605,
+        "y": 380,
+        "wires": [
+            [],
+            [
+                "db7c93f50d03cd4e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "8e058063d7977bdc",
+        "type": "while-loop",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "",
+        "condi": "global.get(`${msg.typing}`) === true",
+        "limit": true,
+        "limitTime": "100",
+        "time": "counter",
+        "timeType": "msg",
+        "x": 385,
+        "y": 520,
+        "wires": [
+            [],
+            [
+                "7c1bf4b5923a9948"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "b5149a289a574835",
+        "type": "openai-ubos",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 790,
+        "y": 860,
+        "wires": [
+            [
+                "d10542b05ef1f56d"
+            ]
+        ]
+    },
+    {
+        "id": "62ddf71e3259e377",
+        "type": "openai-ubos",
+        "z": "c8208e6a65d3c2af",
+        "g": "0cf1026d3ccdfd21",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1185,
+        "y": 360,
+        "wires": [
+            [
+                "5c39762c2eac8a7e",
+                "569bafc9227ab6cd"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "2677414dc3b763e4",
@@ -9857,21 +9858,6 @@
         ]
     },
     {
-        "id": "1b5e108dc61af00c",
-        "type": "mongodb out",
-        "z": "f4036141cc030bcf",
-        "mongodb": "7908a755f1520aa7",
-        "name": "",
-        "collection": "admin_roles",
-        "payonly": false,
-        "upsert": false,
-        "multi": false,
-        "operation": "delete",
-        "x": 780,
-        "y": 4360,
-        "wires": []
-    },
-    {
         "id": "909b6dc35a1bf271",
         "type": "function",
         "z": "f4036141cc030bcf",
@@ -9908,36 +9894,6 @@
                 "c6316eee1e014afc"
             ]
         ]
-    },
-    {
-        "id": "9979252923793062",
-        "type": "mongodb out",
-        "z": "f4036141cc030bcf",
-        "mongodb": "7908a755f1520aa7",
-        "name": "",
-        "collection": "admins",
-        "payonly": false,
-        "upsert": false,
-        "multi": false,
-        "operation": "delete",
-        "x": 760,
-        "y": 4240,
-        "wires": []
-    },
-    {
-        "id": "c6316eee1e014afc",
-        "type": "mongodb out",
-        "z": "f4036141cc030bcf",
-        "mongodb": "7908a755f1520aa7",
-        "name": "",
-        "collection": "admin_modules",
-        "payonly": false,
-        "upsert": false,
-        "multi": false,
-        "operation": "delete",
-        "x": 790,
-        "y": 4300,
-        "wires": []
     },
     {
         "id": "ba4b22d80c1c5e19",
@@ -10027,6 +9983,51 @@
         "statusType": "auto",
         "x": 2790,
         "y": 4160,
+        "wires": []
+    },
+    {
+        "id": "1b5e108dc61af00c",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_roles",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 780,
+        "y": 4360,
+        "wires": []
+    },
+    {
+        "id": "9979252923793062",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admins",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 760,
+        "y": 4240,
+        "wires": []
+    },
+    {
+        "id": "c6316eee1e014afc",
+        "type": "mongodb out",
+        "z": "f4036141cc030bcf",
+        "mongodb": "7908a755f1520aa7",
+        "name": "",
+        "collection": "admin_modules",
+        "payonly": false,
+        "upsert": false,
+        "multi": false,
+        "operation": "delete",
+        "x": 790,
+        "y": 4300,
         "wires": []
     },
     {
@@ -11855,29 +11856,6 @@
         "l": false
     },
     {
-        "id": "0293ec9c022d79f4",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1640,
-        "y": 1140,
-        "wires": [
-            [
-                "7aa9e7878f282bf1"
-            ],
-            [
-                "4be769eac39e255b"
-            ]
-        ]
-    },
-    {
         "id": "3a033404aaeb8479",
         "type": "file in",
         "z": "8bea414da58d7b2a",
@@ -12076,29 +12054,6 @@
         "l": false
     },
     {
-        "id": "ed222f0c52f5bbc8",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1770,
-        "y": 1540,
-        "wires": [
-            [
-                "a5445e57033f03ab"
-            ],
-            [
-                "bd7a3b08d4b90416"
-            ]
-        ]
-    },
-    {
         "id": "32db447c7547eadb",
         "type": "file in",
         "z": "8bea414da58d7b2a",
@@ -12277,29 +12232,6 @@
         "l": false
     },
     {
-        "id": "bb4cc1dcf4246d5c",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1260,
-        "y": 1880,
-        "wires": [
-            [
-                "b6866d5174367b94"
-            ],
-            [
-                "3745a86daf8b2d65"
-            ]
-        ]
-    },
-    {
         "id": "f84baf671b6d2ba0",
         "type": "function",
         "z": "8bea414da58d7b2a",
@@ -12316,33 +12248,6 @@
         "wires": [
             [
                 "6dbf6ccd83ab84de"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "6dbf6ccd83ab84de",
-        "type": "openai-ubos",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1765,
-        "y": 1840,
-        "wires": [
-            [
-                "55cee18d243cb0dc"
             ]
         ],
         "l": false
@@ -12398,29 +12303,6 @@
         "l": false
     },
     {
-        "id": "3b529a0ad5978908",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1750,
-        "y": 1760,
-        "wires": [
-            [
-                "60a4af21e5faaa7d"
-            ],
-            [
-                "f84baf671b6d2ba0"
-            ]
-        ]
-    },
-    {
         "id": "a6174946dc747baa",
         "type": "function",
         "z": "8bea414da58d7b2a",
@@ -12438,33 +12320,6 @@
             [
                 "9917eac5b77b4506",
                 "34f72e23a62f55f9"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "9917eac5b77b4506",
-        "type": "openai-ubos",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1685,
-        "y": 1360,
-        "wires": [
-            [
-                "01868ecd3acf2961"
             ]
         ],
         "l": false
@@ -12518,29 +12373,6 @@
             ]
         ],
         "l": false
-    },
-    {
-        "id": "ca26229730123383",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1670,
-        "y": 1280,
-        "wires": [
-            [
-                "665c6273f8a9b9a1"
-            ],
-            [
-                "a6174946dc747baa"
-            ]
-        ]
     },
     {
         "id": "35737464a5bac056",
@@ -13025,21 +12857,6 @@
         ]
     },
     {
-        "id": "5dd8bc6925a4d897",
-        "type": "pdfparse",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "path": "",
-        "x": 1120,
-        "y": 1320,
-        "wires": [
-            [
-                "e25c2d369acc6872"
-            ]
-        ]
-    },
-    {
         "id": "4b6f1eb42b88da74",
         "type": "function",
         "z": "8bea414da58d7b2a",
@@ -13147,21 +12964,6 @@
         "wires": [
             [
                 "840dd35450baa020"
-            ]
-        ]
-    },
-    {
-        "id": "840dd35450baa020",
-        "type": "pdfparse",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "path": "",
-        "x": 1040,
-        "y": 1660,
-        "wires": [
-            [
-                "0582d87bd044fa4d"
             ]
         ]
     },
@@ -13515,32 +13317,6 @@
         "y": 1280,
         "wires": [
             []
-        ]
-    },
-    {
-        "id": "434e200cd77ed275",
-        "type": "openai-ubos",
-        "z": "8bea414da58d7b2a",
-        "g": "1f1b365afc8becc5",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1000,
-        "y": 2480,
-        "wires": [
-            [
-                "6e171ee418466503"
-            ]
         ]
     },
     {
@@ -14151,29 +13927,6 @@
         "wires": [
             [
                 "6cb8466c8d27b038"
-            ]
-        ]
-    },
-    {
-        "id": "6cb8466c8d27b038",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "911c1ee2586e9d4d",
-        "name": "",
-        "key": "amount",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 680,
-        "y": 2160,
-        "wires": [
-            [
-                "fca11faee5518dfa"
-            ],
-            [
-                "abf038af92f26537"
             ]
         ]
     },
@@ -15860,5 +15613,253 @@
         "x": 850,
         "y": 580,
         "wires": []
+    },
+    {
+        "id": "5dd8bc6925a4d897",
+        "type": "pdfparse",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "path": "",
+        "x": 1120,
+        "y": 1320,
+        "wires": [
+            [
+                "e25c2d369acc6872"
+            ]
+        ]
+    },
+    {
+        "id": "840dd35450baa020",
+        "type": "pdfparse",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "path": "",
+        "x": 1040,
+        "y": 1660,
+        "wires": [
+            [
+                "0582d87bd044fa4d"
+            ]
+        ]
+    },
+    {
+        "id": "0293ec9c022d79f4",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1640,
+        "y": 1140,
+        "wires": [
+            [
+                "7aa9e7878f282bf1"
+            ],
+            [
+                "4be769eac39e255b"
+            ]
+        ]
+    },
+    {
+        "id": "ed222f0c52f5bbc8",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1770,
+        "y": 1540,
+        "wires": [
+            [
+                "a5445e57033f03ab"
+            ],
+            [
+                "bd7a3b08d4b90416"
+            ]
+        ]
+    },
+    {
+        "id": "bb4cc1dcf4246d5c",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1260,
+        "y": 1880,
+        "wires": [
+            [
+                "b6866d5174367b94"
+            ],
+            [
+                "3745a86daf8b2d65"
+            ]
+        ]
+    },
+    {
+        "id": "3b529a0ad5978908",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1750,
+        "y": 1760,
+        "wires": [
+            [
+                "60a4af21e5faaa7d"
+            ],
+            [
+                "f84baf671b6d2ba0"
+            ]
+        ]
+    },
+    {
+        "id": "ca26229730123383",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1670,
+        "y": 1280,
+        "wires": [
+            [
+                "665c6273f8a9b9a1"
+            ],
+            [
+                "a6174946dc747baa"
+            ]
+        ]
+    },
+    {
+        "id": "6cb8466c8d27b038",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "911c1ee2586e9d4d",
+        "name": "",
+        "key": "amount",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 680,
+        "y": 2160,
+        "wires": [
+            [
+                "fca11faee5518dfa"
+            ],
+            [
+                "abf038af92f26537"
+            ]
+        ]
+    },
+    {
+        "id": "6dbf6ccd83ab84de",
+        "type": "openai-ubos",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1765,
+        "y": 1840,
+        "wires": [
+            [
+                "55cee18d243cb0dc"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "9917eac5b77b4506",
+        "type": "openai-ubos",
+        "z": "8bea414da58d7b2a",
+        "g": "e5c2a19a4e324330",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1685,
+        "y": 1360,
+        "wires": [
+            [
+                "01868ecd3acf2961"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "434e200cd77ed275",
+        "type": "openai-ubos",
+        "z": "8bea414da58d7b2a",
+        "g": "1f1b365afc8becc5",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1000,
+        "y": 2480,
+        "wires": [
+            [
+                "6e171ee418466503"
+            ]
+        ]
     }
 ]
