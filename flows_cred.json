@@ -1,7 +1,5 @@
 {
-    "4b07803a52e468f5": {
-        "token": "{global.get('telegram').BOT_TOKEN}"
-    },
+    "4b07803a52e468f5": {},
     "b5149a289a574835": {},
     "62ddf71e3259e377": {},
     "dedc8713aa88daf6": {},
