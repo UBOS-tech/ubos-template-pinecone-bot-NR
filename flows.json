@@ -218,6 +218,40 @@
         "icon": "node-red/leveldb.png"
     },
     {
+        "id": "c19f84e03debc55b",
+        "type": "subflow",
+        "name": "initialMain (4)",
+        "info": "",
+        "category": "",
+        "in": [
+            {
+                "x": 160,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "bdb405aa2d70b0f9"
+                    }
+                ]
+            }
+        ],
+        "out": [
+            {
+                "x": 400,
+                "y": 80,
+                "wires": [
+                    {
+                        "id": "bdb405aa2d70b0f9",
+                        "port": 0
+                    }
+                ]
+            }
+        ],
+        "env": [],
+        "meta": {},
+        "color": "#C0DEED",
+        "icon": "node-red/leveldb.png"
+    },
+    {
         "id": "752a8b5a286babe5",
         "type": "group",
         "z": "f4036141cc030bcf",
@@ -525,129 +559,6 @@
         "y": 2079
     },
     {
-        "id": "080a4b05e6b518fc",
-        "type": "group",
-        "z": "8bea414da58d7b2a",
-        "name": "get files",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "796fcd0b58916758",
-            "f7f33a86ce8d8fef",
-            "11bec5f579b0b092",
-            "4158be83830615bc",
-            "c4f1d18b2c5d0eb7",
-            "292d3caa5beb7778",
-            "76f1fd55909c53ab",
-            "5ec283479477abe6",
-            "42505fe8cbd4e294",
-            "b9c3655fb6f94525",
-            "f6f04b7f237878d0",
-            "862dc7094cc3702c",
-            "cbd939371725f5c9",
-            "db5662eacd7d9eb5",
-            "1c2539fd446d3718",
-            "2db2b245aa5eabb5",
-            "29445d42adea56dc",
-            "5d7a154e0c014e18"
-        ],
-        "x": 1434,
-        "y": 39,
-        "w": 792,
-        "h": 322
-    },
-    {
-        "id": "e5c2a19a4e324330",
-        "type": "group",
-        "z": "8bea414da58d7b2a",
-        "name": "Create vectors by type slice",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "686d5ff43aab4bf9",
-            "e2f96b818dbf2d36",
-            "805192a45b1dfb1f",
-            "dedc8713aa88daf6",
-            "7e3ff8422001942a",
-            "cfa67c0faae732a5",
-            "5ca28cbdb2d92066",
-            "4be769eac39e255b",
-            "0293ec9c022d79f4",
-            "3a033404aaeb8479",
-            "ba7d9ba90e21b85e",
-            "81d103f3847b6d65",
-            "cd0e561ad445f426",
-            "958774fd3c549439",
-            "f936d8bcc43cfdf6",
-            "9eeda30ab8a3e81f",
-            "752b7200cc83b1e2",
-            "ed222f0c52f5bbc8",
-            "32db447c7547eadb",
-            "19ee5925125f783f",
-            "9b9c70ad1de4b56b",
-            "343d6eebe20761d7",
-            "5372b1970127ad2f",
-            "0d3eaa5926f77e21",
-            "81c78fbc7d3217d5",
-            "3745a86daf8b2d65",
-            "bb4cc1dcf4246d5c",
-            "f84baf671b6d2ba0",
-            "6dbf6ccd83ab84de",
-            "b70f23e2a0b3e562",
-            "55cee18d243cb0dc",
-            "3b529a0ad5978908",
-            "a6174946dc747baa",
-            "9917eac5b77b4506",
-            "023264aec47fa267",
-            "01868ecd3acf2961",
-            "ca26229730123383",
-            "35737464a5bac056",
-            "f5a4b1e6a817c258",
-            "d3e6e480f48e9893",
-            "7aa9e7878f282bf1",
-            "665c6273f8a9b9a1",
-            "60a4af21e5faaa7d",
-            "a5445e57033f03ab",
-            "b6866d5174367b94",
-            "0990db20b612b892",
-            "5dd8bc6925a4d897",
-            "4b6f1eb42b88da74",
-            "45d050edcec39b86",
-            "e53878b9d91108df",
-            "f32249d89e195b2d",
-            "c7f2f5bb0d1a1e78",
-            "840dd35450baa020",
-            "0582d87bd044fa4d",
-            "4e16359d860b8ded",
-            "f66c0120b1f03455",
-            "5958b50f9d61ea4d",
-            "2eb7416a949db88c",
-            "250e9376a47d5b8a",
-            "72475b4c21b7e944",
-            "c0d0b57e2d701a7c",
-            "79520be0bb6a7870",
-            "0132fdd33de3b624",
-            "0b3b3965772292fa",
-            "e0a30529618286ca",
-            "3191ff659fb73d78",
-            "075cd5f3c274ca98",
-            "358c2c2c2695f0ae",
-            "162158f556a80497",
-            "f4411d154ac1cb06",
-            "e25c2d369acc6872",
-            "34f72e23a62f55f9",
-            "8bbeceb6411b448f",
-            "bd7a3b08d4b90416",
-            "2b0b88cae098c7a9"
-        ],
-        "x": 14,
-        "y": 1039,
-        "w": 2222,
-        "h": 942
-    },
-    {
         "id": "1f1b365afc8becc5",
         "type": "group",
         "z": "8bea414da58d7b2a",
@@ -697,53 +608,9 @@
             "ed63a752615547a1"
         ],
         "x": 34,
-        "y": 2019,
+        "y": 2079,
         "w": 1092,
         "h": 262
-    },
-    {
-        "id": "bc79b0c55ed950a2",
-        "type": "group",
-        "z": "8bea414da58d7b2a",
-        "name": "actions with vectors",
-        "style": {
-            "label": true
-        },
-        "nodes": [
-            "21cbda1bf24a2a69",
-            "19823422f5fa86c1",
-            "48094b3f0e2ee8d9",
-            "f152600620f043bd",
-            "962290bc68cb0b29",
-            "3ce9a2870ef10866",
-            "14f30a7985cc31c8",
-            "a69ae4c66f87b1f0",
-            "4bfdfc1b314f7faa",
-            "c19961b743cde705",
-            "20ef169512cdd410",
-            "f033b92e5ba13fcc",
-            "8444301221890904",
-            "d36889816ac0fe8e",
-            "cf4156d5c447a16c",
-            "9b5d8966c49993cd",
-            "5a9cf18af75e3c0b",
-            "5582346294319529",
-            "cd48cc7a92b2a3d1",
-            "bfd25775c6570faa",
-            "d92184e6adc057c5",
-            "d648ea43ba5a7657",
-            "8c5c228aa9202f2b",
-            "5bb720dc3ef56b7a",
-            "99ad91f7fb16dfbc",
-            "718ebd07aa298058",
-            "c99c1f560bd3c907",
-            "06b21e1c324bcb90",
-            "5a3203eb955fd7d9"
-        ],
-        "x": 1414,
-        "y": 399,
-        "w": 932,
-        "h": 602
     },
     {
         "id": "a16a3e4151c2e982",
@@ -1098,6 +965,191 @@
         "y": 1419
     },
     {
+        "id": "4d9997e34fc515e3",
+        "type": "group",
+        "z": "8bea414da58d7b2a",
+        "name": "Create vectors by type slice",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "38078d4521bd2654",
+            "3260737fa16542db",
+            "9ad89ec9afa18bcf",
+            "a8f56c2553162837",
+            "a0802b89555f5d46",
+            "f7e13fb061a0d7f7",
+            "79bc54c562f56e96",
+            "48fe9ab6d7040507",
+            "17810b41e58795b1",
+            "e821f5f86e2e93c2",
+            "8d8334914d6cf945",
+            "9d9b2267bcd63d34",
+            "5ca1e7b43802a928",
+            "d7fff4960fb3648b",
+            "a8a2d9a9f276bd20",
+            "d55d4555217b91e8",
+            "9fa2f1bac8d09e44",
+            "c915a9fd0fd90dfd",
+            "06e1284a975f6a24",
+            "6b4cda07d65addcd",
+            "571c9400ebe291c3",
+            "b3d1c7aabf701498",
+            "677e45351d959b4d",
+            "bfbb3766b6857752",
+            "7338a2a9c24c949c",
+            "3da3de6b1340777e",
+            "5d1de5f2bfe88ad1",
+            "fb903a325704e294",
+            "0ae2e6be5aa6b0bd",
+            "108b59a506048622",
+            "2efe0b9f1454fee2",
+            "4bb9c7b82b1bedac",
+            "a6432e2120d18a72",
+            "dd4341b099b6c43b",
+            "d1686af8f9caaa80",
+            "3116ac3f50cd361e",
+            "ecf11abebc3832c1",
+            "959f59c98f643917",
+            "98f78c16526ddcc3",
+            "bc1ddb60e7ba20b4",
+            "7889ba87e21c4b1b",
+            "8ac60db9f091b86b",
+            "d0ea321794c4a4d8",
+            "eafa11919460c7c7",
+            "065d7cf4f71fe573",
+            "0e256c3473e6f055",
+            "5108ac0711d79c10",
+            "8facd8353b7e4341",
+            "0ff19f9d39e738a8",
+            "4f86fe630853bda7",
+            "1680e68a72c1087b",
+            "d1ded379d6243d94",
+            "8493ba85731f331a",
+            "98b0f743c1fd71ea",
+            "a3f36cb673994ea6",
+            "62707ae7c9fcf27d",
+            "2f7c16d401c3ec0f",
+            "6e206b8d65692ec1",
+            "9b0be820f3198188",
+            "95f6cf01c66de4ea",
+            "5ee24fefb506174d",
+            "5e1c6fb2c1ab9c51",
+            "9cb94ca82b443fbe",
+            "739bb6d64b53ad50",
+            "a6ee4307ea0824b5",
+            "a5a446e41ff623bb",
+            "781479e15f147c9e",
+            "008f8886ca491687",
+            "21dc20bb302c7364",
+            "ef6ec2941f608c58",
+            "c89c8e6ee869484a",
+            "9bdfffdad524d2a2",
+            "70c15e2dac5ca7ca",
+            "7f79bd11d26c94e1",
+            "904c7bd4cfd6eb62",
+            "fb8b5e1e32698da2",
+            "20c7f41597215949",
+            "12dd4228e49edf33",
+            "3dc587f979ecf665",
+            "0003d926e74809dc",
+            "ae6ebf4cd995df5e"
+        ],
+        "x": 34,
+        "y": 1079,
+        "w": 2222,
+        "h": 942
+    },
+    {
+        "id": "9ab1eb9b42ce281a",
+        "type": "group",
+        "z": "8bea414da58d7b2a",
+        "name": "get files",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "796fcd0b58916758",
+            "f7f33a86ce8d8fef",
+            "11bec5f579b0b092",
+            "4158be83830615bc",
+            "c4f1d18b2c5d0eb7",
+            "292d3caa5beb7778",
+            "76f1fd55909c53ab",
+            "5ec283479477abe6",
+            "42505fe8cbd4e294",
+            "b9c3655fb6f94525",
+            "f6f04b7f237878d0",
+            "862dc7094cc3702c",
+            "cbd939371725f5c9",
+            "db5662eacd7d9eb5",
+            "1c2539fd446d3718",
+            "2db2b245aa5eabb5",
+            "29445d42adea56dc"
+        ],
+        "x": 2454,
+        "y": 39,
+        "w": 792,
+        "h": 322
+    },
+    {
+        "id": "aff5f6094780b487",
+        "type": "group",
+        "z": "8bea414da58d7b2a",
+        "name": "actions with vectors",
+        "style": {
+            "label": true
+        },
+        "nodes": [
+            "21cbda1bf24a2a69",
+            "19823422f5fa86c1",
+            "48094b3f0e2ee8d9",
+            "f152600620f043bd",
+            "962290bc68cb0b29",
+            "3ce9a2870ef10866",
+            "14f30a7985cc31c8",
+            "a69ae4c66f87b1f0",
+            "4bfdfc1b314f7faa",
+            "c19961b743cde705",
+            "20ef169512cdd410",
+            "f033b92e5ba13fcc",
+            "8444301221890904",
+            "d36889816ac0fe8e",
+            "cf4156d5c447a16c",
+            "9b5d8966c49993cd",
+            "5a9cf18af75e3c0b",
+            "5582346294319529",
+            "cd48cc7a92b2a3d1",
+            "bfd25775c6570faa",
+            "d92184e6adc057c5",
+            "d648ea43ba5a7657",
+            "8c5c228aa9202f2b",
+            "5bb720dc3ef56b7a",
+            "99ad91f7fb16dfbc",
+            "718ebd07aa298058",
+            "5a3203eb955fd7d9",
+            "c99c1f560bd3c907",
+            "06b21e1c324bcb90",
+            "60fcf811aaa47983",
+            "29f355cc5c5a2756",
+            "991728e9094bd66f",
+            "73421b0edc8be468",
+            "c2b008a8e03aea46",
+            "d101f0224434fdea",
+            "ca416f1b98beabd4",
+            "a174c982a35eeae3",
+            "9799e4664d3f7445",
+            "f722a9741c9e9a40",
+            "348afd1aff8b7e76",
+            "9da53257cf02584a",
+            "461f1e55f3127c0b"
+        ],
+        "x": 1394,
+        "y": 39,
+        "w": 992,
+        "h": 922
+    },
+    {
         "id": "7908a755f1520aa7",
         "type": "mongodb",
         "hostname": "${AIBOTDB-MONGO-HOST-NAME}",
@@ -1355,6 +1407,59 @@
         "wires": [
             []
         ]
+    },
+    {
+        "id": "bdb405aa2d70b0f9",
+        "type": "function",
+        "z": "c19f84e03debc55b",
+        "name": "initialMain",
+        "func": "\n\nmsg.fromApp = msg.payload\nmsg.fromTG = msg.payload\n\n\n\nconst { Configuration, OpenAIApi } = openai;\nconst { PineconeClient } = pineconeBD;\nconst { CreateIndexRequest } = pineconeDBPFetch;\n\n\n\nconst process_env = global.get(\"process_env\")\nconst OPENAI_API_KEY = process_env.OPENAI_API\nconst PINECONE_API_KEY = process_env.PIPECONE_API\nconst PINECONE_ENVIRONMENT = process_env.PIPECONE_ENV\nconst PIPECONE_INDEX = process_env.PIPECONE_INDEX\nnode.warn(OPENAI_API_KEY)\nnode.warn(PINECONE_API_KEY)\nnode.warn(PINECONE_ENVIRONMENT)\nnode.warn(PIPECONE_INDEX)\nglobal.set(\"TABLE_NAME\", PIPECONE_INDEX);\nglobal.set(\"tasks_storage\", []);\nglobal.set(\"results_storage\", []);\nglobal.set(\"taskId\", 0);\n// ============================\n\nconst configuration = new Configuration({\n    apiKey: OPENAI_API_KEY,\n});\nconst openAI = new OpenAIApi(configuration);\n\nconst pinecone = new PineconeClient();\nawait pinecone.init({\n    apiKey: PINECONE_API_KEY,\n    environment: PINECONE_ENVIRONMENT,\n});\n\nconst indexList = await pinecone.listIndexes();\nlet index = pinecone.Index(global.get(\"TABLE_NAME\"));\n\nlet embeddingList = new Map();\nglobal.set(\"embeddingList\", embeddingList);\n\nmsg.main = { indexList, openAI, pinecone, index };\n\n\n\nasync function getADAEmbedding(text) {\n    try {\n        const response = await axios.post(\n            'https://api.openai.com/v1/embeddings',\n            {\n                input: `${text}`,\n                model: \"text-embedding-ada-002\"\n            },\n            {\n                headers: {\n                    'Authorization': `Bearer ${OPENAI_API_KEY}`,\n                    'Content-Type': 'application/json'\n                }\n            }\n        );\n\n        const embeddings = response.data.data[0].embedding;\n        return embeddings;\n    } catch (error) {\n        //node.warn(`Error: ${error}`);\n    }\n}\n\nglobal.set(\"helpers\", {\n    getADAEmbedding\n});\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "openai",
+                "module": "openai"
+            },
+            {
+                "var": "pineconeBD",
+                "module": "@pinecone-database/pinecone"
+            },
+            {
+                "var": "pineconeDBPFetch",
+                "module": "@pinecone-database/pinecone/dist/pinecone-generated-ts-fetch"
+            },
+            {
+                "var": "axios",
+                "module": "axios"
+            }
+        ],
+        "x": 260,
+        "y": 80,
+        "wires": [
+            [
+                "b6d7988f03c57f1a"
+            ]
+        ]
+    },
+    {
+        "id": "b6d7988f03c57f1a",
+        "type": "debug",
+        "z": "c19f84e03debc55b",
+        "name": "debug 447",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 470,
+        "y": 180,
+        "wires": []
     },
     {
         "id": "666747ce63dfca18",
@@ -11688,943 +11793,17 @@
         "wires": []
     },
     {
-        "id": "686d5ff43aab4bf9",
-        "type": "http in",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "url": "/divideFile",
-        "method": "post",
-        "upload": false,
-        "swaggerDoc": "",
-        "x": 120,
-        "y": 1320,
-        "wires": [
-            [
-                "e2f96b818dbf2d36"
-            ]
-        ]
-    },
-    {
-        "id": "e2f96b818dbf2d36",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "check type",
-        "func": "\nmsg.collection = \"knowledgeObjects\";\nmsg.oldPayload = msg.payload;\nmsg.type = msg.payload.type;\nmsg.urlName = msg.oldPayload.link;\nmsg.fileType = msg.payload.file_type;\nmsg._id = objectid(msg.payload.id);\n\n\nif(msg.type ===\"Points\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"Paragraphs\"){\n    return[null,msg,null]\n}\nif (msg.type ===\"Question-Answer\"){\n    return [null, null, msg]\n}",
-        "outputs": 3,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 350,
-        "y": 1320,
-        "wires": [
-            [
-                "805192a45b1dfb1f",
-                "35737464a5bac056"
-            ],
-            [
-                "343d6eebe20761d7",
-                "35737464a5bac056"
-            ],
-            [
-                "81c78fbc7d3217d5",
-                "35737464a5bac056"
-            ]
-        ]
-    },
-    {
-        "id": "805192a45b1dfb1f",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "check file Type",
-        "func": "if (msg.fileType ===\"Link\"){\n    return [msg,null,null]\n} if (msg.fileType === \"File\"){\n    return[null,msg,null]\n}",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 560,
-        "y": 1300,
-        "wires": [
-            [
-                "7e3ff8422001942a"
-            ],
-            [
-                "4b6f1eb42b88da74"
-            ]
-        ]
-    },
-    {
-        "id": "dedc8713aa88daf6",
-        "type": "http request",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Get Link Info",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 970,
-        "y": 1260,
-        "wires": [
-            [
-                "5ca28cbdb2d92066"
-            ]
-        ]
-    },
-    {
-        "id": "7e3ff8422001942a",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "func": "\nmsg.url = msg.oldPayload.link;\n\n\n    return msg\n\n\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 800,
-        "y": 1260,
-        "wires": [
-            [
-                "dedc8713aa88daf6"
-            ]
-        ]
-    },
-    {
-        "id": "cfa67c0faae732a5",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Create Pages",
-        "func": "\nlet str = msg.payload\nmsg.payload  = msg.payload\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 1260,
-        "wires": [
-            [
-                "162158f556a80497",
-                "0293ec9c022d79f4"
-            ],
-            [
-                "162158f556a80497",
-                "ca26229730123383"
-            ]
-        ]
-    },
-    {
-        "id": "5ca28cbdb2d92066",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Scrape",
-        "func": "\nconst { extractor } = unfluff;\n\nmsg.payload = unfluff(msg.payload);\nmsg.payload.originalSourceUrl = msg.responseUrl;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "unfluff",
-                "module": "unfluff"
-            }
-        ],
-        "x": 1120,
-        "y": 1260,
-        "wires": [
-            [
-                "f4411d154ac1cb06"
-            ]
-        ]
-    },
-    {
-        "id": "4be769eac39e255b",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "\nmsg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload.text[0]\n\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1635,
-        "y": 1220,
-        "wires": [
-            [
-                "0b3b3965772292fa",
-                "2b0b88cae098c7a9"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "3a033404aaeb8479",
-        "type": "file in",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "filename": "filepath",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 1120,
-        "y": 1380,
-        "wires": [
-            [
-                "81d103f3847b6d65"
-            ]
-        ]
-    },
-    {
-        "id": "ba7d9ba90e21b85e",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "function 326",
-        "func": "\nmsg.payload = msg.oldPayload.file[0].data\n\nconst decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.filepath = \"/data/storage/\" + outputString;\n// msg.filepath = \"/data/storage/14_16274_SI_Introduction.pdf\"\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 970,
-        "y": 1380,
-        "wires": [
-            [
-                "3a033404aaeb8479"
-            ]
-        ]
-    },
-    {
-        "id": "81d103f3847b6d65",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Create Pages",
-        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "natural",
-                "module": "natural"
-            }
-        ],
-        "x": 1380,
-        "y": 1380,
-        "wires": [
-            [
-                "162158f556a80497",
-                "0293ec9c022d79f4"
-            ],
-            [
-                "162158f556a80497",
-                "ca26229730123383"
-            ]
-        ]
-    },
-    {
-        "id": "cd0e561ad445f426",
-        "type": "http request",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Get Link Info",
-        "method": "GET",
-        "ret": "txt",
-        "paytoqs": "ignore",
-        "url": "",
-        "tls": "",
-        "persist": false,
-        "proxy": "",
-        "insecureHTTPParser": false,
-        "authType": "",
-        "senderr": false,
-        "headers": [],
-        "x": 990,
-        "y": 1520,
-        "wires": [
-            [
-                "9eeda30ab8a3e81f"
-            ]
-        ]
-    },
-    {
-        "id": "958774fd3c549439",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "func": "\n\nmsg.url = msg.oldPayload.link;\n\n\n    return msg\n\n\n\n\n\n",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 820,
-        "y": 1520,
-        "wires": [
-            [
-                "cd0e561ad445f426"
-            ]
-        ]
-    },
-    {
-        "id": "f936d8bcc43cfdf6",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Create Pages",
-        "func": "let str = msg.payload\nmsg.ll = msg.payload.length;\n\nconst result = str.split('\\n\\n').map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array =result;\n\n\nif (msg.oldPayload.anrichment){\n    return [null, msg]\n}else{\n    return[msg, null]\n}\n\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "natural",
-                "module": "natural"
-            }
-        ],
-        "x": 1420,
-        "y": 1520,
-        "wires": [
-            [
-                "ed222f0c52f5bbc8",
-                "075cd5f3c274ca98"
-            ],
-            [
-                "3b529a0ad5978908",
-                "075cd5f3c274ca98"
-            ]
-        ]
-    },
-    {
-        "id": "9eeda30ab8a3e81f",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Scrape",
-        "func": "\nconst { extractor } = unfluff;\n\nmsg.payload = unfluff(msg.payload);\nmsg.payload.originalSourceUrl = msg.responseUrl;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "unfluff",
-                "module": "unfluff"
-            }
-        ],
-        "x": 1180,
-        "y": 1520,
-        "wires": [
-            [
-                "8bbeceb6411b448f"
-            ]
-        ]
-    },
-    {
-        "id": "752b7200cc83b1e2",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload.text\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1735,
-        "y": 1620,
-        "wires": [
-            [
-                "ed222f0c52f5bbc8",
-                "2eb7416a949db88c"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "32db447c7547eadb",
-        "type": "file in",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "filename": "filepath",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 1120,
-        "y": 1720,
-        "wires": [
-            [
-                "9b9c70ad1de4b56b"
-            ]
-        ]
-    },
-    {
-        "id": "19ee5925125f783f",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "function 327",
-        "func": "\n//msg.payload = msg.oldPayload.file[0].data\n\nconst decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\nmsg.urlName = outputString \nmsg.filepath = \"/data/storage\" + outputString;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 890,
-        "y": 1720,
-        "wires": [
-            [
-                "32db447c7547eadb"
-            ]
-        ]
-    },
-    {
-        "id": "9b9c70ad1de4b56b",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "Create Pages",
-        "func": "let str = msg.payload;\nmsg.ll = msg.payload.length;\nconst result = str.split(/\\r?\\n\\s*\\r?\\n/).map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "natural",
-                "module": "natural"
-            }
-        ],
-        "x": 1420,
-        "y": 1680,
-        "wires": [
-            [
-                "ed222f0c52f5bbc8",
-                "075cd5f3c274ca98"
-            ],
-            [
-                "3b529a0ad5978908",
-                "075cd5f3c274ca98"
-            ]
-        ]
-    },
-    {
-        "id": "343d6eebe20761d7",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "check file Type",
-        "func": "if (msg.fileType ===\"Link\"){\n    return [msg,null,null]\n} if (msg.fileType === \"File\"){\n    return[null,msg,null]\n}",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 600,
-        "y": 1540,
-        "wires": [
-            [
-                "958774fd3c549439",
-                "3191ff659fb73d78"
-            ],
-            [
-                "f32249d89e195b2d"
-            ]
-        ]
-    },
-    {
-        "id": "5372b1970127ad2f",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "encoding file",
-        "func": "\nlet text = msg.payload\n\nlet parts = text.split(/\\n/g).map(part => part.trim()).filter(part => part.length > 0);\n\nlet result = [];\nlet obj = {};\nfor (let i = 0; i < parts.length; i++) {\n    if (parts[i].endsWith(\"?\")) {\n        if (Object.keys(obj).length > 0) { // if 'obj' has keys\n            result.push(obj);\n            // @ts-ignore\n            obj = {};\n        }\n        obj[\"A\"] = parts[i];\n    } else {\n        if (obj[\"B\"]) {\n            obj[\"B\"] += ' ' + parts[i];\n        } else {\n            obj[\"B\"] = parts[i];\n        }\n    }\n}\n\n// Push the last object to the result if it hasn't been pushed yet\nif (Object.keys(obj).length > 0) {\n    result.push(obj);\n}\n\nmsg.array= result;\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1030,
-        "y": 1880,
-        "wires": [
-            [
-                "bb4cc1dcf4246d5c"
-            ]
-        ]
-    },
-    {
-        "id": "0d3eaa5926f77e21",
-        "type": "file in",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "filename": "filepath",
-        "filenameType": "msg",
-        "format": "utf8",
-        "chunk": false,
-        "sendError": false,
-        "encoding": "none",
-        "allProps": false,
-        "x": 780,
-        "y": 1880,
-        "wires": [
-            [
-                "5372b1970127ad2f"
-            ]
-        ]
-    },
-    {
-        "id": "81c78fbc7d3217d5",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "FAQ",
-        "func": "\nconst decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.filepath = \"/data/storage/\" + outputString;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 590,
-        "y": 1880,
-        "wires": [
-            [
-                "0d3eaa5926f77e21"
-            ]
-        ]
-    },
-    {
-        "id": "3745a86daf8b2d65",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "// delete msg.filepath;\n// delete msg.filename;\n\nmsg.collection = \"knowledgeObjects\"\n\nlet question = msg.payload.A;\nlet result = msg.payload.B;\n\nlet url = msg.oldPayload.link\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: url, question: question, result },\n      }\n   }\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1245,
-        "y": 1940,
-        "wires": [
-            [
-                "bb4cc1dcf4246d5c",
-                "f66c0120b1f03455"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "f84baf671b6d2ba0",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\nmsg.text = msg.payload.text\n  msg.messages= [\n    { \"role\": \"system\", \"content\": `create me the questionfor this text : ${msg.payload.text}`},\n     \n    ]\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1695,
-        "y": 1840,
-        "wires": [
-            [
-                "6dbf6ccd83ab84de"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "b70f23e2a0b3e562",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text;\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1915,
-        "y": 1840,
-        "wires": [
-            [
-                "3b529a0ad5978908",
-                "c0d0b57e2d701a7c",
-                "358c2c2c2695f0ae"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "55cee18d243cb0dc",
-        "type": "delay",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "10",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1845,
-        "y": 1840,
-        "wires": [
-            [
-                "b70f23e2a0b3e562"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "a6174946dc747baa",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\nmsg.text = msg.payload.text[0]\n\n  msg.messages= [\n    { \"role\": \"system\", \"content\": `create me the questionfor this text : ${msg.text}`},\n     \n    ]\n\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1595,
-        "y": 1360,
-        "wires": [
-            [
-                "9917eac5b77b4506",
-                "34f72e23a62f55f9"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "023264aec47fa267",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text;\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1835,
-        "y": 1360,
-        "wires": [
-            [
-                "ca26229730123383",
-                "79520be0bb6a7870",
-                "34f72e23a62f55f9"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "01868ecd3acf2961",
-        "type": "delay",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "10",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1775,
-        "y": 1360,
-        "wires": [
-            [
-                "023264aec47fa267"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "35737464a5bac056",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        vectors:[],\n        status:\"Dividing in process\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 130,
-        "y": 1500,
-        "wires": [
-            [
-                "d3e6e480f48e9893",
-                "4e16359d860b8ded"
-            ]
-        ]
-    },
-    {
-        "id": "f5a4b1e6a817c258",
-        "type": "http response",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "statusCode": "",
-        "headers": {},
-        "x": 590,
-        "y": 1440,
-        "wires": []
-    },
-    {
-        "id": "d3e6e480f48e9893",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "status",
-        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\":\"Dividing in process\"\n};\n\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 310,
-        "y": 1440,
-        "wires": [
-            [
-                "0990db20b612b892"
-            ]
-        ]
-    },
-    {
-        "id": "7aa9e7878f282bf1",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1830,
-        "y": 1140,
-        "wires": [
-            [
-                "0132fdd33de3b624"
-            ]
-        ]
-    },
-    {
-        "id": "665c6273f8a9b9a1",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1920,
-        "y": 1280,
-        "wires": [
-            [
-                "e0a30529618286ca"
-            ]
-        ]
-    },
-    {
-        "id": "60a4af21e5faaa7d",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1920,
-        "y": 1700,
-        "wires": [
-            [
-                "72475b4c21b7e944"
-            ]
-        ]
-    },
-    {
-        "id": "a5445e57033f03ab",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1940,
-        "y": 1500,
-        "wires": [
-            [
-                "250e9376a47d5b8a"
-            ]
-        ]
-    },
-    {
-        "id": "b6866d5174367b94",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "reset Vectors",
-        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [
-            {
-                "var": "objectid",
-                "module": "objectid"
-            }
-        ],
-        "x": 1450,
-        "y": 1880,
-        "wires": [
-            [
-                "5958b50f9d61ea4d"
-            ]
-        ]
-    },
-    {
-        "id": "0990db20b612b892",
-        "type": "delay",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 465,
-        "y": 1440,
-        "wires": [
-            [
-                "f5a4b1e6a817c258"
-            ]
-        ],
-        "l": false
-    },
-    {
         "id": "21cbda1bf24a2a69",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "url": "/getVectors2",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1520,
-        "y": 440,
+        "x": 1500,
+        "y": 80,
         "wires": [
             [
                 "19823422f5fa86c1"
@@ -12635,7 +11814,7 @@
         "id": "19823422f5fa86c1",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload ={\n_id:objectid(msg.payload.id) \n}\nreturn msg;",
         "outputs": 1,
@@ -12648,8 +11827,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1710,
-        "y": 440,
+        "x": 1690,
+        "y": 80,
         "wires": [
             [
                 "48094b3f0e2ee8d9"
@@ -12660,15 +11839,15 @@
         "id": "48094b3f0e2ee8d9",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1890,
-        "y": 440,
+        "x": 1870,
+        "y": 80,
         "wires": [
             [
                 "f152600620f043bd"
@@ -12679,19 +11858,19 @@
         "id": "f152600620f043bd",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2050,
-        "y": 440,
+        "x": 2030,
+        "y": 80,
         "wires": []
     },
     {
         "id": "962290bc68cb0b29",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "update",
         "func": "const { getADAEmbedding } = global.get(\"helpers\");\n\n\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = msg.fromApp.id;\nconst url = msg.fromApp.url;\n\nconst embeddingResult = await getADAEmbedding(question);\n\nmsg.payload = await msg.main.index.upsert({\n    upsertRequest: {\n        vectors: [\n            {\n                id: id,\n                values: embeddingResult,\n                metadata: { question: question, result },\n            },\n        ],\n    },\n});\n\n // Перетворіть рядок _id у об'єкт ObjectId\nlet updatedData = { url: url, question: question, result }; // Введіть тут нові дані для оновлення\nmsg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"vectors.id\": id };\nmsg.payload = {\n    \"$set\": {\n        \"vectors.$\": {\n            id: id,\n            metadata: updatedData\n        }\n    }\n};\n\n\nreturn msg;\n",
         "outputs": 1,
@@ -12704,8 +11883,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1900,
-        "y": 520,
+        "x": 1880,
+        "y": 160,
         "wires": [
             [
                 "4bfdfc1b314f7faa",
@@ -12717,14 +11896,14 @@
         "id": "3ce9a2870ef10866",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "url": "/updateVector",
         "method": "put",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1530,
-        "y": 520,
+        "x": 1510,
+        "y": 160,
         "wires": [
             [
                 "a69ae4c66f87b1f0",
@@ -12736,22 +11915,22 @@
         "id": "14f30a7985cc31c8",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
-        "y": 580,
+        "x": 2130,
+        "y": 220,
         "wires": []
     },
     {
         "id": "a69ae4c66f87b1f0",
         "type": "subflow:a36ef6d92fe6c77f",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
-        "x": 1740,
-        "y": 520,
+        "x": 1720,
+        "y": 160,
         "wires": [
             [
                 "962290bc68cb0b29"
@@ -12762,7 +11941,7 @@
         "id": "4bfdfc1b314f7faa",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "status",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -12770,8 +11949,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 2000,
-        "y": 580,
+        "x": 1980,
+        "y": 220,
         "wires": [
             [
                 "14f30a7985cc31c8"
@@ -12782,14 +11961,14 @@
         "id": "c19961b743cde705",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "url": "/deleteVector1",
         "method": "delete",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1540,
-        "y": 680,
+        "x": 1520,
+        "y": 320,
         "wires": [
             [
                 "20ef169512cdd410",
@@ -12801,7 +11980,7 @@
         "id": "20ef169512cdd410",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "delete",
         "func": "let vectorIds = msg.req.query.id;\n\nconst process_env = global.get(\"process_env\")\nmsg.PIPECONE_URL = process_env.PIPECONE_URL\nmsg.PIPECONE_API = process_env.PIPECONE_API\n\nmsg.headers = {\n    'Api-Key': msg.PIPECONE_API,\n    'Content-Type': 'application/json'\n};\n\nmsg.url = `${msg.PIPECONE_URL}/vectors/delete`;\nmsg.payload = { ids: vectorIds };\nmsg.ids = vectorIds\n\n\nreturn msg;\n\n\n\n",
         "outputs": 1,
@@ -12814,8 +11993,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1730,
-        "y": 680,
+        "x": 1710,
+        "y": 320,
         "wires": [
             [
                 "d36889816ac0fe8e"
@@ -12826,19 +12005,19 @@
         "id": "f033b92e5ba13fcc",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2190,
-        "y": 660,
+        "x": 2170,
+        "y": 300,
         "wires": []
     },
     {
         "id": "8444301221890904",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "the end",
         "func": "const id = msg.req.query.id;\nmsg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"vectors.id\": id };\nmsg.payload = {\n    \"$pull\": {\n        \"vectors\": {\n            \"id\": msg.ids\n        }\n    }\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -12851,8 +12030,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 2060,
-        "y": 680,
+        "x": 2040,
+        "y": 320,
         "wires": [
             [
                 "f033b92e5ba13fcc",
@@ -12864,7 +12043,7 @@
         "id": "d36889816ac0fe8e",
         "type": "http request",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "method": "DELETE",
         "ret": "txt",
@@ -12877,142 +12056,11 @@
         "authType": "",
         "senderr": false,
         "headers": [],
-        "x": 1890,
-        "y": 680,
+        "x": 1870,
+        "y": 320,
         "wires": [
             [
                 "8444301221890904"
-            ]
-        ]
-    },
-    {
-        "id": "4b6f1eb42b88da74",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "check .pdf or .txt",
-        "func": "if (msg.oldPayload.link.includes(\".pdf\")){\n    return[msg, null]\n}else{\n    return[null, msg]\n}\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 750,
-        "y": 1320,
-        "wires": [
-            [
-                "45d050edcec39b86"
-            ],
-            [
-                "ba7d9ba90e21b85e"
-            ]
-        ]
-    },
-    {
-        "id": "45d050edcec39b86",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "read pdf",
-        "func": "\n\nconst decodedFilename = `${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.path = \"/data/storage/\" + outputString;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 960,
-        "y": 1320,
-        "wires": [
-            [
-                "5dd8bc6925a4d897"
-            ]
-        ]
-    },
-    {
-        "id": "e53878b9d91108df",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create payload",
-        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1380,
-        "y": 1320,
-        "wires": [
-            [
-                "162158f556a80497",
-                "0293ec9c022d79f4"
-            ],
-            [
-                "162158f556a80497",
-                "ca26229730123383"
-            ]
-        ]
-    },
-    {
-        "id": "f32249d89e195b2d",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "check .pdf or .txt",
-        "func": "if (msg.oldPayload.link.includes(\".pdf\")){\n    return[msg, null]\n}else{\n    return[null, msg]\n}\n",
-        "outputs": 2,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 670,
-        "y": 1700,
-        "wires": [
-            [
-                "c7f2f5bb0d1a1e78"
-            ],
-            [
-                "19ee5925125f783f"
-            ]
-        ]
-    },
-    {
-        "id": "c7f2f5bb0d1a1e78",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "read pdf",
-        "func": "\n\nconst decodedFilename = `${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.path = \"/data/storage/\" + outputString;\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 880,
-        "y": 1660,
-        "wires": [
-            [
-                "840dd35450baa020"
-            ]
-        ]
-    },
-    {
-        "id": "0582d87bd044fa4d",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "create payload",
-        "func": "msg.payload = msg.payload.text\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1220,
-        "y": 1660,
-        "wires": [
-            [
-                "9b9c70ad1de4b56b"
             ]
         ]
     },
@@ -13145,205 +12193,18 @@
         ]
     },
     {
-        "id": "4e16359d860b8ded",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 320,
-        "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "f66c0120b1f03455",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1440,
-        "y": 1940,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "5958b50f9d61ea4d",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1640,
-        "y": 1880,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "2eb7416a949db88c",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1890,
-        "y": 1620,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "250e9376a47d5b8a",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2130,
-        "y": 1500,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "72475b4c21b7e944",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2103,
-        "y": 1701.2000732421875,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "c0d0b57e2d701a7c",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2050,
-        "y": 1860,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "79520be0bb6a7870",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2030,
-        "y": 1360,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0132fdd33de3b624",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2000,
-        "y": 1140,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "0b3b3965772292fa",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 1780,
-        "y": 1220,
-        "wires": [
-            []
-        ]
-    },
-    {
         "id": "cf4156d5c447a16c",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2100,
-        "y": 520,
-        "wires": [
-            []
-        ]
-    },
-    {
-        "id": "e0a30529618286ca",
-        "type": "link call",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "links": [
-            "d1949ed8cdf3c5ed"
-        ],
-        "linkType": "static",
-        "timeout": "30",
-        "x": 2110,
-        "y": 1280,
+        "x": 2080,
+        "y": 160,
         "wires": [
             []
         ]
@@ -13372,13 +12233,13 @@
         "id": "796fcd0b58916758",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "url": "/getKnowlegeObjectLink",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1580,
+        "x": 2600,
         "y": 120,
         "wires": [
             [
@@ -13390,7 +12251,7 @@
         "id": "f7f33a86ce8d8fef",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload ={\n'knowledgeBaseId': msg.payload.id,\n\"type\": \"Link\",\ndeleted: { $ne: true }\n}\nreturn msg;",
         "outputs": 1,
@@ -13403,7 +12264,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1810,
+        "x": 2830,
         "y": 120,
         "wires": [
             [
@@ -13415,14 +12276,14 @@
         "id": "11bec5f579b0b092",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1990,
+        "x": 3010,
         "y": 120,
         "wires": [
             [
@@ -13434,11 +12295,11 @@
         "id": "4158be83830615bc",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
+        "x": 3170,
         "y": 120,
         "wires": []
     },
@@ -13446,13 +12307,13 @@
         "id": "c4f1d18b2c5d0eb7",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "url": "/getKnowlegeObjectFiles",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1580,
+        "x": 2600,
         "y": 160,
         "wires": [
             [
@@ -13464,7 +12325,7 @@
         "id": "292d3caa5beb7778",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.payload.id,\n    \"type\": \"File\",\n    deleted: { $ne: true }\n\n}\nreturn msg;",
         "outputs": 1,
@@ -13477,7 +12338,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1810,
+        "x": 2830,
         "y": 160,
         "wires": [
             [
@@ -13489,14 +12350,14 @@
         "id": "76f1fd55909c53ab",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1990,
+        "x": 3010,
         "y": 160,
         "wires": [
             [
@@ -13508,11 +12369,11 @@
         "id": "5ec283479477abe6",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
+        "x": 3170,
         "y": 160,
         "wires": []
     },
@@ -13520,13 +12381,13 @@
         "id": "42505fe8cbd4e294",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "url": "/getKnowlegeObjectFAQ",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1580,
+        "x": 2600,
         "y": 200,
         "wires": [
             [
@@ -13538,7 +12399,7 @@
         "id": "b9c3655fb6f94525",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.payload.id,\n    \"type\": \"FAQ\",\n    deleted: { $ne: true }\n\n}\nreturn msg;",
         "outputs": 1,
@@ -13551,7 +12412,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1810,
+        "x": 2830,
         "y": 200,
         "wires": [
             [
@@ -13563,14 +12424,14 @@
         "id": "f6f04b7f237878d0",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1990,
+        "x": 3010,
         "y": 200,
         "wires": [
             [
@@ -13582,11 +12443,11 @@
         "id": "862dc7094cc3702c",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
+        "x": 3170,
         "y": 200,
         "wires": []
     },
@@ -13594,7 +12455,7 @@
         "id": "cbd939371725f5c9",
         "type": "inject",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "props": [
             {
@@ -13612,7 +12473,7 @@
         "topic": "",
         "payload": "",
         "payloadType": "date",
-        "x": 1600,
+        "x": 2620,
         "y": 80,
         "wires": [
             [
@@ -13624,13 +12485,13 @@
         "id": "db5662eacd7d9eb5",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "url": "/getKnowlegeObjectPdf",
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1580,
+        "x": 2600,
         "y": 320,
         "wires": [
             [
@@ -13642,7 +12503,7 @@
         "id": "1c2539fd446d3718",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "to mongoDB",
         "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.payload.id,\n    \"type\": \"FilePDF\",\n    deleted: { $ne: true }\n\n}\nreturn msg;",
         "outputs": 1,
@@ -13655,7 +12516,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1810,
+        "x": 2830,
         "y": 320,
         "wires": [
             [
@@ -13667,14 +12528,14 @@
         "id": "2db2b245aa5eabb5",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "links": [
             "2677414dc3b763e4"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1990,
+        "x": 3010,
         "y": 320,
         "wires": [
             [
@@ -13686,11 +12547,11 @@
         "id": "29445d42adea56dc",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
+        "g": "9ab1eb9b42ce281a",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
+        "x": 3170,
         "y": 320,
         "wires": []
     },
@@ -13698,225 +12559,18 @@
         "id": "9b5d8966c49993cd",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 2240,
-        "y": 720,
+        "x": 2220,
+        "y": 360,
         "wires": [
             []
         ]
-    },
-    {
-        "id": "3191ff659fb73d78",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "debug 427",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 770,
-        "y": 1460,
-        "wires": []
-    },
-    {
-        "id": "075cd5f3c274ca98",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "debug 428",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1570,
-        "y": 1600,
-        "wires": []
-    },
-    {
-        "id": "358c2c2c2695f0ae",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "debug 429",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 2100,
-        "y": 1800,
-        "wires": []
-    },
-    {
-        "id": "162158f556a80497",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "debug 430",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1670,
-        "y": 1080,
-        "wires": []
-    },
-    {
-        "id": "f4411d154ac1cb06",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "function 328",
-        "func": "msg.payload = msg.payload.text\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1235,
-        "y": 1260,
-        "wires": [
-            [
-                "cfa67c0faae732a5"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "e25c2d369acc6872",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "function 329",
-        "func": "msg.payload = msg.payload.text\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1235,
-        "y": 1320,
-        "wires": [
-            [
-                "e53878b9d91108df"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "34f72e23a62f55f9",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "debug 431",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1790,
-        "y": 1420,
-        "wires": []
-    },
-    {
-        "id": "8bbeceb6411b448f",
-        "type": "function",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "function 330",
-        "func": "msg.payload = msg.payload.text\nreturn msg;",
-        "outputs": 1,
-        "noerr": 0,
-        "initialize": "",
-        "finalize": "",
-        "libs": [],
-        "x": 1295,
-        "y": 1520,
-        "wires": [
-            [
-                "f936d8bcc43cfdf6"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "bd7a3b08d4b90416",
-        "type": "delay",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1895,
-        "y": 1580,
-        "wires": [
-            [
-                "752b7200cc83b1e2"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "2b0b88cae098c7a9",
-        "type": "delay",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "pauseType": "delay",
-        "timeout": "1",
-        "timeoutUnits": "seconds",
-        "rate": "1",
-        "nbRateUnits": "1",
-        "rateUnits": "second",
-        "randomFirst": "1",
-        "randomLast": "5",
-        "randomUnits": "seconds",
-        "drop": false,
-        "allowrate": false,
-        "outputs": 1,
-        "x": 1785,
-        "y": 1180,
-        "wires": [
-            [
-                "0293ec9c022d79f4"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "447d219e04f5c4e9",
@@ -13929,7 +12583,7 @@
         "upload": false,
         "swaggerDoc": "",
         "x": 160,
-        "y": 2160,
+        "y": 2220,
         "wires": [
             [
                 "7be5a588bfe35ac5",
@@ -13952,7 +12606,7 @@
         "finalize": "",
         "libs": [],
         "x": 470,
-        "y": 2160,
+        "y": 2220,
         "wires": [
             [
                 "6cb8466c8d27b038"
@@ -13972,7 +12626,7 @@
         "finalize": "",
         "libs": [],
         "x": 510,
-        "y": 2240,
+        "y": 2300,
         "wires": [
             [
                 "931545f90773e617"
@@ -13997,7 +12651,7 @@
             }
         ],
         "x": 850,
-        "y": 2240,
+        "y": 2300,
         "wires": [
             [
                 "6cb8466c8d27b038",
@@ -14012,7 +12666,7 @@
         "g": "911c1ee2586e9d4d",
         "name": "",
         "x": 700,
-        "y": 2240,
+        "y": 2300,
         "wires": [
             [
                 "f79c4b87e3960cf9"
@@ -14028,7 +12682,7 @@
         "statusCode": "",
         "headers": {},
         "x": 730,
-        "y": 2060,
+        "y": 2120,
         "wires": []
     },
     {
@@ -14044,7 +12698,7 @@
         "finalize": "",
         "libs": [],
         "x": 450,
-        "y": 2060,
+        "y": 2120,
         "wires": [
             [
                 "6f43f46c6d6627e4"
@@ -14070,7 +12724,7 @@
         "allowrate": false,
         "outputs": 1,
         "x": 605,
-        "y": 2060,
+        "y": 2120,
         "wires": [
             [
                 "0dd7f5e7c3f02753"
@@ -14096,7 +12750,7 @@
             }
         ],
         "x": 830,
-        "y": 2120,
+        "y": 2180,
         "wires": [
             [
                 "96bc55efbe1eda75"
@@ -14115,7 +12769,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 1000,
-        "y": 2120,
+        "y": 2180,
         "wires": [
             []
         ]
@@ -14134,7 +12788,7 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 250,
-        "y": 2220,
+        "y": 2280,
         "wires": []
     },
     {
@@ -14149,7 +12803,7 @@
         "linkType": "static",
         "timeout": "30",
         "x": 640,
-        "y": 2120,
+        "y": 2180,
         "wires": [
             []
         ]
@@ -14172,7 +12826,7 @@
             }
         ],
         "x": 450,
-        "y": 2120,
+        "y": 2180,
         "wires": [
             [
                 "63d687c22b99e9d5"
@@ -14194,14 +12848,14 @@
         "statusVal": "",
         "statusType": "auto",
         "x": 1010,
-        "y": 2240,
+        "y": 2300,
         "wires": []
     },
     {
         "id": "5a9cf18af75e3c0b",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "update",
         "func": "msg.collection = \"knowledgeObjects\"\n\nconst question = msg.payload.question;\nconst result = msg.payload.result;\nconst id = msg.payload.id;\nconst url = msg.payload.url;\n\n\nlet updatedData = { url: url, question: question, result };\n\n\nmsg.query = { \"vectors.id\": id };\nmsg.payload = {\n    \"$set\": {\n        \"vectors.$\": {\n            id: id,\n            metadata: updatedData\n        }\n    }\n};\n\n\nreturn msg;\n",
         "outputs": 1,
@@ -14214,8 +12868,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1760,
-        "y": 800,
+        "x": 1740,
+        "y": 440,
         "wires": [
             [
                 "bfd25775c6570faa",
@@ -14227,14 +12881,14 @@
         "id": "5582346294319529",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "url": "/updateVectorOnDB",
         "method": "put",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1550,
-        "y": 800,
+        "x": 1530,
+        "y": 440,
         "wires": [
             [
                 "5a9cf18af75e3c0b",
@@ -14246,19 +12900,19 @@
         "id": "cd48cc7a92b2a3d1",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2090,
-        "y": 840,
+        "x": 2070,
+        "y": 480,
         "wires": []
     },
     {
         "id": "bfd25775c6570faa",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "status",
         "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
         "outputs": 1,
@@ -14266,8 +12920,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 1950,
-        "y": 840,
+        "x": 1930,
+        "y": 480,
         "wires": [
             [
                 "cd48cc7a92b2a3d1"
@@ -14278,15 +12932,15 @@
         "id": "d92184e6adc057c5",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1980,
-        "y": 780,
+        "x": 1960,
+        "y": 420,
         "wires": [
             []
         ]
@@ -14295,7 +12949,7 @@
         "id": "d648ea43ba5a7657",
         "type": "function",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "the end",
         "func": "\nmsg.collection = \"knowledgeObjects\"\nconst id = msg.req.query.id;\n\nmsg.query = { \"vectors.id\": id };\nmsg.payload = {\n    \"$pull\": {\n        \"vectors\": {\n            \"id\": id\n        }\n    }\n};\n\nreturn msg;\n",
         "outputs": 1,
@@ -14308,8 +12962,8 @@
                 "module": "objectid"
             }
         ],
-        "x": 1780,
-        "y": 940,
+        "x": 1760,
+        "y": 580,
         "wires": [
             [
                 "5bb720dc3ef56b7a",
@@ -14321,14 +12975,14 @@
         "id": "8c5c228aa9202f2b",
         "type": "http in",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "url": "/deleteVectorDB",
         "method": "delete",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1550,
-        "y": 940,
+        "x": 1530,
+        "y": 580,
         "wires": [
             [
                 "d648ea43ba5a7657",
@@ -14340,27 +12994,27 @@
         "id": "5bb720dc3ef56b7a",
         "type": "http response",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 1910,
-        "y": 920,
+        "x": 1890,
+        "y": 560,
         "wires": []
     },
     {
         "id": "99ad91f7fb16dfbc",
         "type": "link call",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "",
         "links": [
             "d1949ed8cdf3c5ed"
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1940,
-        "y": 960,
+        "x": 1920,
+        "y": 600,
         "wires": [
             []
         ]
@@ -14369,7 +13023,7 @@
         "id": "718ebd07aa298058",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "debug 434",
         "active": true,
         "tosidebar": true,
@@ -14379,15 +13033,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1830,
-        "y": 880,
+        "x": 1810,
+        "y": 520,
         "wires": []
     },
     {
         "id": "5a3203eb955fd7d9",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "debug 435",
         "active": true,
         "tosidebar": true,
@@ -14397,15 +13051,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 2030,
-        "y": 900,
+        "x": 2010,
+        "y": 540,
         "wires": []
     },
     {
         "id": "c99c1f560bd3c907",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "debug 436",
         "active": true,
         "tosidebar": true,
@@ -14415,15 +13069,15 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1710,
-        "y": 600,
+        "x": 1690,
+        "y": 240,
         "wires": []
     },
     {
         "id": "06b21e1c324bcb90",
         "type": "debug",
         "z": "8bea414da58d7b2a",
-        "g": "bc79b0c55ed950a2",
+        "g": "aff5f6094780b487",
         "name": "debug 437",
         "active": true,
         "tosidebar": true,
@@ -14433,8 +13087,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1750,
-        "y": 740,
+        "x": 1730,
+        "y": 380,
         "wires": []
     },
     {
@@ -15618,151 +14272,6 @@
         "wires": []
     },
     {
-        "id": "5dd8bc6925a4d897",
-        "type": "pdfparse",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "path": "",
-        "x": 1120,
-        "y": 1320,
-        "wires": [
-            [
-                "e25c2d369acc6872"
-            ]
-        ]
-    },
-    {
-        "id": "840dd35450baa020",
-        "type": "pdfparse",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "path": "",
-        "x": 1040,
-        "y": 1660,
-        "wires": [
-            [
-                "0582d87bd044fa4d"
-            ]
-        ]
-    },
-    {
-        "id": "0293ec9c022d79f4",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1640,
-        "y": 1140,
-        "wires": [
-            [
-                "7aa9e7878f282bf1"
-            ],
-            [
-                "4be769eac39e255b"
-            ]
-        ]
-    },
-    {
-        "id": "ed222f0c52f5bbc8",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1770,
-        "y": 1540,
-        "wires": [
-            [
-                "a5445e57033f03ab"
-            ],
-            [
-                "bd7a3b08d4b90416"
-            ]
-        ]
-    },
-    {
-        "id": "bb4cc1dcf4246d5c",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1260,
-        "y": 1880,
-        "wires": [
-            [
-                "b6866d5174367b94"
-            ],
-            [
-                "3745a86daf8b2d65"
-            ]
-        ]
-    },
-    {
-        "id": "3b529a0ad5978908",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1750,
-        "y": 1760,
-        "wires": [
-            [
-                "60a4af21e5faaa7d"
-            ],
-            [
-                "f84baf671b6d2ba0"
-            ]
-        ]
-    },
-    {
-        "id": "ca26229730123383",
-        "type": "array-loop",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "",
-        "key": "count",
-        "keyType": "msg",
-        "reset": false,
-        "resetValue": "value-null",
-        "array": "array",
-        "arrayType": "msg",
-        "x": 1670,
-        "y": 1280,
-        "wires": [
-            [
-                "665c6273f8a9b9a1"
-            ],
-            [
-                "a6174946dc747baa"
-            ]
-        ]
-    },
-    {
         "id": "6cb8466c8d27b038",
         "type": "array-loop",
         "z": "8bea414da58d7b2a",
@@ -15775,7 +14284,7 @@
         "array": "array",
         "arrayType": "msg",
         "x": 680,
-        "y": 2160,
+        "y": 2220,
         "wires": [
             [
                 "fca11faee5518dfa"
@@ -15784,60 +14293,6 @@
                 "abf038af92f26537"
             ]
         ]
-    },
-    {
-        "id": "6dbf6ccd83ab84de",
-        "type": "openai-ubos",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1765,
-        "y": 1840,
-        "wires": [
-            [
-                "55cee18d243cb0dc"
-            ]
-        ],
-        "l": false
-    },
-    {
-        "id": "9917eac5b77b4506",
-        "type": "openai-ubos",
-        "z": "8bea414da58d7b2a",
-        "g": "e5c2a19a4e324330",
-        "name": "genarate unswer",
-        "model": "gpt-3.5-turbo",
-        "temperature": 0.02,
-        "max_tokens": 2000,
-        "prompt": "",
-        "frequency_penalty": 0,
-        "presence_penalty": 0,
-        "top_p": 1,
-        "stop": {
-            "type": "json",
-            "value": "[]"
-        },
-        "OPENAI_API_KEY": "",
-        "x": 1685,
-        "y": 1360,
-        "wires": [
-            [
-                "01868ecd3acf2961"
-            ]
-        ],
-        "l": false
     },
     {
         "id": "434e200cd77ed275",
@@ -15936,7 +14391,7 @@
         "z": "8bea414da58d7b2a",
         "g": "a16a3e4151c2e982",
         "name": "update",
-        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\n\nlet url = msg.oldPayload.name\n\n\nmsg.query = { \"_id\":objectid(msg.payload[0]._id)}\nmsg.payload = {\n\n    \"$push\": {\n        \"vectors\": {\n            id: Date.now().toString(),\n            pinecone: false,\n            metadata: { url: url, question: question, result },\n        },\n        status: \"Divided\"\n    }\n\n};\nreturn msg;\n",
+        "func": "let question = msg.oldPayload.question;\nlet result = msg.oldPayload.result;\n\nlet url = msg.oldPayload.name\n\n\nmsg.query = { \"_id\":objectid(msg.payload[0]._id)}\nmsg.payload = {\n\n    \"$push\": {\n        \"vectors\": {\n            id: Date.now().toString(),\n            pinecone: false,\n            metadata: { url: url, question: question, result },\n        },\n    }\n\n};\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16176,12 +14631,11 @@
         "method": "get",
         "upload": false,
         "swaggerDoc": "",
-        "x": 1590,
+        "x": 2610,
         "y": 260,
         "wires": [
             [
-                "d5c3b4a9a0399eb9",
-                "5d7a154e0c014e18"
+                "d5c3b4a9a0399eb9"
             ]
         ]
     },
@@ -16190,7 +14644,7 @@
         "type": "function",
         "z": "8bea414da58d7b2a",
         "name": "to mongoDB",
-        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId': msg.payload.id,\n    \"type\": \"Manual\",\n    deleted: { $ne: true }\n\n}\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\nmsg.payload = {\n    'knowledgeBaseId':msg.payload.id,\n    \"type\": \"Manual\",\n    deleted: { $ne: true }\n\n}\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -16201,7 +14655,7 @@
                 "module": "objectid"
             }
         ],
-        "x": 1810,
+        "x": 2830,
         "y": 260,
         "wires": [
             [
@@ -16219,7 +14673,7 @@
         ],
         "linkType": "static",
         "timeout": "30",
-        "x": 1990,
+        "x": 3010,
         "y": 260,
         "wires": [
             [
@@ -16234,26 +14688,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 2150,
+        "x": 3170,
         "y": 260,
-        "wires": []
-    },
-    {
-        "id": "5d7a154e0c014e18",
-        "type": "debug",
-        "z": "8bea414da58d7b2a",
-        "g": "080a4b05e6b518fc",
-        "name": "debug 482",
-        "active": true,
-        "tosidebar": true,
-        "console": false,
-        "tostatus": false,
-        "complete": "true",
-        "targetType": "full",
-        "statusVal": "",
-        "statusType": "auto",
-        "x": 1830,
-        "y": 300,
         "wires": []
     },
     {
@@ -16272,6 +14708,2030 @@
         "statusType": "auto",
         "x": 380,
         "y": 980,
+        "wires": []
+    },
+    {
+        "id": "60fcf811aaa47983",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "url": "/addVector",
+        "method": "put",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 1500,
+        "y": 760,
+        "wires": [
+            [
+                "ca416f1b98beabd4",
+                "a174c982a35eeae3"
+            ]
+        ]
+    },
+    {
+        "id": "29f355cc5c5a2756",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "update",
+        "func": "\nconst question = msg.payload.question;\nconst result = msg.payload.result;\nconst id = Date.now().toString();\nconst url = msg.payload.url;\n\n\nlet updatedData = { url: url, question: question, result }; \nmsg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.payload._id) }\n\nmsg.payload = {\n    \"$push\": {\n        \"vectors\": {\n            id: id,\n            pinecone: false,\n            metadata: updatedData\n        }\n    }\n\n};\n\nreturn msg;\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1860,
+        "y": 800,
+        "wires": [
+            [
+                "991728e9094bd66f",
+                "73421b0edc8be468"
+            ]
+        ]
+    },
+    {
+        "id": "991728e9094bd66f",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully added\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2070,
+        "y": 860,
+        "wires": [
+            [
+                "c2b008a8e03aea46"
+            ]
+        ]
+    },
+    {
+        "id": "73421b0edc8be468",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2100,
+        "y": 820,
+        "wires": [
+            [
+                "d101f0224434fdea"
+            ]
+        ]
+    },
+    {
+        "id": "c2b008a8e03aea46",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2230,
+        "y": 860,
+        "wires": []
+    },
+    {
+        "id": "d101f0224434fdea",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "to chat",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2280,
+        "y": 820,
+        "wires": []
+    },
+    {
+        "id": "ca416f1b98beabd4",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "to chat",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1960,
+        "y": 920,
+        "wires": []
+    },
+    {
+        "id": "a174c982a35eeae3",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "check status",
+        "func": "if (msg.payload.status === \"Saved in Pinecone\"){\n    return [msg,null]\n}else{\n    return [null,msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1690,
+        "y": 760,
+        "wires": [
+            [
+                "348afd1aff8b7e76"
+            ],
+            [
+                "29f355cc5c5a2756"
+            ]
+        ]
+    },
+    {
+        "id": "9799e4664d3f7445",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "update",
+        "func": "const { getADAEmbedding } = global.get(\"helpers\");\n\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = Date.now().toString();\nconst url = msg.fromApp.url;\n\nconst embeddingResult = await getADAEmbedding(question);\n\nmsg.payload = await msg.main.index.upsert({\n    upsertRequest: {\n        vectors: [\n            {\n                id: id,\n                values: embeddingResult,\n                metadata: { question: question, result, url: url },\n            },\n        ],\n    },\n});\n\nlet updatedData = { url: url, question: question, result };\nmsg.collection = \"knowledgeObjects\"\n\nmsg.query = { \"_id\": objectid(msg.fromTG[\"_id \"]) }\nmsg.payload = {\n    \"$push\": {\n        \"vectors\": {\n            id: id,\n            pinecone: true,\n            metadata: updatedData\n        }\n    }\n\n};\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 2000,
+        "y": 740,
+        "wires": [
+            [
+                "9da53257cf02584a",
+                "461f1e55f3127c0b"
+            ]
+        ]
+    },
+    {
+        "id": "f722a9741c9e9a40",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 2310,
+        "y": 760,
+        "wires": []
+    },
+    {
+        "id": "348afd1aff8b7e76",
+        "type": "subflow:a36ef6d92fe6c77f",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "x": 1860,
+        "y": 740,
+        "wires": [
+            [
+                "9799e4664d3f7445"
+            ]
+        ]
+    },
+    {
+        "id": "9da53257cf02584a",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\": \"Successfully updated\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 2160,
+        "y": 760,
+        "wires": [
+            [
+                "f722a9741c9e9a40"
+            ]
+        ]
+    },
+    {
+        "id": "461f1e55f3127c0b",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "aff5f6094780b487",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2180,
+        "y": 720,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "38078d4521bd2654",
+        "type": "http in",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "url": "/divideFile",
+        "method": "post",
+        "upload": false,
+        "swaggerDoc": "",
+        "x": 140,
+        "y": 1360,
+        "wires": [
+            [
+                "3260737fa16542db"
+            ]
+        ]
+    },
+    {
+        "id": "3260737fa16542db",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "check type",
+        "func": "\nmsg.collection = \"knowledgeObjects\";\nmsg.oldPayload = msg.payload;\nmsg.type = msg.payload.type;\nmsg.urlName = msg.oldPayload.link;\nmsg.fileType = msg.payload.file_type;\nmsg._id = objectid(msg.payload.id);\n\n\nif(msg.type ===\"Points\"){\n    return [msg,null,null]\n}\nif(msg.type ===\"Paragraphs\"){\n    return[null,msg,null]\n}\nif (msg.type ===\"Question-Answer\"){\n    return [null, null, msg]\n}",
+        "outputs": 3,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 370,
+        "y": 1360,
+        "wires": [
+            [
+                "9ad89ec9afa18bcf",
+                "4bb9c7b82b1bedac"
+            ],
+            [
+                "c915a9fd0fd90dfd",
+                "4bb9c7b82b1bedac"
+            ],
+            [
+                "06e1284a975f6a24",
+                "4bb9c7b82b1bedac"
+            ]
+        ]
+    },
+    {
+        "id": "9ad89ec9afa18bcf",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "check file Type",
+        "func": "if (msg.fileType ===\"Link\"){\n    return [msg,null,null]\n} if (msg.fileType === \"File\"){\n    return[null,msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 580,
+        "y": 1340,
+        "wires": [
+            [
+                "a0802b89555f5d46"
+            ],
+            [
+                "8ac60db9f091b86b"
+            ]
+        ]
+    },
+    {
+        "id": "a8f56c2553162837",
+        "type": "http request",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Get Link Info",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 990,
+        "y": 1300,
+        "wires": [
+            [
+                "79bc54c562f56e96"
+            ]
+        ]
+    },
+    {
+        "id": "a0802b89555f5d46",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "func": "\nmsg.url = msg.oldPayload.link;\n\n\n    return msg\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 820,
+        "y": 1300,
+        "wires": [
+            [
+                "a8f56c2553162837"
+            ]
+        ]
+    },
+    {
+        "id": "f7e13fb061a0d7f7",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Create Pages",
+        "func": "\nlet str = msg.payload\nmsg.payload  = msg.payload\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1300,
+        "wires": [
+            [
+                "9cb94ca82b443fbe",
+                "17810b41e58795b1"
+            ],
+            [
+                "9cb94ca82b443fbe",
+                "2efe0b9f1454fee2"
+            ]
+        ]
+    },
+    {
+        "id": "79bc54c562f56e96",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Scrape",
+        "func": "const { JSDOM } = jsdom;\n\nconst html = msg.payload;\n\nconst dom = new JSDOM(`${html}`);\ndom.window.document.querySelectorAll('style').forEach(link => {\n    link.remove();\n});\ndom.window.document.querySelectorAll('script').forEach(link => {\n    link.remove();\n});\nconst document = dom.window.document;\nconst pageText = document.body.textContent;\nmsg.text = pageText;\n\n\nlet table = dom.window.document.querySelector('table');\n\nlet ckeckTable = table?.textContent ? true : false;\n\n\nif (ckeckTable) {\n    const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n        const text = td.textContent.trim();\n        return text !== \"\" ? text : undefined;\n    }).filter(Boolean);\n\n    const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n    const tableData = rows.map(row => {\n        const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n        return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n    });\n\n    let tables = JSON.stringify(tableData);\n    node.warn(tables)\n    msg.payload = pageText + '\\n\\n' + tables;\n} else {\n    msg.payload = pageText;\n}\n\n\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsdom",
+                "module": "jsdom"
+            }
+        ],
+        "x": 1160,
+        "y": 1300,
+        "wires": [
+            [
+                "9cb94ca82b443fbe",
+                "f7e13fb061a0d7f7"
+            ]
+        ]
+    },
+    {
+        "id": "48fe9ab6d7040507",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "\nmsg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload.text\n\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1655,
+        "y": 1260,
+        "wires": [
+            [
+                "6e206b8d65692ec1",
+                "781479e15f147c9e",
+                "a6ee4307ea0824b5",
+                "0003d926e74809dc"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "17810b41e58795b1",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1660,
+        "y": 1180,
+        "wires": [
+            [
+                "d1686af8f9caaa80"
+            ],
+            [
+                "48fe9ab6d7040507"
+            ]
+        ]
+    },
+    {
+        "id": "e821f5f86e2e93c2",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "decodedFilename ",
+        "func": "const decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\nmsg.urlName = outputString\nmsg.filepath = \"/data/storage\" + outputString;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 890,
+        "y": 1420,
+        "wires": [
+            [
+                "12dd4228e49edf33"
+            ]
+        ]
+    },
+    {
+        "id": "8d8334914d6cf945",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Create Pages",
+        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "natural",
+                "module": "natural"
+            }
+        ],
+        "x": 1400,
+        "y": 1420,
+        "wires": [
+            [
+                "9cb94ca82b443fbe",
+                "17810b41e58795b1"
+            ],
+            [
+                "9cb94ca82b443fbe",
+                "2efe0b9f1454fee2"
+            ]
+        ]
+    },
+    {
+        "id": "9d9b2267bcd63d34",
+        "type": "http request",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Get Link Info",
+        "method": "GET",
+        "ret": "txt",
+        "paytoqs": "ignore",
+        "url": "",
+        "tls": "",
+        "persist": false,
+        "proxy": "",
+        "insecureHTTPParser": false,
+        "authType": "",
+        "senderr": false,
+        "headers": [],
+        "x": 1010,
+        "y": 1560,
+        "wires": [
+            [
+                "70c15e2dac5ca7ca"
+            ]
+        ]
+    },
+    {
+        "id": "5ca1e7b43802a928",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "func": "\n\nmsg.url = msg.oldPayload.link;\n\n\n    return msg\n\n\n\n\n\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 840,
+        "y": 1560,
+        "wires": [
+            [
+                "9d9b2267bcd63d34"
+            ]
+        ]
+    },
+    {
+        "id": "d7fff4960fb3648b",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Create Pages",
+        "func": "let str = msg.payload\n\n\nconst MAX_LENGTH = 300;\n\nlet paragraphs = [];\nlet currentParagraph = '';\n\nconst sentences = str.split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        paragraphs.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    paragraphs.push(currentParagraph.trim());\n}\nmsg.array = paragraphs\nmsg.array = paragraphs\nif (msg.oldPayload.anrichment){\n    return [null, msg]\n}else{\n    return[msg, null]\n}\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "natural",
+                "module": "natural"
+            }
+        ],
+        "x": 1440,
+        "y": 1560,
+        "wires": [
+            [
+                "5ee24fefb506174d",
+                "d55d4555217b91e8"
+            ],
+            [
+                "3da3de6b1340777e",
+                "5ee24fefb506174d"
+            ]
+        ]
+    },
+    {
+        "id": "a8a2d9a9f276bd20",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "msg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1755,
+        "y": 1660,
+        "wires": [
+            [
+                "d55d4555217b91e8",
+                "d1ded379d6243d94"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "d55d4555217b91e8",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1790,
+        "y": 1580,
+        "wires": [
+            [
+                "959f59c98f643917"
+            ],
+            [
+                "a5a446e41ff623bb",
+                "7f79bd11d26c94e1"
+            ]
+        ]
+    },
+    {
+        "id": "9fa2f1bac8d09e44",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Create Pages",
+        "func": "// let str = msg.payload;\n// msg.ll = msg.payload.length;\n\n// const MAX_LENGTH = 300;\n\n// let paragraphs = [];\n// let currentParagraph = '';\n\n// const sentences = str.split(/([.?!])+/).filter(sentence => sentence.trim() !== '');\n// // const sentences = str.split().filter(sentence => sentence.trim() !== '');\n\n// for (const sentence of sentences) {\n//     if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n//         currentParagraph += sentence;\n//     } else {\n//         paragraphs.push(currentParagraph.trim());\n//         currentParagraph = sentence;\n//     }\n// }\n\n// if (currentParagraph.trim() !== '') {\n//     paragraphs.push(currentParagraph.trim());\n// }\n// msg.array = paragraphs\n\n// if (msg.oldPayload.anrichment) {\n//     return [null, msg]\n// } else {\n//     return [msg, null]\n// }\n\n// let str = msg.payload;\n// msg.ll = msg.payload.length;\n\n// const MAX_LENGTH = 300;\n\n// let paragraphs = [];\n// let currentParagraph = '';\n\n// const sentences = str.match(/[^.!?]+[.!?]+/g) || [];\n// // const sentences = str.split().filter(sentence => sentence.trim() !== '');\n\n// for (const sentence of sentences) {\n//     if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n//         currentParagraph += sentence;\n//     } else {\n//         paragraphs.push(currentParagraph.trim());\n//         currentParagraph = sentence;\n//     }\n// }\n\n// if (currentParagraph.trim() !== '') {\n//     paragraphs.push(currentParagraph.trim());\n// }\n// msg.array = paragraphs;\n\n// if (msg.oldPayload && msg.oldPayload.anrichment) {\n//     return [null, msg];\n// } else {\n//     return [msg, null];\n// }\n\n\n\nlet str = msg.payload.replace(/\\s+/g, ' ')\n\nconst MAX_LENGTH = 300;\n\nlet paragraphs = [];\nlet currentParagraph = '';\n\nconst sentences = str.split('. ').filter(sentence => sentence.trim() !== '');\nfor (const sentence of sentences) {\n    if (currentParagraph.length + sentence.length <= MAX_LENGTH) {\n        currentParagraph += sentence;\n    } else {\n        paragraphs.push(currentParagraph.trim());\n        currentParagraph = sentence;\n    }\n}\n\nif (currentParagraph.trim() !== '') {\n    paragraphs.push(currentParagraph.trim());\n}\nmsg.array= paragraphs\n\n\nif (msg.oldPayload && msg.oldPayload.anrichment) {\n    return [null, msg];\n} else {\n    return [msg, null];\n}\n\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "natural",
+                "module": "natural"
+            }
+        ],
+        "x": 1440,
+        "y": 1720,
+        "wires": [
+            [
+                "d55d4555217b91e8",
+                "5ee24fefb506174d"
+            ],
+            [
+                "3da3de6b1340777e",
+                "5ee24fefb506174d"
+            ]
+        ]
+    },
+    {
+        "id": "c915a9fd0fd90dfd",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "check file Type",
+        "func": "if (msg.fileType ===\"Link\"){\n    return [msg,null,null]\n} if (msg.fileType === \"File\"){\n    return[null,msg,null]\n}",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 620,
+        "y": 1580,
+        "wires": [
+            [
+                "5ca1e7b43802a928",
+                "95f6cf01c66de4ea"
+            ],
+            [
+                "065d7cf4f71fe573"
+            ]
+        ]
+    },
+    {
+        "id": "06e1284a975f6a24",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "FAQ",
+        "func": "\nconst decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.filepath = \"/data/storage/\" + outputString;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 610,
+        "y": 1920,
+        "wires": [
+            [
+                "fb8b5e1e32698da2"
+            ]
+        ]
+    },
+    {
+        "id": "6b4cda07d65addcd",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "// delete msg.filepath;\n// delete msg.filename;\n\nmsg.collection = \"knowledgeObjects\"\n\nlet question = msg.payload.A;\nlet result = msg.payload.B;\n\nlet url = msg.oldPayload.link\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: url, question: question, result },\n      }\n   }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1265,
+        "y": 1980,
+        "wires": [
+            [
+                "571c9400ebe291c3",
+                "4f86fe630853bda7",
+                "ae6ebf4cd995df5e"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "571c9400ebe291c3",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1280,
+        "y": 1920,
+        "wires": [
+            [
+                "98f78c16526ddcc3"
+            ],
+            [
+                "6b4cda07d65addcd"
+            ]
+        ]
+    },
+    {
+        "id": "b3d1c7aabf701498",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\nmsg.text = msg.payload\n  msg.messages= [\n    { \"role\": \"system\", \"content\": `створіть мені запитання до цього тексту українською мовою : ${msg.payload}`},\n     \n    ]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1715,
+        "y": 1880,
+        "wires": [
+            [
+                "677e45351d959b4d"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "677e45351d959b4d",
+        "type": "openai-ubos",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1785,
+        "y": 1880,
+        "wires": [
+            [
+                "7338a2a9c24c949c",
+                "3dc587f979ecf665"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "bfbb3766b6857752",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1935,
+        "y": 1880,
+        "wires": [
+            [
+                "3da3de6b1340777e",
+                "a3f36cb673994ea6",
+                "5e1c6fb2c1ab9c51"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7338a2a9c24c949c",
+        "type": "delay",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1865,
+        "y": 1880,
+        "wires": [
+            [
+                "bfbb3766b6857752"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "3da3de6b1340777e",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1770,
+        "y": 1800,
+        "wires": [
+            [
+                "ecf11abebc3832c1"
+            ],
+            [
+                "b3d1c7aabf701498"
+            ]
+        ]
+    },
+    {
+        "id": "5d1de5f2bfe88ad1",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\nmsg.OPENAI_API_KEY = process_env.OPENAI_API\n\nmsg.text = msg.payload.text\n\n  msg.messages= [\n    { \"role\": \"system\", \"content\": `створіть мені питання до цього тексту українською мовою : ${msg.text}`},\n     \n    ]\n\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1615,
+        "y": 1400,
+        "wires": [
+            [
+                "fb903a325704e294",
+                "a6ee4307ea0824b5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "fb903a325704e294",
+        "type": "openai-ubos",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "genarate unswer",
+        "model": "gpt-3.5-turbo",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1705,
+        "y": 1400,
+        "wires": [
+            [
+                "108b59a506048622"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "0ae2e6be5aa6b0bd",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create vector",
+        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text;\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1855,
+        "y": 1400,
+        "wires": [
+            [
+                "2efe0b9f1454fee2",
+                "62707ae7c9fcf27d",
+                "a6ee4307ea0824b5"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "108b59a506048622",
+        "type": "delay",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "10",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1795,
+        "y": 1400,
+        "wires": [
+            [
+                "0ae2e6be5aa6b0bd"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "2efe0b9f1454fee2",
+        "type": "array-loop",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "key": "count",
+        "keyType": "msg",
+        "reset": false,
+        "resetValue": "value-null",
+        "array": "array",
+        "arrayType": "msg",
+        "x": 1690,
+        "y": 1320,
+        "wires": [
+            [
+                "3116ac3f50cd361e"
+            ],
+            [
+                "5d1de5f2bfe88ad1"
+            ]
+        ]
+    },
+    {
+        "id": "4bb9c7b82b1bedac",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        vectors:[],\n        status:\"Dividing in process\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 150,
+        "y": 1540,
+        "wires": [
+            [
+                "dd4341b099b6c43b",
+                "0ff19f9d39e738a8"
+            ]
+        ]
+    },
+    {
+        "id": "a6432e2120d18a72",
+        "type": "http response",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "statusCode": "",
+        "headers": {},
+        "x": 610,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "dd4341b099b6c43b",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "status",
+        "func": "msg.payload = {\n    \"success\": true,\n    \"payload\":\"Dividing in process\"\n};\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 330,
+        "y": 1480,
+        "wires": [
+            [
+                "bc1ddb60e7ba20b4"
+            ]
+        ]
+    },
+    {
+        "id": "d1686af8f9caaa80",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1850,
+        "y": 1180,
+        "wires": [
+            [
+                "2f7c16d401c3ec0f",
+                "0003d926e74809dc"
+            ]
+        ]
+    },
+    {
+        "id": "3116ac3f50cd361e",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1940,
+        "y": 1320,
+        "wires": [
+            [
+                "9b0be820f3198188"
+            ]
+        ]
+    },
+    {
+        "id": "ecf11abebc3832c1",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1940,
+        "y": 1740,
+        "wires": [
+            [
+                "98b0f743c1fd71ea"
+            ]
+        ]
+    },
+    {
+        "id": "959f59c98f643917",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1960,
+        "y": 1540,
+        "wires": [
+            [
+                "8493ba85731f331a"
+            ]
+        ]
+    },
+    {
+        "id": "98f78c16526ddcc3",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "reset Vectors",
+        "func": "msg.collection = \"knowledgeObjects\"\n\nmsg.query = {\n    _id: objectid(msg.oldPayload.id)\n}\nmsg.payload ={\n    $set:{\n        status:\"Divided\"\n    }\n}\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "objectid",
+                "module": "objectid"
+            }
+        ],
+        "x": 1470,
+        "y": 1920,
+        "wires": [
+            [
+                "1680e68a72c1087b"
+            ]
+        ]
+    },
+    {
+        "id": "bc1ddb60e7ba20b4",
+        "type": "delay",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 485,
+        "y": 1480,
+        "wires": [
+            [
+                "a6432e2120d18a72"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "7889ba87e21c4b1b",
+        "type": "pdfparse",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "path": "",
+        "x": 1140,
+        "y": 1360,
+        "wires": [
+            [
+                "739bb6d64b53ad50"
+            ]
+        ]
+    },
+    {
+        "id": "8ac60db9f091b86b",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "check .pdf or .txt",
+        "func": "if (msg.oldPayload.link.includes(\".pdf\")){\n    return[msg, null]\n}else{\n    return[null, msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 770,
+        "y": 1360,
+        "wires": [
+            [
+                "d0ea321794c4a4d8"
+            ],
+            [
+                "e821f5f86e2e93c2"
+            ]
+        ]
+    },
+    {
+        "id": "d0ea321794c4a4d8",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "read pdf",
+        "func": "\n\nconst decodedFilename = `${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.path = \"/data/storage/\" + outputString;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 980,
+        "y": 1360,
+        "wires": [
+            [
+                "7889ba87e21c4b1b"
+            ]
+        ]
+    },
+    {
+        "id": "eafa11919460c7c7",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create payload",
+        "func": "\nlet str = msg.payload\nmsg.ll = msg.payload.length;\nconst result = str.split(\".\").map(paragraph => ({ text: paragraph.trim() })).filter(e => e.text !== \"\")\n\nmsg.array = result;\nnode.warn(msg.array)\n\nif (msg.oldPayload.anrichment) {\n    return [null, msg]\n} else {\n    return [msg, null]\n}\n\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1400,
+        "y": 1360,
+        "wires": [
+            [
+                "9cb94ca82b443fbe",
+                "17810b41e58795b1"
+            ],
+            [
+                "9cb94ca82b443fbe",
+                "2efe0b9f1454fee2"
+            ]
+        ]
+    },
+    {
+        "id": "065d7cf4f71fe573",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "check .pdf or .txt",
+        "func": "if (msg.oldPayload.link.includes(\".pdf\")){\n    return[msg, null]\n}else{\n    return[null, msg]\n}\n",
+        "outputs": 2,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 690,
+        "y": 1740,
+        "wires": [
+            [
+                "0e256c3473e6f055"
+            ],
+            [
+                "ef6ec2941f608c58"
+            ]
+        ]
+    },
+    {
+        "id": "0e256c3473e6f055",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "read pdf",
+        "func": "\n\nconst decodedFilename = `${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\n\nmsg.path = \"/data/storage/\" + outputString;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 900,
+        "y": 1700,
+        "wires": [
+            [
+                "5108ac0711d79c10"
+            ]
+        ]
+    },
+    {
+        "id": "5108ac0711d79c10",
+        "type": "pdfparse",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "path": "",
+        "x": 1060,
+        "y": 1700,
+        "wires": [
+            [
+                "8facd8353b7e4341"
+            ]
+        ]
+    },
+    {
+        "id": "8facd8353b7e4341",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "create payload",
+        "func": "msg.payload = msg.payload.text\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1240,
+        "y": 1700,
+        "wires": [
+            [
+                "9fa2f1bac8d09e44"
+            ]
+        ]
+    },
+    {
+        "id": "0ff19f9d39e738a8",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 340,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "4f86fe630853bda7",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1460,
+        "y": 1980,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "1680e68a72c1087b",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1660,
+        "y": 1920,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "d1ded379d6243d94",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1910,
+        "y": 1660,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "8493ba85731f331a",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2150,
+        "y": 1540,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "98b0f743c1fd71ea",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2123,
+        "y": 1741.2000732421875,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "a3f36cb673994ea6",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2070,
+        "y": 1900,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "62707ae7c9fcf27d",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2050,
+        "y": 1400,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "2f7c16d401c3ec0f",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2020,
+        "y": 1180,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "6e206b8d65692ec1",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 1800,
+        "y": 1260,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "9b0be820f3198188",
+        "type": "link call",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "links": [
+            "d1949ed8cdf3c5ed"
+        ],
+        "linkType": "static",
+        "timeout": "30",
+        "x": 2130,
+        "y": 1320,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "95f6cf01c66de4ea",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 427",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 790,
+        "y": 1500,
+        "wires": []
+    },
+    {
+        "id": "5ee24fefb506174d",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 428",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1590,
+        "y": 1640,
+        "wires": []
+    },
+    {
+        "id": "5e1c6fb2c1ab9c51",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 429",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2120,
+        "y": 1840,
+        "wires": []
+    },
+    {
+        "id": "9cb94ca82b443fbe",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 430",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1690,
+        "y": 1120,
+        "wires": []
+    },
+    {
+        "id": "739bb6d64b53ad50",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "function 329",
+        "func": "msg.payload = msg.payload.text\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1255,
+        "y": 1360,
+        "wires": [
+            [
+                "eafa11919460c7c7"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "a6ee4307ea0824b5",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 431",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1810,
+        "y": 1460,
+        "wires": []
+    },
+    {
+        "id": "a5a446e41ff623bb",
+        "type": "delay",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1915,
+        "y": 1620,
+        "wires": [
+            [
+                "a8a2d9a9f276bd20"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "781479e15f147c9e",
+        "type": "delay",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1805,
+        "y": 1220,
+        "wires": [
+            [
+                "17810b41e58795b1"
+            ]
+        ],
+        "l": false
+    },
+    {
+        "id": "008f8886ca491687",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "encoding file",
+        "func": "\nlet text = msg.payload\n\nlet parts = text.split(/\\n/g).map(part => part.trim()).filter(part => part.length > 0);\n\nlet result = [];\nlet obj = {};\nfor (let i = 0; i < parts.length; i++) {\n    if (parts[i].endsWith(\"?\")) {\n        if (Object.keys(obj).length > 0) { // if 'obj' has keys\n            result.push(obj);\n            // @ts-ignore\n            obj = {};\n        }\n        obj[\"A\"] = parts[i];\n    } else {\n        if (obj[\"B\"]) {\n            obj[\"B\"] += ' ' + parts[i];\n        } else {\n            obj[\"B\"] = parts[i];\n        }\n    }\n}\n\n// Push the last object to the result if it hasn't been pushed yet\nif (Object.keys(obj).length > 0) {\n    result.push(obj);\n}\n\nmsg.array= result;\n\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1090,
+        "y": 1920,
+        "wires": [
+            [
+                "904c7bd4cfd6eb62",
+                "571c9400ebe291c3"
+            ]
+        ]
+    },
+    {
+        "id": "21dc20bb302c7364",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "decodedText",
+        "func": "\nlet decodedText = Buffer.from(msg.text, 'binary').toString('utf8');\n\nmsg.text = decodedText;\nmsg.payload = decodedText;\nnode.send(msg);\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "mammoth",
+                "module": "mammoth"
+            }
+        ],
+        "x": 1270,
+        "y": 1820,
+        "wires": [
+            []
+        ]
+    },
+    {
+        "id": "ef6ec2941f608c58",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "decodedFilename ",
+        "func": "\nconst decodedFilename = `/${msg.oldPayload.link}`;\n\nconst outputString = decodedFilename.replace(/י/g, '`')\nmsg.urlName= outputString \nmsg.filepath = \"/data/storage\" + outputString;\nreturn msg;",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 910,
+        "y": 1820,
+        "wires": [
+            [
+                "c89c8e6ee869484a",
+                "20c7f41597215949"
+            ]
+        ]
+    },
+    {
+        "id": "c89c8e6ee869484a",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "get file",
+        "func": "\nconst filepath = msg.filepath; // Встановити шлях до файлу\nfs.readFile(filepath, 'utf8', function (err, data) {\n    if (err) {\n        node.error('Error reading the file: ' + err);\n    } else {\n        msg.text = data; \n        node.send(msg);\n    }\n});\n\nreturn null;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "mammoth",
+                "module": "mammoth"
+            },
+            {
+                "var": "fs",
+                "module": "fs"
+            }
+        ],
+        "x": 1110,
+        "y": 1820,
+        "wires": [
+            [
+                "21dc20bb302c7364"
+            ]
+        ]
+    },
+    {
+        "id": "9bdfffdad524d2a2",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 440",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1330,
+        "y": 1480,
+        "wires": []
+    },
+    {
+        "id": "70c15e2dac5ca7ca",
+        "type": "function",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "Scrape",
+        "func": "const { JSDOM } = jsdom;\n\nconst html = msg.payload;\n\nconst dom = new JSDOM(`${html}`);\ndom.window.document.querySelectorAll('style').forEach(link => {\n    link.remove();\n});\ndom.window.document.querySelectorAll('script').forEach(link => {\n    link.remove();\n});\nconst document = dom.window.document;\nconst pageText = document.body.textContent;\nmsg.text = pageText;\n\n\nlet table = dom.window.document.querySelector('table');\n\nlet ckeckTable = table?.textContent ? true : false;\n\n\nif (ckeckTable) {\n    const headers = Array.from(table.querySelectorAll('tr:first-child th, tr:first-child td')).map(td => {\n        const text = td.textContent.trim();\n        return text !== \"\" ? text : undefined;\n    }).filter(Boolean);\n\n    const rows = Array.from(table.querySelectorAll('tr:not(:first-child)'));\n    const tableData = rows.map(row => {\n        const rowData = Array.from(row.querySelectorAll('td')).map(td => td.textContent.trim());\n        return Object.fromEntries(headers.map((header, index) => [header, rowData[index]]));\n    });\n\n    let tables = JSON.stringify(tableData);\n    node.warn(tables)\n    msg.payload = pageText + '\\n\\n' + tables;\n} else {\n    msg.payload = pageText;\n}\n\n\n\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [
+            {
+                "var": "jsdom",
+                "module": "jsdom"
+            }
+        ],
+        "x": 1180,
+        "y": 1560,
+        "wires": [
+            [
+                "d7fff4960fb3648b",
+                "9bdfffdad524d2a2"
+            ]
+        ]
+    },
+    {
+        "id": "7f79bd11d26c94e1",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 445",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1790,
+        "y": 1700,
+        "wires": []
+    },
+    {
+        "id": "904c7bd4cfd6eb62",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 446",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1050,
+        "y": 1980,
+        "wires": []
+    },
+    {
+        "id": "fb8b5e1e32698da2",
+        "type": "file in",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 800,
+        "y": 1920,
+        "wires": [
+            [
+                "904c7bd4cfd6eb62",
+                "008f8886ca491687"
+            ]
+        ]
+    },
+    {
+        "id": "20c7f41597215949",
+        "type": "file in",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 940,
+        "y": 1760,
+        "wires": [
+            [
+                "9fa2f1bac8d09e44"
+            ]
+        ]
+    },
+    {
+        "id": "12dd4228e49edf33",
+        "type": "file in",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "",
+        "filename": "filepath",
+        "filenameType": "msg",
+        "format": "utf8",
+        "chunk": false,
+        "sendError": false,
+        "encoding": "none",
+        "allProps": false,
+        "x": 1100,
+        "y": 1420,
+        "wires": [
+            [
+                "8d8334914d6cf945",
+                "9bdfffdad524d2a2"
+            ]
+        ]
+    },
+    {
+        "id": "3dc587f979ecf665",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "debug 449",
+        "active": false,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "https://pineconen-64abf7e293ab8c11000000d8.ubos.tech/?#payload",
+        "targetType": "msg",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1970,
+        "y": 1800,
+        "wires": []
+    },
+    {
+        "id": "0003d926e74809dc",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "to base",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 2040,
+        "y": 1220,
+        "wires": []
+    },
+    {
+        "id": "ae6ebf4cd995df5e",
+        "type": "debug",
+        "z": "8bea414da58d7b2a",
+        "g": "4d9997e34fc515e3",
+        "name": "to base",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1660,
+        "y": 1980,
         "wires": []
     }
 ]

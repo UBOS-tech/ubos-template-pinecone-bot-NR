@@ -2,14 +2,10 @@
     "4b07803a52e468f5": {},
     "b5149a289a574835": {},
     "62ddf71e3259e377": {},
-    "dedc8713aa88daf6": {},
     "434e200cd77ed275": {},
-    "6dbf6ccd83ab84de": {},
-    "9917eac5b77b4506": {},
     "1b678c07805e900a": {},
     "483948c77608cd63": {},
     "09abf79dd626bde6": {},
-    "cd0e561ad445f426": {},
     "7908a755f1520aa7": {
         "user": "${AIBOTDB-MONGO-USER-NAME}",
         "password": "${AIBOTDB-MONGO-PASSWORD}"
