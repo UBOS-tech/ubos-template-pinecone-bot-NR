@@ -7268,16 +7268,7 @@
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "https://nodered-0131-64942bd3a77d221100000463.ubos.tech/?#objectid",
-                "module": "objectid"
-            },
-            {
-                "var": "jsonwebtoken",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 1520,
         "y": 1660,
         "wires": [
@@ -9777,7 +9768,8 @@
                 "909b6dc35a1bf271",
                 "b8765ebf35fcbee2",
                 "fcdafe8c0d80cff3",
-                "dbd0601d6a61d27f"
+                "dbd0601d6a61d27f",
+                "cd9e9f5449db580b"
             ]
         ]
     },
@@ -10211,6 +10203,23 @@
         "statusType": "auto",
         "x": 710,
         "y": 3980,
+        "wires": []
+    },
+    {
+        "id": "cd9e9f5449db580b",
+        "type": "debug",
+        "z": "f4036141cc030bcf",
+        "name": "debug 505",
+        "active": true,
+        "tosidebar": true,
+        "console": true,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 230,
+        "y": 4180,
         "wires": []
     },
     {
