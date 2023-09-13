@@ -15037,7 +15037,8 @@
         "y": 2380,
         "wires": [
             [
-                "6636970cd09260b8"
+                "6636970cd09260b8",
+                "1f0712b9ddfca967"
             ]
         ]
     },
@@ -15047,7 +15048,7 @@
         "z": "8bea414da58d7b2a",
         "g": "911c1ee2586e9d4d",
         "name": "function 371",
-        "func": "const vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.metadata.question\nconst result = msg.fromApp.metadata.result\nconst url = msg.fromApp.metadata.url\nmsg.payload = {\n    name: global.get(\"process_env\").PIPECONE_INDEX,\n    vectors: [{\n        id: msg.fromApp.id,\n        values: msg.payload.data[0].embedding,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"process_env\").PIPECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"process_env\").PIPECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"process_env\").PIPECONE_URL\n\nreturn msg;",
+        "func": "const vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.metadata.question\nconst result = msg.fromApp.metadata.result\nconst url = msg.fromApp.metadata.url\nmsg.payload = {\n    name: global.get(\"process_env\").PIPECONE_INDEX,\n    vectors: [{\n        id: msg.fromApp.id,\n        values: vector,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\n\nmsg.PINECONE_API_KEY = global.get(\"process_env\").PIPECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"process_env\").PIPECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"process_env\").PIPECONE_URL\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -15172,7 +15173,7 @@
         "z": "8bea414da58d7b2a",
         "g": "aff5f6094780b487",
         "name": "function 372",
-        "func": "const vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = msg.fromApp.id;\nconst url = msg.fromApp.url;\n\nmsg.payload = {\n    id: id,\n    name: global.get(\"process_env\").PIPECONE_INDEX,\n    set_metadata: { url: url, question: question, result: result },\n    values: msg.payload.data[0].embedding,\n    namespase:''\n};\nmsg.payload = {\n    name: global.get(\"process_env\").PIPECONE_INDEX,\n    vectors: [{\n        id: id,\n        values: vector,\n        metadata: { url: url, question: question, result: result }\n    }]\n};\nmsg.PINECONE_API_KEY = global.get(\"process_env\").PIPECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"process_env\").PIPECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"process_env\").PIPECONE_URL\n\nreturn msg;",
+        "func": "msg.PINECONE_API_KEY = global.get(\"process_env\").PIPECONE_API\nmsg.PINECONE_ENVIRONMENT = global.get(\"process_env\").PIPECONE_ENV\nmsg.PINECONE_BASE_URL = global.get(\"process_env\").PIPECONE_URL\n\nconst vector = msg.payload.data[0].embedding\nconst question = msg.fromApp.question;\nconst result = msg.fromApp.result;\nconst id = msg.fromApp.id;\nconst url = msg.fromApp.url;\nmsg.actionType='update'\nmsg.payload = {\n    id: id,\n    name: global.get(\"process_env\").PIPECONE_INDEX,\n    setMetadata: { url: url, question: question, result: result },\n    values: vector,\n    namespase:''\n};\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -15479,7 +15480,7 @@
         "z": "8bea414da58d7b2a",
         "g": "7ce0f5d37c531784",
         "name": "create vector",
-        "func": "\nmsg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload\n\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
+        "func": "\nmsg.collection = \"knowledgeObjects\"\ndelete msg.filepath;\ndelete msg.filename;\n\n\nmsg.query = { \"_id\": msg._id }\nlet result = msg.payload\n\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.old.link, result: result, question:\"\"},\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -15699,7 +15700,7 @@
         "z": "8bea414da58d7b2a",
         "g": "7ce0f5d37c531784",
         "name": "create vector",
-        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.urlName,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
+        "func": "msg.collection = \"knowledgeObjects\"\n\ndelete msg.filepath;\ndelete msg.filename;\n\nlet question =  msg.payload.choices[0].message.content;\nlet result = msg.text\n\n\n\n\nmsg.query = { \"_id\": msg._id }\nmsg.payload = {\n\n   \"$push\": {\n      \"vectors\": {\n         id: Date.now().toString(),\n         pinecone: false,\n         metadata: { url: msg.old.link,question: question, result },\n      }\n   }\n\n};\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
