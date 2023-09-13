@@ -9369,8 +9369,8 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admin_roles",
-        "func": "msg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n\nreturn msg;",
-        "outputs": 1,
+        "func": "if(msg.payload.length>0){\nmsg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9381,6 +9381,9 @@
             [
                 "5116a17ede9b9174",
                 "a760317f5d87d5e0"
+            ],
+            [
+                "aa731c1041cbaf75"
             ]
         ]
     },
@@ -9447,8 +9450,8 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admins",
-        "func": "let bcrypt = global.get('bcrypt')\nlet result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn msg;",
-        "outputs": 1,
+        "func": "if(msg.payload.length>0){\nlet bcrypt = global.get('bcrypt')\nlet result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn [msg,null];\n}else{\n    return[null,msg]\n}",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9459,6 +9462,9 @@
             [
                 "a38a8f1480c9758d",
                 "94fe01e84d30294a"
+            ],
+            [
+                "bda3da5d16e93c41"
             ]
         ]
     },
@@ -9525,8 +9531,8 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "send response",
-        "func": "msg.payload={\n    error: false,\n    email: msg.payload[0].email,\n    password: msg.password\n}\nreturn msg;",
-        "outputs": 1,
+        "func": "if(msg.payload.length>0){\nmsg.payload={\n    error: false,\n    email: msg.payload[0].email,\n    password: msg.password\n}\nreturn [msg,null];\n}\nelse{\n    return[null,msg]\n}",
+        "outputs": 2,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
@@ -9538,6 +9544,9 @@
                 "ebea711cc8d850d3",
                 "f3e689179c45a333",
                 "5043535bb60779a6"
+            ],
+            [
+                "cd743bf8265985e6"
             ]
         ]
     },
@@ -9761,8 +9770,8 @@
             "44c1d1f78ec482d1"
         ],
         "uncaught": false,
-        "x": 130,
-        "y": 4300,
+        "x": 150,
+        "y": 4540,
         "wires": [
             [
                 "909b6dc35a1bf271",
@@ -9784,8 +9793,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 4360,
+        "x": 450,
+        "y": 4600,
         "wires": [
             [
                 "1b5e108dc61af00c"
@@ -9803,8 +9812,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 4240,
+        "x": 450,
+        "y": 4480,
         "wires": [
             [
                 "9979252923793062"
@@ -9822,8 +9831,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 4300,
+        "x": 450,
+        "y": 4540,
         "wires": [
             [
                 "c6316eee1e014afc"
@@ -9837,8 +9846,8 @@
         "name": "",
         "statusCode": "",
         "headers": {},
-        "x": 610,
-        "y": 4420,
+        "x": 630,
+        "y": 4660,
         "wires": []
     },
     {
@@ -9852,8 +9861,8 @@
         "initialize": "",
         "finalize": "",
         "libs": [],
-        "x": 430,
-        "y": 4420,
+        "x": 450,
+        "y": 4660,
         "wires": [
             [
                 "ba4b22d80c1c5e19"
@@ -9931,8 +9940,8 @@
         "upsert": false,
         "multi": false,
         "operation": "delete",
-        "x": 860,
-        "y": 4360,
+        "x": 880,
+        "y": 4600,
         "wires": []
     },
     {
@@ -9946,8 +9955,8 @@
         "upsert": false,
         "multi": false,
         "operation": "delete",
-        "x": 840,
-        "y": 4240,
+        "x": 860,
+        "y": 4480,
         "wires": []
     },
     {
@@ -9961,8 +9970,8 @@
         "upsert": false,
         "multi": false,
         "operation": "delete",
-        "x": 870,
-        "y": 4300,
+        "x": 890,
+        "y": 4540,
         "wires": []
     },
     {
@@ -9977,7 +9986,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 470,
+        "x": 350,
         "y": 4120,
         "wires": []
     },
@@ -9993,7 +10002,7 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 650,
+        "x": 610,
         "y": 4120,
         "wires": []
     },
@@ -10218,9 +10227,84 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 230,
-        "y": 4180,
+        "x": 250,
+        "y": 4420,
         "wires": []
+    },
+    {
+        "id": "aa731c1041cbaf75",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 850,
+        "y": 4220,
+        "wires": [
+            [
+                "8f1a371dd4f3b4c8"
+            ]
+        ]
+    },
+    {
+        "id": "bda3da5d16e93c41",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 1510,
+        "y": 4260,
+        "wires": [
+            [
+                "62b62daee225d3a2"
+            ]
+        ]
+    },
+    {
+        "id": "cd743bf8265985e6",
+        "type": "delay",
+        "z": "f4036141cc030bcf",
+        "name": "",
+        "pauseType": "delay",
+        "timeout": "15",
+        "timeoutUnits": "milliseconds",
+        "rate": "1",
+        "nbRateUnits": "1",
+        "rateUnits": "second",
+        "randomFirst": "1",
+        "randomLast": "5",
+        "randomUnits": "seconds",
+        "drop": false,
+        "allowrate": false,
+        "outputs": 1,
+        "x": 2270,
+        "y": 4260,
+        "wires": [
+            [
+                "961e3c913cd2112c"
+            ]
+        ]
     },
     {
         "id": "b9dfba77cf0659da",
