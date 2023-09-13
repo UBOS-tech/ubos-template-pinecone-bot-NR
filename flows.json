@@ -1459,17 +1459,12 @@
         "z": "c8208e6a65d3c2af",
         "g": "cbd9c53fe26c3884",
         "name": "Scrape",
-        "func": "\nconst { extractor } = unfluff;\n\nmsg.payload = unfluff(msg.payload);\nmsg.payload.originalSourceUrl = msg.responseUrl;\n\nreturn msg;",
+        "func": "\n// const { extractor } = unfluff;\n\n// msg.payload = unfluff(msg.payload);\n// msg.payload.originalSourceUrl = msg.responseUrl;\n\n// return msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "unfluff",
-                "module": "unfluff"
-            }
-        ],
+        "libs": [],
         "x": 780,
         "y": 700,
         "wires": [
@@ -5721,17 +5716,12 @@
         "z": "f4036141cc030bcf",
         "g": "7cf09a5628ba29e5",
         "name": "jwt token",
-        "func": "msg.payload = msg.payload[0]\nconst token = jwt.sign(\n    { user_id: msg.payload._id, email:msg.payload.email },\n    \"test\",\n    {\n        expiresIn: \"1400m\",\n    }\n);\n\nmsg.cookies = {};\nmsg.cookies[\"user_token\"] = token;\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nmsg.payload = msg.payload[0]\nconst token = jwt.sign(\n    { user_id: msg.payload._id, email:msg.payload.email },\n    \"test\",\n    {\n        expiresIn: \"1400m\",\n    }\n);\n\nmsg.cookies = {};\nmsg.cookies[\"user_token\"] = token;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 1060,
         "y": 140,
         "wires": [
@@ -5797,17 +5787,12 @@
         "z": "f4036141cc030bcf",
         "g": "7cf09a5628ba29e5",
         "name": "check jwt",
-        "func": "msg.check = msg.payload;\nconst decoded = jwt.verify(msg.payload.token, 'test');\nmsg.payload = decoded\n\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nmsg.check = msg.payload;\nconst decoded = jwt.verify(msg.payload.token, 'test');\nmsg.payload = decoded\n\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 320,
         "y": 880,
         "wires": [
@@ -6573,16 +6558,12 @@
         "z": "f4036141cc030bcf",
         "g": "7cf09a5628ba29e5",
         "name": "check",
-        "func": "if (msg.payload.length > 0) {\n    if (!msg.payload[0].active) {\n        const decoded = jwt.verify(msg.payload[0].verifyToken, 'test');\n        const dateNow = new Date().getTime();\n\n        if (decoded.exp < dateNow) {\n            msg.query = { _id: objectid(msg.payload[0]._id) }\n            msg.payload = {\n                $set: {\n                    deleted: false\n                }\n            }\n\n            return [null, null, msg, null]\n        } else {\n            msg.payload = {\n                verifyToken: msg.payload[0].verifyToken,\n                email: msg.payload[0].email\n            }\n\n            return [null, null, null, msg]\n        }\n    } else {\n        msg.payload = {\n            data: \"This email address already exists\",\n            code: 400,\n        }\n        return [null, msg, null, null]\n    }\n}\nelse {\n    return [msg, null, null, null]\n}\n\n\n",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nif (msg.payload.length > 0) {\n    if (!msg.payload[0].active) {\n        const decoded = jwt.verify(msg.payload[0].verifyToken, 'test');\n        const dateNow = new Date().getTime();\n\n        if (decoded.exp < dateNow) {\n            msg.query = { _id: objectid(msg.payload[0]._id) }\n            msg.payload = {\n                $set: {\n                    deleted: false\n                }\n            }\n\n            return [null, null, msg, null]\n        } else {\n            msg.payload = {\n                verifyToken: msg.payload[0].verifyToken,\n                email: msg.payload[0].email\n            }\n\n            return [null, null, null, msg]\n        }\n    } else {\n        msg.payload = {\n            data: \"This email address already exists\",\n            code: 400,\n        }\n        return [null, msg, null, null]\n    }\n}\nelse {\n    return [msg, null, null, null]\n}\n\n\n",
         "outputs": 4,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            },
             {
                 "var": "objectid",
                 "module": "objectid"
@@ -6705,17 +6686,12 @@
         "z": "f4036141cc030bcf",
         "g": "7cf09a5628ba29e5",
         "name": "msg to email",
-        "func": "const token = msg.payload.verifyToken;\nconst nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/verifyToken?token=${token}`;\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>Confirm Your Email Address</h1>\n    <p>Tap the button below to confirm your email address. If you didn't create an account, you can delete this email.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #95e4f0;\">Confirm</a>\n</div>\n`;\n\nmsg.to = msg.payload.email;\nmsg.topic = 'Verify';\nmsg.payload = text;\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nconst token = msg.payload.verifyToken;\nconst nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/verifyToken?token=${token}`;\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>Confirm Your Email Address</h1>\n    <p>Tap the button below to confirm your email address. If you didn't create an account, you can delete this email.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #95e4f0;\">Confirm</a>\n</div>\n`;\n\nmsg.to = msg.payload.email;\nmsg.topic = 'Verify';\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 1010,
         "y": 580,
         "wires": [
@@ -6850,17 +6826,12 @@
         "z": "f4036141cc030bcf",
         "g": "7cf09a5628ba29e5",
         "name": "msg to email",
-        "func": "const token = msg.payload.verifyToken;\nconst nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/verifyToken?token=${token}`;\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>Confirm Your Email Address</h1>\n    <p>Tap the button below to confirm your email address. If you didn't create an account, you can delete this email.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #95e4f0;\">Confirm</a>\n</div>\n`;\n\nmsg.to = msg.payload.email;\nmsg.topic = 'Verify';\nmsg.payload = text;\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nconst token = msg.payload.verifyToken;\nconst nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/verifyToken?token=${token}`;\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>Confirm Your Email Address</h1>\n    <p>Tap the button below to confirm your email address. If you didn't create an account, you can delete this email.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #95e4f0;\">Confirm</a>\n</div>\n`;\n\nmsg.to = msg.payload.email;\nmsg.topic = 'Verify';\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 570,
         "y": 680,
         "wires": [
@@ -7132,16 +7103,12 @@
         "z": "f4036141cc030bcf",
         "g": "d47c4baf98dd7d3b",
         "name": "redirect to page",
-        "func": "node.warn(msg)\nconst token = await jwt.sign(\n    { user_id: msg.payload[0]._id, email: msg.payload[0].email },\n    \"test\",\n    {\n        expiresIn: \"150m\",\n    }\n);\n\nconst uiUrl = env.get(\"uiUrl\");\n\nmsg.token = token\nmsg.statusCode = 302\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Credentials\": true,\n    \"location\": `${uiUrl}/Login`\n}\n\nmsg.collection = \"admins\";\nmsg.query = {\n    _id: objectid(msg.payload[0]._id)\n}\nmsg.payload = {\n    $set: {\n        active: true,\n        verifyToken: null\n    }\n}\n\nnode.send(msg)",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nnode.warn(msg)\nconst token = await jwt.sign(\n    { user_id: msg.payload[0]._id, email: msg.payload[0].email },\n    \"test\",\n    {\n        expiresIn: \"150m\",\n    }\n);\n\nconst uiUrl = env.get(\"uiUrl\");\n\nmsg.token = token\nmsg.statusCode = 302\nmsg.headers = {\n    \"Access-Control-Allow-Origin\": \"*\",\n    \"Access-Control-Allow-Credentials\": true,\n    \"location\": `${uiUrl}/Login`\n}\n\nmsg.collection = \"admins\";\nmsg.query = {\n    _id: objectid(msg.payload[0]._id)\n}\nmsg.payload = {\n    $set: {\n        active: true,\n        verifyToken: null\n    }\n}\n\nnode.send(msg)",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
         "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            },
             {
                 "var": "objectid",
                 "module": "objectid"
@@ -7596,17 +7563,12 @@
         "z": "f4036141cc030bcf",
         "g": "b69c8ee37e3e0852",
         "name": "msg to email",
-        "func": "const nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/queryToResetPassword?token=${msg.token}`;\n\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>We received a request to reset your password</h1>\n    <p>Use the link below to set up a new password for your account. If you did not request to reset your password, ignore this email and the link will expire on its own.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #2E3D49;\">\n        SET NEW PASSWORD\n    </a>\n</div>\n`;\n\nmsg.to = msg.oldpayload.email;\nmsg.topic = 'Reset password';\nmsg.payload = text;\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nconst nodeUrl = env.get(\"nodeUrl\");\nconst url = `${nodeUrl}/queryToResetPassword?token=${msg.token}`;\n\nconst text = `\n<div style=\"padding: 10px 0; color: black;\">\n    <h1>We received a request to reset your password</h1>\n    <p>Use the link below to set up a new password for your account. If you did not request to reset your password, ignore this email and the link will expire on its own.</p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #2E3D49;\">\n        SET NEW PASSWORD\n    </a>\n</div>\n`;\n\nmsg.to = msg.oldpayload.email;\nmsg.topic = 'Reset password';\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 1930,
         "y": 1460,
         "wires": [
@@ -7813,17 +7775,12 @@
         "z": "f4036141cc030bcf",
         "g": "b69c8ee37e3e0852",
         "name": "msg to email",
-        "func": "const uiUrl = env.get(\"uiUrl\");\nconst url = `${uiUrl}/Login`;\nconst dateChanged = new Date().toString().slice(0, 24);\nconst text = `\n<div style=\"padding: 10px 0; color: black;\" display: block;>\n    <img src=\"https://www.iconpacks.net/icons/2/free-icon-check-mark-3280.png\"; alt=\"Success Icon\"; width=90px; height=90px;>\n    <h1 text-align=\"center\" >Password changed!</h1>\n    <p>\n        Your password has been changed successfully. \n        This is a confirmation that your password was changed at <b>${dateChanged}</b>\n        <br><br>\n        Use your new password to log in.\n    </p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #72D393;\">\n        <b>LOGIN NOW</b>\n    </a>\n</div>\n`;\n\nmsg.to = msg.oldpayload[0].email;\nmsg.topic = 'Password changed';\nmsg.payload = text;\n\nreturn msg;",
+        "func": "let jwt = global.get('jsonwebtoken')\n\nconst uiUrl = env.get(\"uiUrl\");\nconst url = `${uiUrl}/Login`;\nconst dateChanged = new Date().toString().slice(0, 24);\nconst text = `\n<div style=\"padding: 10px 0; color: black;\" display: block;>\n    <img src=\"https://www.iconpacks.net/icons/2/free-icon-check-mark-3280.png\"; alt=\"Success Icon\"; width=90px; height=90px;>\n    <h1 text-align=\"center\" >Password changed!</h1>\n    <p>\n        Your password has been changed successfully. \n        This is a confirmation that your password was changed at <b>${dateChanged}</b>\n        <br><br>\n        Use your new password to log in.\n    </p>\n    <a href=\"${url}\" target=\"_blank\" style=\"margin: 10px 0; display: inline-block; padding: 16px 36px; font-family: 'Source Sans Pro', Helvetica, Arial, sans-serif; font-size: 16px; color: #ffffff; text-decoration: none; border-radius: 6px; background: #72D393;\">\n        <b>LOGIN NOW</b>\n    </a>\n</div>\n`;\n\nmsg.to = msg.oldpayload[0].email;\nmsg.topic = 'Password changed';\nmsg.payload = text;\n\nreturn msg;",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
         "finalize": "",
-        "libs": [
-            {
-                "var": "jwt",
-                "module": "jsonwebtoken"
-            }
-        ],
+        "libs": [],
         "x": 1670,
         "y": 1860,
         "wires": [
