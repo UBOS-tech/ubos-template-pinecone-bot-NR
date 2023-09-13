@@ -91,9 +91,7 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 1139,
-        "w": 712,
-        "h": 902
+        "y": 1139
     },
     {
         "id": "7cf09a5628ba29e5",
@@ -178,9 +176,7 @@
             "56afed1bb13cc979"
         ],
         "x": 14,
-        "y": 39,
-        "w": 1952,
-        "h": 1022
+        "y": 39
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -204,9 +200,7 @@
             "4ca2aafdce75631b"
         ],
         "x": 774,
-        "y": 1139,
-        "w": 1012,
-        "h": 162
+        "y": 1139
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -257,9 +251,7 @@
             "5322da50da8b810a"
         ],
         "x": 774,
-        "y": 1339,
-        "w": 1652,
-        "h": 622
+        "y": 1339
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -303,9 +295,7 @@
             "db9c3ea65883774f"
         ],
         "x": 14,
-        "y": 3039,
-        "w": 1172,
-        "h": 662
+        "y": 3039
     },
     {
         "id": "a89d39ed625d493a",
@@ -362,9 +352,7 @@
             "daa9252c4d5e4a15"
         ],
         "x": 14,
-        "y": 2079,
-        "w": 1032,
-        "h": 922
+        "y": 2079
     },
     {
         "id": "1f1b365afc8becc5",
@@ -2333,7 +2321,8 @@
         "y": 1440,
         "wires": [
             [
-                "201d52af1c42d0e7"
+                "201d52af1c42d0e7",
+                "83e70ce5a4defd36"
             ]
         ]
     },
@@ -2553,8 +2542,8 @@
         "targetType": "full",
         "statusVal": "",
         "statusType": "auto",
-        "x": 1390,
-        "y": 1520,
+        "x": 1510,
+        "y": 1500,
         "wires": []
     },
     {
@@ -3746,7 +3735,7 @@
         "z": "c8208e6a65d3c2af",
         "g": "ebee837ffce65a75",
         "name": "create vector",
-        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\n// msg.OPENAI_API_KEY = process_env.OPENAI_API\nmsg.model = 'gpt-3.5-turbo-16k'\nconst content = msg.fromTG.content.includes(`@${global.get('telegram').BOT_NAME}`) ? msg.fromTG.content.replace(`@${global.get('telegram').BOT_NAME}`, '') : msg.fromTG.content;\n\nmsg.messages = [\n  { \"role\": \"system\", \"content\": global.get(\"process_env\").PROMPT + msg.payload.matches[0].metadata.result + \", \" + msg.payload.matches[1].metadata.result },\n  { \"role\": \"user\", \"content\": msg.old.entry[0].messaging[0].message.text }\n]\n\nreturn msg;\n",
+        "func": "delete msg.filepath;\ndelete msg.filename;\ndelete msg.text;\nconst process_env = global.get(\"process_env\")\n// msg.OPENAI_API_KEY = process_env.OPENAI_API\nmsg.model = 'gpt-3.5-turbo-16k'\n\nmsg.messages = [\n  { \"role\": \"system\", \"content\": global.get(\"process_env\").PROMPT + msg.payload.matches[0].metadata.result + \", \" + msg.payload.matches[1].metadata.result },\n  { \"role\": \"user\", \"content\": msg.old.entry[0].messaging[0].message.text }\n]\n\nreturn msg;\n",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
