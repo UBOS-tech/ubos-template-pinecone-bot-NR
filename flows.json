@@ -9384,10 +9384,7 @@
                 "a760317f5d87d5e0"
             ],
             [
-                "aa731c1041cbaf75",
-                "909b6dc35a1bf271",
-                "b8765ebf35fcbee2",
-                "fcdafe8c0d80cff3"
+                "aa731c1041cbaf75"
             ]
         ]
     },
@@ -9468,10 +9465,7 @@
                 "94fe01e84d30294a"
             ],
             [
-                "bda3da5d16e93c41",
-                "909b6dc35a1bf271",
-                "fcdafe8c0d80cff3",
-                "b8765ebf35fcbee2"
+                "bda3da5d16e93c41"
             ]
         ]
     },
@@ -9574,8 +9568,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -9600,8 +9594,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -9626,8 +9620,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -9993,8 +9987,8 @@
         "complete": "false",
         "statusVal": "",
         "statusType": "auto",
-        "x": 350,
-        "y": 4120,
+        "x": 470,
+        "y": 3980,
         "wires": []
     },
     {
