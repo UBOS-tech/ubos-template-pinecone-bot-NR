@@ -91,7 +91,9 @@
             "881a3a438a261f6f"
         ],
         "x": 14,
-        "y": 1139
+        "y": 1139,
+        "w": 712,
+        "h": 902
     },
     {
         "id": "7cf09a5628ba29e5",
@@ -176,7 +178,9 @@
             "56afed1bb13cc979"
         ],
         "x": 14,
-        "y": 39
+        "y": 39,
+        "w": 1952,
+        "h": 1022
     },
     {
         "id": "d47c4baf98dd7d3b",
@@ -200,7 +204,9 @@
             "4ca2aafdce75631b"
         ],
         "x": 774,
-        "y": 1139
+        "y": 1139,
+        "w": 1012,
+        "h": 162
     },
     {
         "id": "b69c8ee37e3e0852",
@@ -251,7 +257,9 @@
             "5322da50da8b810a"
         ],
         "x": 774,
-        "y": 1339
+        "y": 1339,
+        "w": 1652,
+        "h": 622
     },
     {
         "id": "1c10aa09f2bae3b6",
@@ -295,7 +303,9 @@
             "db9c3ea65883774f"
         ],
         "x": 14,
-        "y": 3039
+        "y": 3039,
+        "w": 1172,
+        "h": 662
     },
     {
         "id": "a89d39ed625d493a",
@@ -352,7 +362,9 @@
             "daa9252c4d5e4a15"
         ],
         "x": 14,
-        "y": 2079
+        "y": 2079,
+        "w": 1032,
+        "h": 922
     },
     {
         "id": "1f1b365afc8becc5",
@@ -9372,7 +9384,10 @@
                 "a760317f5d87d5e0"
             ],
             [
-                "aa731c1041cbaf75"
+                "aa731c1041cbaf75",
+                "909b6dc35a1bf271",
+                "b8765ebf35fcbee2",
+                "fcdafe8c0d80cff3"
             ]
         ]
     },
@@ -9453,7 +9468,10 @@
                 "94fe01e84d30294a"
             ],
             [
-                "bda3da5d16e93c41"
+                "bda3da5d16e93c41",
+                "909b6dc35a1bf271",
+                "fcdafe8c0d80cff3",
+                "b8765ebf35fcbee2"
             ]
         ]
     },
@@ -10226,8 +10244,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -10237,7 +10255,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 850,
+        "x": 840,
         "y": 4220,
         "wires": [
             [
@@ -10251,8 +10269,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -10262,11 +10280,11 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 1510,
+        "x": 1500,
         "y": 4260,
         "wires": [
             [
-                "62b62daee225d3a2"
+                "8f1a371dd4f3b4c8"
             ]
         ]
     },
