@@ -9451,7 +9451,7 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admins",
-        "func": "if(msg.payload.length>0){\nlet bcrypt = global.get('bcrypt')\nlet result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn [msg,null];\n}else{\n    return[null,msg]\n}",
+        "func": "if (msg.payload.length > 0){\nlet bcrypt = global.get('bcrypt')\nlet result = '';\nconst characters = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz';\nconst charactersLength = characters.length;\nfor (let i = 0; i < 8; i++) {\n    result += characters.charAt(Math.floor(Math.random() * charactersLength));\n}\n\nlet encryptedPassword = await bcrypt.hash(result, 10);\n\nmsg.password=result\nmsg.payload = {\n    \"deleted\": false,\n    \"avatarColor\": \"#80f124\",\n    \"createdAt\": Date.now(),\n    \"roles\": [msg.payload[0]._id],\n    \"active\": true,\n    \"firstname\": \"admin\",\n    \"lastname\": \"admin\",\n    \"email\": \"admin@ubos.tech\",\n    \"password\": encryptedPassword,\n    \"verifyToken\": null,\n    \"resetPassToken\": \"\",\n    \"resetPassExpireToken\": null\n}\nmsg.collection = \"admins\";\n\nreturn [msg,null];\n}else{\n    return[null,msg]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
@@ -10288,8 +10288,8 @@
         "z": "f4036141cc030bcf",
         "name": "",
         "pauseType": "delay",
-        "timeout": "15",
-        "timeoutUnits": "milliseconds",
+        "timeout": "1",
+        "timeoutUnits": "seconds",
         "rate": "1",
         "nbRateUnits": "1",
         "rateUnits": "second",
@@ -10299,7 +10299,7 @@
         "drop": false,
         "allowrate": false,
         "outputs": 1,
-        "x": 2270,
+        "x": 2260,
         "y": 4260,
         "wires": [
             [
