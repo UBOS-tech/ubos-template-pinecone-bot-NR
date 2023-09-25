@@ -361,9 +361,9 @@
             "22995a8e4464c6e5",
             "daa9252c4d5e4a15"
         ],
-        "x": 14,
+        "x": 4,
         "y": 2079,
-        "w": 1032,
+        "w": 1042,
         "h": 922
     },
     {
@@ -908,9 +908,9 @@
             "f7d336beb3bb2ce7",
             "fe7802ec805d07bd"
         ],
-        "x": 34,
+        "x": 44,
         "y": 179,
-        "w": 2642,
+        "w": 2632,
         "h": 702
     },
     {
@@ -4055,6 +4055,97 @@
                 "9406da99327c9644"
             ]
         ]
+    },
+    {
+        "id": "abb9bde490999ba5",
+        "type": "inject",
+        "z": "c8208e6a65d3c2af",
+        "name": "",
+        "props": [
+            {
+                "p": "payload"
+            },
+            {
+                "p": "topic",
+                "vt": "str"
+            }
+        ],
+        "repeat": "",
+        "crontab": "",
+        "once": false,
+        "onceDelay": 0.1,
+        "topic": "",
+        "payload": "",
+        "payloadType": "date",
+        "x": 1100,
+        "y": 120,
+        "wires": [
+            [
+                "5eb4c7834a97c8e5"
+            ]
+        ]
+    },
+    {
+        "id": "ed88c848c27931f2",
+        "type": "debug",
+        "z": "c8208e6a65d3c2af",
+        "name": "fromTG",
+        "active": true,
+        "tosidebar": true,
+        "console": false,
+        "tostatus": false,
+        "complete": "true",
+        "targetType": "full",
+        "statusVal": "",
+        "statusType": "auto",
+        "x": 1520,
+        "y": 120,
+        "wires": []
+    },
+    {
+        "id": "5eb4c7834a97c8e5",
+        "type": "function",
+        "z": "c8208e6a65d3c2af",
+        "name": "create vector",
+        "func": "\nconst content = 'hello';\n\n  msg.messages = [\n    { \"role\": \"system\", \"content\": 'hello'},\n    { \"role\": \"user\", \"content\": content }\n  ]\n\nreturn msg;\n",
+        "outputs": 1,
+        "noerr": 0,
+        "initialize": "",
+        "finalize": "",
+        "libs": [],
+        "x": 1270,
+        "y": 120,
+        "wires": [
+            [
+                "8c0ad43edc80e309"
+            ]
+        ]
+    },
+    {
+        "id": "8c0ad43edc80e309",
+        "type": "openai-ubos",
+        "z": "c8208e6a65d3c2af",
+        "name": "genarate unswer",
+        "model": "gpt-4",
+        "temperature": 0.02,
+        "max_tokens": 2000,
+        "prompt": "",
+        "frequency_penalty": 0,
+        "presence_penalty": 0,
+        "top_p": 1,
+        "stop": {
+            "type": "json",
+            "value": "[]"
+        },
+        "OPENAI_API_KEY": "",
+        "x": 1395,
+        "y": 120,
+        "wires": [
+            [
+                "ed88c848c27931f2"
+            ]
+        ],
+        "l": false
     },
     {
         "id": "2677414dc3b763e4",
@@ -9292,7 +9383,7 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admin_modules",
-        "func": "if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n}",
+        "func": "if(msg.payload.length===0){\n     msg.payload = [\n     { \"name\": \"App settings\", \"position\": 1, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Demo\", \"position\": 2, \"icon\": \"\", \"deleted\": false, \"isParent\": false },\n     { \"name\": \"Knowledge base\", \"position\": 3, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Users\", \"position\": 4, \"icon\": \"\", \"deleted\": false, \"isParent\": false }, \n     { \"name\": \"Management\", \"position\": 5, \"icon\": \"\", \"deleted\": false, \"isParent\": true, \"childModules\": [{ \"name\": \"Modules\", \"page_id\": \"Modules\", \"position\": 1 }, { \"name\": \"AdminRoles\", \"page_id\": \"AdminRoles\", \"position\": 2 }, { \"name\": \"User Management\", \"page_id\": \"User Management\", \"position\": 3 }] }\n     ]\nmsg.collection = \"admin_modules\"\n\nreturn msg;\n}",
         "outputs": 1,
         "noerr": 0,
         "initialize": "",
@@ -9370,7 +9461,7 @@
         "type": "function",
         "z": "f4036141cc030bcf",
         "name": "admin_roles",
-        "func": "if(msg.payload.length>0){\nmsg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}",
+        "func": "if(msg.payload.length>0){\nmsg.payload=\n        { \"name\": \"admin\", \"deleted\": false, \"permissions\": [\n            { \"module\": \"App settings\", \"moduleId\": msg.payload.filter(e => e.name ==='App settings')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Demo\", \"moduleId\": msg.payload.filter(e => e.name === 'Demo')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Knowledge base\", \"moduleId\": msg.payload.filter(e => e.name === 'Base')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Users\", \"moduleId\": msg.payload.filter(e => e.name === 'Users')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }, \n            { \"module\": \"Management\", \"moduleId\": msg.payload.filter(e => e.name === 'Management')[0]._id, \"canCreate\": true, \"canRead\": true, \"canEdit\": true, \"canRemove\": true }], \n        \"createdAt\":Date.now() }\n        \nmsg.collection = \"admin_roles\"\n    return [msg,null];\n}\nelse{\n    return[null,msg]\n}",
         "outputs": 2,
         "noerr": 0,
         "initialize": "",
